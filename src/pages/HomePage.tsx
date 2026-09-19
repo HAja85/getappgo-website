@@ -1,6 +1,10 @@
 import { Seo } from "@/components/seo/Seo";
-import { Hero } from "@/components/hero/Hero";
-import { ProofBar } from "@/components/sections/ProofBar";
+import { VoiceSceneProvider } from "@/components/ai-voice/voice-scene";
+import { VoiceHero } from "@/components/ai-voice/VoiceHero";
+import { AgentMarketplace } from "@/components/ai-voice/AgentMarketplace";
+import { AgentOutcomes } from "@/components/ai-voice/AgentOutcomes";
+import { AgentCollaboration } from "@/components/ai-voice/AgentCollaboration";
+import { BusinessActionRail } from "@/components/ai-voice/BusinessActionRail";
 import { PlatformSplit } from "@/components/sections/PlatformSplit";
 import { ProductCatalog } from "@/components/sections/ProductCatalog";
 import { IndustriesRail } from "@/components/sections/IndustriesRail";
@@ -15,10 +19,19 @@ export function HomePage() {
   return (
     <>
       <Seo path="/" description={site.seo.defaultDescription} />
-      <Hero />
-      <ProofBar />
+      <VoiceSceneProvider>
+        <VoiceHero />
+        <AgentMarketplace />
+        <AgentOutcomes />
+        <AgentCollaboration />
+      </VoiceSceneProvider>
+      <BusinessActionRail />
       <PlatformSplit />
-      <ProductCatalog />
+      <ProductCatalog
+        eyebrow="Business applications"
+        title="Systems the agents can update."
+        description="CRM, facilities, helpdesk, commerce, and custom applications remain in the same catalog."
+      />
       <SolutionsPreview />
       <IndustriesRail />
       <DeliveryProcess />

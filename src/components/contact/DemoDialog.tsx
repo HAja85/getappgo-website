@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from "re
 import * as Dialog from "@radix-ui/react-dialog";
 import * as Select from "@radix-ui/react-select";
 import { demoRequestSchema } from "@/lib/content/schema";
-import { getProducts, getSite } from "@/lib/content/repository";
+import { getAiAgents, getProducts, getSite } from "@/lib/content/repository";
 import { submitDemoRequest } from "@/lib/leads/submit";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import { Button } from "@/components/ui/Button";
@@ -21,6 +21,7 @@ const emptyForm = {
 export function DemoDialog() {
   const site = getSite();
   const products = getProducts();
+  const agents = getAiAgents();
   const { open, closeDemo, productSlug, intent } = useDemo();
   const [form, setForm] = useState(emptyForm);
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -69,8 +70,8 @@ export function DemoDialog() {
   return (
     <Dialog.Root open={open} onOpenChange={(next) => !next && closeDemo()}>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm" />
-        <Dialog.Content className="relative fixed inset-x-3 top-[8vh] z-50 mx-auto max-h-[84vh] max-w-lg overflow-auto rounded-[28px] border border-line bg-ink-soft p-6 md:p-8">
+        <Dialog.Overlay className="fixed inset-0 z-[80] bg-black/70" />
+        <Dialog.Content className="fixed top-[8vh] left-1/2 z-[90] max-h-[84vh] w-[calc(100%-1.5rem)] max-w-lg -translate-x-1/2 overflow-auto rounded-[28px] border border-line bg-ink-soft p-6 shadow-[0_24px_80px_rgba(0,0,0,0.45)] md:p-8">
           <Dialog.Title className="font-display text-2xl font-semibold text-mist">{copy.title}</Dialog.Title>
           <Dialog.Description className="mt-2 text-sm leading-6 text-muted">
             {copy.subtitle}
@@ -117,15 +118,26 @@ export function DemoDialog() {
               </Field>
               <Field label="Product" error={errors.productSlug}>
                 <Select.Root
-                  value={form.productSlug}
+                  value={form.productSlug || undefined}
                   onValueChange={(value) => setForm((current) => ({ ...current, productSlug: value }))}
                 >
                   <Select.Trigger className="flex h-11 w-full items-center justify-between rounded-2xl border border-line bg-ink px-4 text-left text-sm text-mist">
                     <Select.Value placeholder="Select a product" />
                   </Select.Trigger>
                   <Select.Portal>
-                    <Select.Content className="z-[60] overflow-hidden rounded-2xl border border-line bg-ink-elevated">
+                    <Select.Content className="z-[100] overflow-hidden rounded-2xl border border-line bg-ink-elevated">
                       <Select.Viewport className="p-2">
+                        <p className="px-3 py-2 text-[11px] tracking-[0.14em] text-muted uppercase">AI Voice Agents</p>
+                        {agents.map((agent) => (
+                          <Select.Item
+                            key={agent.slug}
+                            value={agent.slug}
+                            className="cursor-pointer rounded-xl px-3 py-2 text-sm text-mist outline-none data-[highlighted]:bg-accent/20"
+                          >
+                            <Select.ItemText>{agent.name}</Select.ItemText>
+                          </Select.Item>
+                        ))}
+                        <p className="mt-2 px-3 py-2 text-[11px] tracking-[0.14em] text-muted uppercase">Applications</p>
                         {products.map((product) => (
                           <Select.Item
                             key={product.slug}

@@ -127,6 +127,7 @@ export interface NavLink {
   label: string;
   href: string;
   mega?: boolean;
+  source?: "products" | "solutions" | "industries";
   groups?: { id: string; label: string; filter: { category: ProductCategory } }[];
 }
 
@@ -214,4 +215,106 @@ export interface NavigationContent {
       links?: { label: string; href: string }[];
     }>;
   };
+}
+
+export type VoiceLocale = "en" | "ar";
+export type VoicePhase = "listening" | "speaking" | "idle";
+
+export interface LocaleText {
+  en: string;
+  ar: string;
+}
+
+export interface AiVoiceAgent {
+  id: string;
+  slug: string;
+  name: string;
+  tagline: string;
+  description: string;
+  languages: string[];
+  capabilities: string[];
+  preview: LocaleText;
+  cta: Cta;
+}
+
+export interface VoiceSceneStep {
+  id: string;
+  agentId: string;
+  agentName: LocaleText;
+  status: LocaleText;
+  phase: VoicePhase;
+  customer: LocaleText;
+  reply: LocaleText;
+  intent: LocaleText;
+  nextAction: LocaleText;
+  activeNodes: string[];
+}
+
+export interface VoiceOutcome {
+  id: string;
+  title: string;
+  body: string;
+  steps: string[];
+}
+
+export interface VoiceFlowNode {
+  id: string;
+  label: string;
+  kind: "customer" | "agent" | "system";
+}
+
+export interface BusinessApplicationLink {
+  id: string;
+  name: string;
+  productSlug?: string;
+  action: string;
+}
+
+export interface AiVoiceContent {
+  marketplace: {
+    id: string;
+    eyebrow: string;
+    headline: string;
+    description: string;
+  };
+  outcomes: {
+    eyebrow: string;
+    headline: string;
+    description: string;
+    items: VoiceOutcome[];
+  };
+  collaboration: {
+    eyebrow: string;
+    headline: string;
+    description: string;
+    customerPrompt: LocaleText;
+    nodes: VoiceFlowNode[];
+  };
+  business: {
+    eyebrow: string;
+    headline: string;
+    description: string;
+    applications: BusinessApplicationLink[];
+    cashout: { name: string; tagline: string; steps: string[] };
+    banking: {
+      name: string;
+      tagline: string;
+      bankRows: string[];
+      systemRows: { label: string; status: "matched" | "review" }[];
+    };
+  };
+  console: {
+    liveLabel: string;
+    networkLabel: string;
+    languageLabel: LocaleText;
+    intentLabel: LocaleText;
+    actionLabel: LocaleText;
+    customerLabel: LocaleText;
+    listeningLabel: LocaleText;
+    speakingLabel: LocaleText;
+    arabicToggle: string;
+    englishToggle: string;
+    nodes: { id: string; label: string }[];
+  };
+  scene: VoiceSceneStep[];
 }

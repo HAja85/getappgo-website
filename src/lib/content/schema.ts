@@ -182,6 +182,7 @@ export const navigationSchema = z.object({
       label: z.string(),
       href: z.string(),
       mega: z.boolean().optional(),
+      source: z.enum(["products", "solutions", "industries"]).optional(),
       groups: z
         .array(
           z.object({
@@ -269,6 +270,118 @@ export const testimonialsFileSchema = z.object({
       role: z.string(),
       company: z.string(),
       productSlugs: z.array(z.string()),
+    }),
+  ),
+});
+
+const localeTextSchema = z.object({
+  en: z.string(),
+  ar: z.string(),
+});
+
+export const aiAgentsFileSchema = z.object({
+  agents: z.array(
+    z.object({
+      id: z.string(),
+      slug: z.string(),
+      name: z.string(),
+      tagline: z.string(),
+      description: z.string(),
+      languages: z.array(z.string()),
+      capabilities: z.array(z.string()),
+      preview: localeTextSchema,
+      cta: ctaSchema,
+    }),
+  ),
+});
+
+export const aiVoiceFileSchema = z.object({
+  marketplace: z.object({
+    id: z.string(),
+    eyebrow: z.string(),
+    headline: z.string(),
+    description: z.string(),
+  }),
+  outcomes: z.object({
+    eyebrow: z.string(),
+    headline: z.string(),
+    description: z.string(),
+    items: z.array(
+      z.object({
+        id: z.string(),
+        title: z.string(),
+        body: z.string(),
+        steps: z.array(z.string()),
+      }),
+    ),
+  }),
+  collaboration: z.object({
+    eyebrow: z.string(),
+    headline: z.string(),
+    description: z.string(),
+    customerPrompt: localeTextSchema,
+    nodes: z.array(
+      z.object({
+        id: z.string(),
+        label: z.string(),
+        kind: z.enum(["customer", "agent", "system"]),
+      }),
+    ),
+  }),
+  business: z.object({
+    eyebrow: z.string(),
+    headline: z.string(),
+    description: z.string(),
+    applications: z.array(
+      z.object({
+        id: z.string(),
+        name: z.string(),
+        productSlug: z.string().optional(),
+        action: z.string(),
+      }),
+    ),
+    cashout: z.object({
+      name: z.string(),
+      tagline: z.string(),
+      steps: z.array(z.string()),
+    }),
+    banking: z.object({
+      name: z.string(),
+      tagline: z.string(),
+      bankRows: z.array(z.string()),
+      systemRows: z.array(
+        z.object({
+          label: z.string(),
+          status: z.enum(["matched", "review"]),
+        }),
+      ),
+    }),
+  }),
+  console: z.object({
+    liveLabel: z.string(),
+    networkLabel: z.string(),
+    languageLabel: localeTextSchema,
+    intentLabel: localeTextSchema,
+    actionLabel: localeTextSchema,
+    customerLabel: localeTextSchema,
+    listeningLabel: localeTextSchema,
+    speakingLabel: localeTextSchema,
+    arabicToggle: z.string(),
+    englishToggle: z.string(),
+    nodes: z.array(z.object({ id: z.string(), label: z.string() })),
+  }),
+  scene: z.array(
+    z.object({
+      id: z.string(),
+      agentId: z.string(),
+      agentName: localeTextSchema,
+      status: localeTextSchema,
+      phase: z.enum(["listening", "speaking", "idle"]),
+      customer: localeTextSchema,
+      reply: localeTextSchema,
+      intent: localeTextSchema,
+      nextAction: localeTextSchema,
+      activeNodes: z.array(z.string()),
     }),
   ),
 });

@@ -22,7 +22,7 @@ export function SectionHeader({
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="font-display text-3xl leading-tight font-semibold tracking-tight text-mist md:text-4xl">
+      <h2 className="font-display text-3xl leading-tight font-semibold tracking-tight whitespace-pre-line text-mist md:text-4xl">
         {title}
       </h2>
       {description ? <p className="mt-4 text-base leading-7 text-muted">{description}</p> : null}

@@ -1,0 +1,240 @@
+{
+  "marketplace": {
+    "id": "ai-voice-workforce",
+    "eyebrow": "AI Voice Workforce",
+    "headline": "Meet your AI voice agents.",
+    "description": "Give every conversation a specialist."
+  },
+  "outcomes": {
+    "eyebrow": "Outcomes",
+    "headline": "What will your AI agent do?",
+    "description": "From the first conversation to the final action, automate the work behind every call.",
+    "items": [
+      {
+        "id": "engage-convert",
+        "title": "Engage & Convert",
+        "body": "Automate lead qualification and follow-ups.",
+        "steps": ["Call", "Understand", "Qualify", "Follow-up"]
+      },
+      {
+        "id": "invite-activate",
+        "title": "Invite & Activate",
+        "body": "Boost event attendance with AI-powered invitations and outbound conversations.",
+        "steps": ["Invite", "Confirm", "Remind", "Attend"]
+      },
+      {
+        "id": "support-24-7",
+        "title": "Support 24/7",
+        "body": "Provide always-on AI customer support.",
+        "steps": ["Ask", "Identify", "Resolve", "Escalate"]
+      },
+      {
+        "id": "interview-screen",
+        "title": "Interview & Screen",
+        "body": "Automate applicant interviews and capture structured responses.",
+        "steps": ["Greet", "Interview", "Score", "Handoff"]
+      }
+    ]
+  },
+  "collaboration": {
+    "eyebrow": "Orchestration",
+    "headline": "One conversation.\nMultiple AI agents.",
+    "description": "Specialized agents can work together to move a conversation from first contact to completed action.",
+    "customerPrompt": {
+      "en": "I'd like to book an appointment.",
+      "ar": "أريد حجز موعد"
+    },
+    "nodes": [
+      { "id": "customer", "label": "Customer", "kind": "customer" },
+      { "id": "receptionist", "label": "Receptionist", "kind": "agent" },
+      { "id": "lead-qualification", "label": "Lead Qualification", "kind": "agent" },
+      { "id": "sales", "label": "Sales", "kind": "agent" },
+      { "id": "appointment-setter", "label": "Appointment", "kind": "agent" },
+      { "id": "crm-system", "label": "CRM", "kind": "system" }
+    ]
+  },
+  "business": {
+    "eyebrow": "Business applications",
+    "headline": "Your AI doesn't just talk.\nIt gets work done.",
+    "description": "Voice agents understand the request, then update the systems that run the operation.",
+    "applications": [
+      { "id": "fmsx", "name": "FMSx", "productSlug": "facility-management-system", "action": "FMS request created" },
+      { "id": "crm", "name": "CRM", "productSlug": "crm-system", "action": "Lead created" },
+      { "id": "helpdesk", "name": "Help Desk", "productSlug": "helpdesk-system", "action": "Support ticket created" },
+      { "id": "shipping", "name": "Shipping & Logistics", "action": "Shipment update recorded" },
+      { "id": "cashout", "name": "Cashout", "action": "Cashout recorded" },
+      { "id": "banking", "name": "Banking Reconciliation", "action": "Bank transaction reconciled" }
+    ],
+    "cashout": {
+      "name": "Cashout",
+      "tagline": "Business cashout and financial operational management.",
+      "steps": ["Transaction", "Cashout", "Validation", "Approval", "Reconciliation"]
+    },
+    "banking": {
+      "name": "Banking Reconciliation",
+      "tagline": "Connect operational transactions with banking records and simplify reconciliation workflows.",
+      "bankRows": ["AED 12,450", "AED 8,200", "AED 4,850"],
+      "systemRows": [
+        { "label": "Matched", "status": "matched" },
+        { "label": "Matched", "status": "matched" },
+        { "label": "Review", "status": "review" }
+      ]
+    }
+  },
+  "console": {
+    "liveLabel": "Live",
+    "networkLabel": "AI Voice Network",
+    "languageLabel": { "en": "Language", "ar": "اللغة" },
+    "intentLabel": { "en": "Intent", "ar": "النية" },
+    "actionLabel": { "en": "Next action", "ar": "الإجراء التالي" },
+    "customerLabel": { "en": "Customer", "ar": "العميل" },
+    "listeningLabel": { "en": "Listening", "ar": "يستمع" },
+    "speakingLabel": { "en": "Speaking", "ar": "يتحدث" },
+    "arabicToggle": "العربية",
+    "englishToggle": "English",
+    "nodes": [
+      { "id": "receptionist", "label": "Receptionist" },
+      { "id": "lead-qualification", "label": "Qualification" },
+      { "id": "sales", "label": "Sales" },
+      { "id": "appointment-setter", "label": "Appointment" },
+      { "id": "crm-system", "label": "CRM" }
+    ]
+  },
+  "scene": [
+    {
+      "id": "incoming",
+      "agentId": "receptionist",
+      "agentName": { "en": "Receptionist AI", "ar": "وكيل الاستقبال" },
+      "status": { "en": "Incoming call", "ar": "مكالمة واردة" },
+      "phase": "listening",
+      "customer": { "en": "", "ar": "" },
+      "reply": { "en": "", "ar": "" },
+      "intent": { "en": "New inbound", "ar": "اتصال جديد" },
+      "nextAction": { "en": "Greet caller", "ar": "الترحيب بالمتصل" },
+      "activeNodes": ["receptionist"]
+    },
+    {
+      "id": "customer-speaks",
+      "agentId": "receptionist",
+      "agentName": { "en": "Receptionist AI", "ar": "وكيل الاستقبال" },
+      "status": { "en": "Customer speaking", "ar": "العميل يتحدث" },
+      "phase": "listening",
+      "customer": {
+        "en": "Hello, I'd like to know more about your services.",
+        "ar": "السلام عليكم، أريد معرفة المزيد عن خدماتكم."
+      },
+      "reply": { "en": "", "ar": "" },
+      "intent": { "en": "Detecting…", "ar": "جارٍ التعرف…" },
+      "nextAction": { "en": "Identify intent", "ar": "تحديد النية" },
+      "activeNodes": ["receptionist"]
+    },
+    {
+      "id": "intent",
+      "agentId": "receptionist",
+      "agentName": { "en": "Receptionist AI", "ar": "وكيل الاستقبال" },
+      "status": { "en": "Intent identified", "ar": "تم تحديد النية" },
+      "phase": "speaking",
+      "customer": {
+        "en": "Hello, I'd like to know more about your services.",
+        "ar": "السلام عليكم، أريد معرفة المزيد عن خدماتكم."
+      },
+      "reply": {
+        "en": "Of course. I'll connect you with the right specialist.",
+        "ar": "وعليكم السلام. بالتأكيد، سأحوّلك إلى المختص المناسب."
+      },
+      "intent": { "en": "Product enquiry", "ar": "استفسار عن المنتج" },
+      "nextAction": { "en": "Route to sales", "ar": "التحويل للمبيعات" },
+      "activeNodes": ["receptionist", "lead-qualification"]
+    },
+    {
+      "id": "sales-join",
+      "agentId": "custom-agent",
+      "agentName": { "en": "Sales Agent", "ar": "وكيل المبيعات" },
+      "status": { "en": "Sales agent joined", "ar": "انضم وكيل المبيعات" },
+      "phase": "speaking",
+      "customer": {
+        "en": "Hello, I'd like to know more about your services.",
+        "ar": "السلام عليكم، أريد معرفة المزيد عن خدماتكم."
+      },
+      "reply": {
+        "en": "Certainly — how can I help you today?",
+        "ar": "بالتأكيد، كيف يمكنني مساعدتك؟"
+      },
+      "intent": { "en": "Product enquiry", "ar": "استفسار عن المنتج" },
+      "nextAction": { "en": "Qualify lead", "ar": "تأهيل العميل" },
+      "activeNodes": ["receptionist", "lead-qualification", "sales"]
+    },
+    {
+      "id": "qualify",
+      "agentId": "lead-qualification",
+      "agentName": { "en": "Lead Qualification", "ar": "تأهيل العملاء" },
+      "status": { "en": "Qualifying", "ar": "جارٍ التأهيل" },
+      "phase": "speaking",
+      "customer": {
+        "en": "We need help booking meetings for a regional team.",
+        "ar": "نحتاج مساعدة في حجز الاجتماعات لفريق إقليمي."
+      },
+      "reply": {
+        "en": "Understood. What is the team size, and what should we solve first?",
+        "ar": "مفهوم. ما حجم الفريق، وما التحدي الأهم لديكم؟"
+      },
+      "intent": { "en": "Lead qualification", "ar": "تأهيل عميل محتمل" },
+      "nextAction": { "en": "Capture requirements", "ar": "توثيق المتطلبات" },
+      "activeNodes": ["lead-qualification", "sales"]
+    },
+    {
+      "id": "qualified",
+      "agentId": "lead-qualification",
+      "agentName": { "en": "Lead Qualification", "ar": "تأهيل العملاء" },
+      "status": { "en": "Lead qualified", "ar": "تم تأهيل العميل" },
+      "phase": "idle",
+      "customer": {
+        "en": "We need help booking meetings for a regional team.",
+        "ar": "نحتاج مساعدة في حجز الاجتماعات لفريق إقليمي."
+      },
+      "reply": {
+        "en": "This looks like a fit. I'll offer a meeting next.",
+        "ar": "يبدو أن الطلب مناسب. سأقترح موعداً الآن."
+      },
+      "intent": { "en": "Qualified lead", "ar": "عميل مؤهل" },
+      "nextAction": { "en": "Book meeting", "ar": "حجز اجتماع" },
+      "activeNodes": ["lead-qualification", "appointment-setter"]
+    },
+    {
+      "id": "appointment",
+      "agentId": "appointment-setter",
+      "agentName": { "en": "Appointment Agent", "ar": "وكيل المواعيد" },
+      "status": { "en": "Offering a meeting", "ar": "اقتراح موعد" },
+      "phase": "speaking",
+      "customer": {
+        "en": "Tuesday morning works for us.",
+        "ar": "الثلاثاء صباحاً يناسبنا."
+      },
+      "reply": {
+        "en": "I can book Tuesday at 11:00. I'll send the confirmation.",
+        "ar": "يمكنني حجز الثلاثاء الساعة 11 صباحاً. سأرسل التأكيد."
+      },
+      "intent": { "en": "Appointment request", "ar": "طلب موعد" },
+      "nextAction": { "en": "Confirm booking", "ar": "تأكيد الحجز" },
+      "activeNodes": ["appointment-setter", "crm-system"]
+    },
+    {
+      "id": "crm",
+      "agentId": "appointment-setter",
+      "agentName": { "en": "Appointment Agent", "ar": "وكيل المواعيد" },
+      "status": { "en": "CRM updated", "ar": "تم تحديث نظام العملاء" },
+      "phase": "idle",
+      "customer": {
+        "en": "Tuesday morning works for us.",
+        "ar": "الثلاثاء صباحاً يناسبنا."
+      },
+      "reply": {
+        "en": "Meeting confirmed. The lead is now in CRM.",
+        "ar": "تم تأكيد الاجتماع. وسُجّل العميل في نظام إدارة العملاء."
+      },
+      "intent": { "en": "Meeting booked", "ar": "موعد مؤكد" },
+      "nextAction": { "en": "Update CRM", "ar": "تحديث نظام العملاء" },
+      "activeNodes": ["appointment-setter", "crm-system"]
+    }
+  ]
+}

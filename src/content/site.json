@@ -12,17 +12,17 @@
   },
   "seo": {
     "titleTemplate": "%s · GetAppGo",
-    "defaultTitle": "GetAppGo · Enterprise Software and AI Platforms",
-    "defaultDescription": "Business applications and AI platforms for workforce, call center, trading, ERP, CRM, facilities, helpdesk, commerce, genealogy, and custom Oqtane development.",
+    "defaultTitle": "GetAppGo — AI Voice Agents for Modern Businesses",
+    "defaultDescription": "AI voice agents that speak Arabic and English, qualify leads, book appointments, support customers, and automate business conversations.",
     "ogImage": "/images/og/default.png",
     "canonicalOrigin": "https://www.example.com"
   },
   "hero": {
-    "eyebrow": "Enterprise software · AI platforms",
-    "headline": "Software that runs the operation. Platforms that extend the team.",
-    "subhead": "GetAppGo delivers business systems and AI platforms — from ERP, CRM, and facilities to workforce, call center, and trading — plus custom Oqtane application development.",
-    "primaryCta": { "label": "Request a demo", "action": "demo" },
-    "secondaryCta": { "label": "Explore products", "href": "/products" },
+    "eyebrow": "GetAppGo AI Voice Agents",
+    "headline": "AI agents that speak,\nunderstand, and take action.",
+    "subhead": "Human-like AI voice agents that speak Arabic and English, qualify leads, book appointments, support customers, conduct interviews, and automate business conversations — 24/7.",
+    "primaryCta": { "label": "Explore AI Voice Agents", "href": "/#ai-voice-workforce" },
+    "secondaryCta": { "label": "Talk to an Expert", "action": "expert" },
     "visual": "/images/graphics/hero-home.png",
     "visualAlt": "GetAppGo product platforms shown as a cinematic software collage"
   },

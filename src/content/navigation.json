@@ -1,32 +1,35 @@
-{
-  "primary": [
-    {
-      "id": "products",
-      "label": "Products",
-      "href": "/products",
-      "mega": true,
-      "groups": [
-        { "id": "business-software", "label": "Business Software", "filter": { "category": "business-software" } },
-        { "id": "ai-products", "label": "AI Products", "filter": { "category": "ai-products" } }
-      ]
-    },
-    { "id": "solutions", "label": "Solutions", "href": "/solutions" },
-    { "id": "industries", "label": "Industries", "href": "/industries" },
-    { "id": "about", "label": "About", "href": "/about" }
-  ],
-  "cta": { "id": "demo", "label": "Request a demo", "action": "demo" },
-  "footer": {
-    "columns": [
-      { "title": "Business Software", "from": "products", "filter": { "category": "business-software" } },
-      { "title": "AI Products", "from": "products", "filter": { "category": "ai-products" } },
-      {
-        "title": "Company",
-        "links": [
-          { "label": "About", "href": "/about" },
-          { "label": "Contact", "href": "/contact" },
-          { "label": "Privacy", "href": "/privacy" }
-        ]
-      }
-    ]
-  }
-}
+{
+  "primary": [
+    { "id": "ai-voice", "label": "AI Voice Agents", "href": "/#ai-voice-workforce" },
+    {
+      "id": "products",
+      "label": "Products",
+      "href": "/products",
+      "mega": true,
+      "source": "products",
+      "groups": [
+        { "id": "business-software", "label": "Business Software", "filter": { "category": "business-software" } },
+        { "id": "ai-products", "label": "AI Products", "filter": { "category": "ai-products" } }
+      ]
+    },
+    { "id": "solutions", "label": "Solutions", "href": "/solutions", "mega": true, "source": "solutions" },
+    { "id": "industries", "label": "Industries", "href": "/industries", "mega": true, "source": "industries" },
+    { "id": "about", "label": "About", "href": "/about" },
+    { "id": "contact", "label": "Contact", "href": "/contact" }
+  ],
+  "cta": { "id": "demo", "label": "Request a demo", "action": "demo" },
+  "footer": {
+    "columns": [
+      { "title": "Business Software", "from": "products", "filter": { "category": "business-software" } },
+      { "title": "AI Products", "from": "products", "filter": { "category": "ai-products" } },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About", "href": "/about" },
+          { "label": "Contact", "href": "/contact" },
+          { "label": "Privacy", "href": "/privacy" }
+        ]
+      }
+    ]
+  }
+}

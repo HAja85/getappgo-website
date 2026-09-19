@@ -1,0 +1,88 @@
+{
+  "agents": [
+    {
+      "id": "receptionist",
+      "slug": "receptionist",
+      "name": "Receptionist",
+      "tagline": "Your always-on first impression.",
+      "description": "Handle incoming calls, route callers to the right specialist, and answer frequent questions — in Arabic and English.",
+      "languages": ["Arabic", "English"],
+      "capabilities": ["Incoming calls", "Call routing", "FAQ handling", "Department transfer"],
+      "preview": {
+        "en": "Good morning. How can I direct your call?",
+        "ar": "صباح الخير. كيف يمكنني توجيه مكالمتك؟"
+      },
+      "cta": { "label": "Explore Agent", "action": "demo" }
+    },
+    {
+      "id": "appointment-setter",
+      "slug": "appointment-setter",
+      "name": "Appointment Setter",
+      "tagline": "Meetings booked without the back-and-forth.",
+      "description": "Schedule meetings, confirm availability, and send the caller a clear next step.",
+      "languages": ["Arabic", "English"],
+      "capabilities": ["Calendar", "Qualification", "Booking", "Confirmation"],
+      "preview": {
+        "en": "Tuesday at 11:00 is open. Shall I book it?",
+        "ar": "الثلاثاء الساعة 11 متاح. هل أحجز الموعد؟"
+      },
+      "cta": { "label": "Explore Agent", "action": "demo" }
+    },
+    {
+      "id": "lead-qualification",
+      "slug": "lead-qualification",
+      "name": "Lead Qualification",
+      "tagline": "Screen, score, and hand off ready leads.",
+      "description": "Ask the right questions, capture requirements, and pass qualified prospects into CRM.",
+      "languages": ["Arabic", "English"],
+      "capabilities": ["Prospect screening", "Requirement discovery", "Lead scoring", "CRM handoff"],
+      "preview": {
+        "en": "What size is the team, and what should we solve first?",
+        "ar": "ما حجم الفريق، وما التحدي الأهم لديكم؟"
+      },
+      "cta": { "label": "Explore Agent", "action": "demo" }
+    },
+    {
+      "id": "survey-feedback",
+      "slug": "survey-feedback",
+      "name": "Survey & Feedback",
+      "tagline": "Structured answers, spoken naturally.",
+      "description": "Run surveys and collect feedback as a conversation, then store structured responses.",
+      "languages": ["Arabic", "English"],
+      "capabilities": ["Surveys", "Feedback collection", "Structured responses", "Insight gathering"],
+      "preview": {
+        "en": "On a scale of one to five, how was today's visit?",
+        "ar": "من واحد إلى خمسة، كيف تقيّم زيارتكم اليوم؟"
+      },
+      "cta": { "label": "Explore Agent", "action": "demo" }
+    },
+    {
+      "id": "customer-service",
+      "slug": "customer-service",
+      "name": "Customer Service",
+      "tagline": "Answers first. People when needed.",
+      "description": "Resolve common issues, answer account questions, and escalate exceptions with context.",
+      "languages": ["Arabic", "English"],
+      "capabilities": ["Customer support", "FAQ", "Issue resolution", "Escalation"],
+      "preview": {
+        "en": "I can check that request and open a ticket if it needs a specialist.",
+        "ar": "يمكنني متابعة الطلب وفتح تذكرة إذا احتجتم مختصاً."
+      },
+      "cta": { "label": "Explore Agent", "action": "demo" }
+    },
+    {
+      "id": "custom-agent",
+      "slug": "custom-agent",
+      "name": "Custom Agent",
+      "tagline": "A voice agent designed around your process.",
+      "description": "Define the role, knowledge, workflow, and business actions — then connect the agent to your applications.",
+      "languages": ["Arabic", "English"],
+      "capabilities": ["Custom role", "Custom workflow", "Knowledge", "Business actions", "Integrations"],
+      "preview": {
+        "en": "Tell us the conversation you want handled. We'll design the agent around it.",
+        "ar": "صفوا لنا المحادثة المطلوبة. نصمّم الوكيل وفقاً لها."
+      },
+      "cta": { "label": "Explore Agent", "action": "demo" }
+    }
+  ]
+}

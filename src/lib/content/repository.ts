@@ -1,3 +1,5 @@
+import aiAgentsFile from "@/content/ai-agents.json";
+import aiVoiceFile from "@/content/ai-voice.json";
 import faqsFile from "@/content/faqs.json";
 import industriesFile from "@/content/industries.json";
 import navigationFile from "@/content/navigation.json";
@@ -6,6 +8,8 @@ import siteFile from "@/content/site.json";
 import solutionsFile from "@/content/solutions.json";
 import testimonialsFile from "@/content/testimonials.json";
 import type {
+  AiVoiceAgent,
+  AiVoiceContent,
   Faq,
   Industry,
   NavigationContent,
@@ -18,6 +22,8 @@ import type {
   Testimonial,
 } from "@/types";
 import {
+  aiAgentsFileSchema,
+  aiVoiceFileSchema,
   faqsFileSchema,
   industriesFileSchema,
   navigationSchema,
@@ -34,6 +40,8 @@ const industriesData = industriesFileSchema.parse(industriesFile);
 const solutionsData = solutionsFileSchema.parse(solutionsFile);
 const faqsData = faqsFileSchema.parse(faqsFile);
 const testimonialsData = testimonialsFileSchema.parse(testimonialsFile);
+const aiAgentsData = aiAgentsFileSchema.parse(aiAgentsFile);
+const aiVoice = aiVoiceFileSchema.parse(aiVoiceFile) as AiVoiceContent;
 
 export function getSite(): SiteContent {
   return site;
@@ -120,4 +128,16 @@ export function getFaqsByIds(ids: string[]): Faq[] {
 export function getTestimonials(): Testimonial[] {
   if (testimonialsData.enabled === false) return [];
   return testimonialsData.items;
+}
+
+export function getAiAgents(): AiVoiceAgent[] {
+  return aiAgentsData.agents as AiVoiceAgent[];
+}
+
+export function getAiAgentBySlug(slug: string): AiVoiceAgent | undefined {
+  return getAiAgents().find((agent) => agent.slug === slug);
+}
+
+export function getAiVoice(): AiVoiceContent {
+  return aiVoice;
 }

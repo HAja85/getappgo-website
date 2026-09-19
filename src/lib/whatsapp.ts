@@ -1,4 +1,4 @@
-import { getProductBySlug, getSite } from "@/lib/content/repository";
+import { getAiAgentBySlug, getProductBySlug, getSite } from "@/lib/content/repository";
 
 function digitsOnly(value: string): string {
   return value.replace(/[^\d]/g, "");
@@ -7,8 +7,10 @@ function digitsOnly(value: string): string {
 export function buildWhatsAppUrl(productSlug?: string): string {
   const site = getSite();
   const product = productSlug ? getProductBySlug(productSlug) : undefined;
-  const message = product
-    ? `Hi, I'm interested in ${product.name}. I'd like to request a demo.`
+  const agent = productSlug ? getAiAgentBySlug(productSlug) : undefined;
+  const offering = product?.name ?? agent?.name;
+  const message = offering
+    ? `Hi, I'm interested in ${offering}. I'd like to request a demo.`
     : site.contact.whatsapp.defaultMessage;
   return `https://wa.me/${digitsOnly(site.contact.whatsapp.e164)}?text=${encodeURIComponent(message)}`;
 }
