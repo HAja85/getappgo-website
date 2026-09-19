@@ -11,7 +11,8 @@ export function DeliveryProcess() {
         <ol className="mt-10 grid gap-4 md:grid-cols-4">
           {process.map((step) => (
             <li key={step.step} className="rounded-[24px] border border-line p-5">
-              <p className="text-sm text-accent-strong">Step {step.step}</p>
+              {step.icon ? <img src={step.icon} alt="" width={48} height={48} className="h-12 w-12" /> : null}
+              <p className="mt-4 text-sm text-accent-strong">Step {step.step}</p>
               <h3 className="mt-2 font-display text-lg text-mist">{step.title}</h3>
               <p className="mt-2 text-sm leading-6 text-muted">{step.body}</p>
             </li>

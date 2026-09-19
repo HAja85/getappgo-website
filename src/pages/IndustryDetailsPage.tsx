@@ -13,11 +13,14 @@ export function IndustryDetailsPage() {
 
   return (
     <>
-      <Seo path={`/industries/${industry.slug}`} title={industry.name} description={industry.description} />
+      <Seo path={`/industries/${industry.slug}`} title={industry.name} description={industry.description} image={industry.heroVisual} />
       <Container className="pb-12">
         <p className="text-xs tracking-[0.18em] text-accent-strong uppercase">Industry</p>
         <h1 className="font-display mt-4 text-4xl text-white">{industry.name}</h1>
         <p className="mt-4 max-w-2xl text-muted">{industry.description}</p>
+        <div className="visual-frame mt-8 aspect-video max-w-3xl overflow-hidden rounded-[28px]">
+          <img src={industry.heroVisual} alt="" width={1200} height={675} className="h-full w-full object-cover object-center" />
+        </div>
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {products.map((product) => (
             <ProductCard key={product.slug} product={product} />

@@ -37,6 +37,7 @@ export function ContactPage() {
             target="_blank"
             rel="noreferrer"
           >
+            <img src="/images/icons/whatsapp.svg" alt="" width={20} height={20} className="mr-2 h-5 w-5" />
             WhatsApp
           </a>
           <a className="inline-flex h-11 items-center justify-center px-2 text-sm text-accent-strong" href={`mailto:${site.contact.email}`}>

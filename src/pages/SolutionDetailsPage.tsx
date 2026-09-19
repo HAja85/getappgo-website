@@ -13,11 +13,16 @@ export function SolutionDetailsPage() {
 
   return (
     <>
-      <Seo path={`/solutions/${solution.slug}`} title={solution.name} description={solution.description} />
+      <Seo path={`/solutions/${solution.slug}`} title={solution.name} description={solution.description} image={solution.visual} />
       <Container className="pb-12">
         <p className="text-xs tracking-[0.18em] text-accent-strong uppercase">Solution</p>
         <h1 className="font-display mt-4 max-w-3xl text-4xl text-white">{solution.name}</h1>
         <p className="mt-4 max-w-2xl text-muted">{solution.description}</p>
+        {solution.visual ? (
+          <div className="visual-frame mt-8 aspect-video max-w-3xl overflow-hidden rounded-[28px]">
+            <img src={solution.visual} alt="" width={1200} height={675} className="h-full w-full object-cover object-center" />
+          </div>
+        ) : null}
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {products.map((product) => (
             <ProductCard key={product.slug} product={product} />

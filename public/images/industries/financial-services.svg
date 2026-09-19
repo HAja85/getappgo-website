@@ -1,7 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
-  <rect width="1200" height="800" fill="#120E1F"/>
-  <circle cx="380" cy="260" r="220" fill="hsla(268,70%,62%,0.28)"/>
-  <circle cx="860" cy="520" r="260" fill="hsla(308,75%,55%,0.22)"/>
-  <rect x="180" y="180" width="840" height="440" rx="48" stroke="rgba(239,234,252,0.18)" stroke-width="2"/>
-  <text x="600" y="410" text-anchor="middle" fill="#EFEAFC" font-family="Outfit, Inter, sans-serif" font-size="42" font-weight="600">Financial Services</text>
-</svg>
+  <rect width="1200" height="800" fill="#0C0A14"/>
+  <circle cx="360" cy="220" r="260" fill="#6D5CFF" opacity="0.28"/>
+  <circle cx="900" cy="560" r="300" fill="#4F46E5" opacity="0.22"/>
+  <rect width="1200" height="800" fill="url(#grid)" opacity="0.35"/>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#EFEAFC" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+    <rect x="180" y="160" width="840" height="460" rx="36" fill="#161225" stroke="rgba(239,234,252,0.16)"/>
+    <g transform="translate(260 220)"><rect x="0" y="100" width="16" height="40" rx="3" fill="#49D17D" opacity="0.85"/>
+      <line x1="8" y1="84" x2="8" y2="156" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="36" y="93.5" width="16" height="77" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="44" y1="77.5" x2="44" y2="186.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="72" y="63" width="16" height="114" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="80" y1="47" x2="80" y2="193" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="108" y="101.5" width="16" height="61" rx="3" fill="#49D17D" opacity="0.85"/>
+      <line x1="116" y1="85.5" x2="116" y2="178.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="144" y="71" width="16" height="98" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="152" y1="55" x2="152" y2="185" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="180" y="109.5" width="16" height="45" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="188" y1="93.5" x2="188" y2="170.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="216" y="79" width="16" height="82" rx="3" fill="#49D17D" opacity="0.85"/>
+      <line x1="224" y1="63" x2="224" y2="177" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="252" y="72.5" width="16" height="119" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="260" y1="56.5" x2="260" y2="207.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="288" y="87" width="16" height="66" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="296" y1="71" x2="296" y2="169" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="324" y="80.5" width="16" height="103" rx="3" fill="#49D17D" opacity="0.85"/>
+      <line x1="332" y1="64.5" x2="332" y2="199.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="360" y="95" width="16" height="50" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="368" y1="79" x2="368" y2="161" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="396" y="88.5" width="16" height="87" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="404" y1="72.5" x2="404" y2="191.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="432" y="58" width="16" height="124" rx="3" fill="#49D17D" opacity="0.85"/>
+      <line x1="440" y1="42" x2="440" y2="198" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="468" y="96.5" width="16" height="71" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="476" y1="80.5" x2="476" y2="183.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="504" y="66" width="16" height="108" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="512" y1="50" x2="512" y2="190" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="540" y="104.5" width="16" height="55" rx="3" fill="#49D17D" opacity="0.85"/>
+      <line x1="548" y1="88.5" x2="548" y2="175.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="576" y="74" width="16" height="92" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="584" y1="58" x2="584" y2="182" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="612" y="67.5" width="16" height="129" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="620" y1="51.5" x2="620" y2="212.5" stroke="#EFEAFC" stroke-opacity="0.25"/></g>
+    <text x="600" y="770" text-anchor="middle" fill="#B7B0CC" font-family="Outfit, Inter, sans-serif" font-size="18">Financial Services</text></svg>

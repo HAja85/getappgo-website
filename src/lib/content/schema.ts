@@ -83,6 +83,7 @@ export const productsFileSchema = z.object({
       id: z.enum(["business-software", "ai-products"]),
       label: z.string(),
       tagline: z.string(),
+      visual: z.string().optional(),
     }),
   ),
   products: z.array(productSchema),
@@ -97,6 +98,7 @@ export const siteSchema = z.object({
     logo: z.object({
       mark: z.string(),
       wordmark: z.string(),
+      lockup: z.string().optional(),
     }),
   }),
   seo: z.object({
@@ -112,6 +114,8 @@ export const siteSchema = z.object({
     subhead: z.string(),
     primaryCta: ctaSchema,
     secondaryCta: ctaSchema,
+    visual: z.string().optional(),
+    visualAlt: z.string().optional(),
   }),
   proof: z.array(
     z.object({
@@ -155,6 +159,7 @@ export const siteSchema = z.object({
       step: z.number(),
       title: z.string(),
       body: z.string(),
+      icon: z.string().optional(),
     }),
   ),
   social: z.object({
@@ -238,6 +243,7 @@ export const solutionsFileSchema = z.object({
       name: z.string(),
       tagline: z.string(),
       description: z.string(),
+      visual: z.string().optional(),
       productSlugs: z.array(z.string()),
     }),
   ),

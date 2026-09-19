@@ -1,7 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
-  <rect width="1200" height="800" fill="#120E1F"/>
-  <circle cx="380" cy="260" r="220" fill="hsla(316,70%,62%,0.28)"/>
-  <circle cx="860" cy="520" r="260" fill="hsla(356,75%,55%,0.22)"/>
-  <rect x="180" y="180" width="840" height="440" rx="48" stroke="rgba(239,234,252,0.18)" stroke-width="2"/>
-  <text x="600" y="410" text-anchor="middle" fill="#EFEAFC" font-family="Outfit, Inter, sans-serif" font-size="42" font-weight="600">Custom Software</text>
-</svg>
+  <rect width="1200" height="800" fill="#0C0A14"/>
+  <circle cx="360" cy="220" r="260" fill="#6D5CFF" opacity="0.28"/>
+  <circle cx="900" cy="560" r="300" fill="#4F46E5" opacity="0.22"/>
+  <rect width="1200" height="800" fill="url(#grid)" opacity="0.35"/>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#EFEAFC" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+    <rect x="180" y="160" width="840" height="460" rx="36" fill="#161225" stroke="rgba(239,234,252,0.16)"/>
+    <g transform="translate(260 220)"><rect x="0" y="0" width="220" height="132" rx="18" fill="#EFEAFC" fill-opacity="0.06" stroke="rgba(239,234,252,0.16)"/>
+      <rect x="18" y="22" width="120" height="10" rx="5" fill="#8B7CFF" opacity="0.7"/>
+      <rect x="18" y="46" width="170" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.18"/>
+      <rect x="18" y="66" width="140" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.1"/><rect x="240" y="0" width="220" height="132" rx="18" fill="#EFEAFC" fill-opacity="0.06" stroke="rgba(239,234,252,0.16)"/>
+      <rect x="258" y="22" width="120" height="10" rx="5" fill="#8B7CFF" opacity="0.7"/>
+      <rect x="258" y="46" width="170" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.18"/>
+      <rect x="258" y="66" width="140" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.1"/><rect x="0" y="150" width="220" height="132" rx="18" fill="#EFEAFC" fill-opacity="0.06" stroke="rgba(239,234,252,0.16)"/>
+      <rect x="18" y="172" width="120" height="10" rx="5" fill="#8B7CFF" opacity="0.7"/>
+      <rect x="18" y="196" width="170" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.18"/>
+      <rect x="18" y="216" width="140" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.1"/><rect x="240" y="150" width="220" height="132" rx="18" fill="#EFEAFC" fill-opacity="0.06" stroke="rgba(239,234,252,0.16)"/>
+      <rect x="258" y="172" width="120" height="10" rx="5" fill="#8B7CFF" opacity="0.7"/>
+      <rect x="258" y="196" width="170" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.18"/>
+      <rect x="258" y="216" width="140" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.1"/></g>
+    <text x="600" y="770" text-anchor="middle" fill="#B7B0CC" font-family="Outfit, Inter, sans-serif" font-size="18">Custom Software</text></svg>

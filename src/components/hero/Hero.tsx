@@ -22,6 +22,17 @@ export function Hero() {
             </ButtonLink>
           </div>
         </div>
+        {site.hero.visual ? (
+          <div className="visual-frame mx-auto mt-14 max-w-5xl overflow-hidden rounded-[32px]">
+            <img
+              src={site.hero.visual}
+              alt={site.hero.visualAlt ?? ""}
+              width={1600}
+              height={900}
+              className="h-auto w-full object-cover"
+            />
+          </div>
+        ) : null}
       </Container>
     </section>
   );

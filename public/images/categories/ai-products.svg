@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <rect width="1200" height="800" fill="#0C0A14"/>
+  <circle cx="360" cy="220" r="260" fill="#8B7CFF" opacity="0.28"/>
+  <circle cx="900" cy="560" r="300" fill="#4F46E5" opacity="0.22"/>
+  <rect width="1200" height="800" fill="url(#grid)" opacity="0.35"/>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#EFEAFC" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+    <rect x="140" y="140" width="920" height="500" rx="40" fill="#161225" stroke="rgba(239,234,252,0.16)"/>
+    <g transform="translate(240 220)"><path d="M0 90 L16 110.26009873654641 L32 126.9894577496375 L48 137.3510866511107 L64 139.7555357051197 L80 134.1631566075541 L96 122.07426819285095 L112 106.20993726188362 L128 89.948780643502 L144 76.63458483443077 L160 68.89560025220695 L176 68.11381283155336 L192 74.151852433802 L208 85.39269573073867 L224 99.083630090277 L240 111.91400558718765 L256 120.70869915628938 L272 123.09562028371045 L288 118.01079688286012 L304 105.93753772410291 L320 88.83018201937028 L336 69.73704793623307 L352 52.19836045619266 L368 39.54074977219658 L384 34.21105661000163 L400 37.28436070476816 L416 48.245944805980315 L432 65.09146110936341 L448 84.72513233989216 L464 103.57547374723647 L480 118.30401288246603 L496 126.46374201289309 L512 126.97436376766174 L528 120.31868246921128 L544 108.421174967274 L560 94.23433280644939 L576 81.11769125666953 L592 72.13650360829634 L608 69.4232454837395 L624 73.73225218747838 L640 84.27842318573832 L656 98.89307255377378" stroke="#8B7CFF" stroke-width="3" fill="none"/><rect x="0" y="100" width="16" height="40" rx="3" fill="#49D17D" opacity="0.85"/>
+      <line x1="8" y1="84" x2="8" y2="156" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="36" y="93.5" width="16" height="77" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="44" y1="77.5" x2="44" y2="186.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="72" y="63" width="16" height="114" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="80" y1="47" x2="80" y2="193" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="108" y="101.5" width="16" height="61" rx="3" fill="#49D17D" opacity="0.85"/>
+      <line x1="116" y1="85.5" x2="116" y2="178.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="144" y="71" width="16" height="98" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="152" y1="55" x2="152" y2="185" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="180" y="109.5" width="16" height="45" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="188" y1="93.5" x2="188" y2="170.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="216" y="79" width="16" height="82" rx="3" fill="#49D17D" opacity="0.85"/>
+      <line x1="224" y1="63" x2="224" y2="177" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="252" y="72.5" width="16" height="119" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="260" y1="56.5" x2="260" y2="207.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="288" y="87" width="16" height="66" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="296" y1="71" x2="296" y2="169" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="324" y="80.5" width="16" height="103" rx="3" fill="#49D17D" opacity="0.85"/>
+      <line x1="332" y1="64.5" x2="332" y2="199.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="360" y="95" width="16" height="50" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="368" y1="79" x2="368" y2="161" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="396" y="88.5" width="16" height="87" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="404" y1="72.5" x2="404" y2="191.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="432" y="58" width="16" height="124" rx="3" fill="#49D17D" opacity="0.85"/>
+      <line x1="440" y1="42" x2="440" y2="198" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="468" y="96.5" width="16" height="71" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="476" y1="80.5" x2="476" y2="183.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="504" y="66" width="16" height="108" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="512" y1="50" x2="512" y2="190" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="540" y="104.5" width="16" height="55" rx="3" fill="#49D17D" opacity="0.85"/>
+      <line x1="548" y1="88.5" x2="548" y2="175.5" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="576" y="74" width="16" height="92" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="584" y1="58" x2="584" y2="182" stroke="#EFEAFC" stroke-opacity="0.25"/><rect x="612" y="67.5" width="16" height="129" rx="3" fill="#8B7CFF" opacity="0.85"/>
+      <line x1="620" y1="51.5" x2="620" y2="212.5" stroke="#EFEAFC" stroke-opacity="0.25"/></g>
+    <text x="600" y="770" text-anchor="middle" fill="#B7B0CC" font-family="Outfit, Inter, sans-serif" font-size="18">AI Products</text></svg>

@@ -1,7 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
-  <rect width="1200" height="800" fill="#120E1F"/>
-  <circle cx="380" cy="260" r="220" fill="hsla(300,70%,62%,0.28)"/>
-  <circle cx="860" cy="520" r="260" fill="hsla(340,75%,55%,0.22)"/>
-  <rect x="180" y="180" width="840" height="440" rx="48" stroke="rgba(239,234,252,0.18)" stroke-width="2"/>
-  <text x="600" y="410" text-anchor="middle" fill="#EFEAFC" font-family="Outfit, Inter, sans-serif" font-size="42" font-weight="600">Heritage & Records</text>
-</svg>
+  <rect width="1200" height="800" fill="#0C0A14"/>
+  <circle cx="360" cy="220" r="260" fill="#6D5CFF" opacity="0.28"/>
+  <circle cx="900" cy="560" r="300" fill="#4F46E5" opacity="0.22"/>
+  <rect width="1200" height="800" fill="url(#grid)" opacity="0.35"/>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#EFEAFC" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+    <rect x="180" y="160" width="840" height="460" rx="36" fill="#161225" stroke="rgba(239,234,252,0.16)"/>
+    <g transform="translate(260 220)"><line x1="400" y1="80" x2="250" y2="220" stroke="#8B7CFF" stroke-opacity="0.45"/><line x1="250" y1="220" x2="550" y2="220" stroke="#8B7CFF" stroke-opacity="0.45"/><line x1="550" y1="220" x2="160" y2="380" stroke="#8B7CFF" stroke-opacity="0.45"/><line x1="160" y1="380" x2="400" y2="380" stroke="#8B7CFF" stroke-opacity="0.45"/><line x1="400" y1="380" x2="640" y2="380" stroke="#8B7CFF" stroke-opacity="0.45"/><circle cx="400" cy="80" r="10" fill="#8B7CFF"/><circle cx="250" cy="220" r="10" fill="#8B7CFF"/><circle cx="550" cy="220" r="10" fill="#8B7CFF"/><circle cx="160" cy="380" r="10" fill="#8B7CFF"/><circle cx="400" cy="380" r="10" fill="#8B7CFF"/><circle cx="640" cy="380" r="10" fill="#8B7CFF"/></g>
+    <text x="600" y="770" text-anchor="middle" fill="#B7B0CC" font-family="Outfit, Inter, sans-serif" font-size="18">Heritage & Records</text></svg>

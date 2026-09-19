@@ -14,10 +14,15 @@ export function IndustriesRail() {
             <Link
               key={industry.slug}
               to={`/industries/${industry.slug}`}
-              className="rounded-[24px] border border-line px-5 py-6 hover:border-accent/50"
+              className="overflow-hidden rounded-[24px] border border-line hover:border-accent/50"
             >
-              <h3 className="font-display text-lg text-mist">{industry.name}</h3>
-              <p className="mt-2 text-sm text-muted">{industry.tagline}</p>
+              <div className="visual-frame h-36 overflow-hidden">
+                <img src={industry.heroVisual} alt="" width={800} height={450} className="h-full w-full object-cover" />
+              </div>
+              <div className="px-5 py-6">
+                <h3 className="font-display text-lg text-mist">{industry.name}</h3>
+                <p className="mt-2 text-sm text-muted">{industry.tagline}</p>
+              </div>
             </Link>
           ))}
         </div>

@@ -3,12 +3,14 @@
     {
       "id": "business-software",
       "label": "Business Software",
-      "tagline": "Systems of record for operations, customers, facilities, commerce, and records."
+      "tagline": "Systems of record for operations, customers, facilities, commerce, and records.",
+      "visual": "/images/categories/business-software.png"
     },
     {
       "id": "ai-products",
       "label": "AI Products",
-      "tagline": "Platforms that assist workforce, call center, and trading operations."
+      "tagline": "Platforms that assist workforce, call center, and trading operations.",
+      "visual": "/images/categories/ai-products.png"
     }
   ],
   "products": [
@@ -25,7 +27,7 @@
         "eyebrow": "AI product",
         "headline": "Give operations a coordinator that never loses the thread.",
         "subhead": "Ask what is open, who owns it, and what is blocked — using the systems your teams already run.",
-        "visual": "/images/products/ai-workforce-platform.svg",
+        "visual": "/images/products/ai-workforce-platform.png",
         "visualAlt": "AI Workforce Platform summarizing open operational work"
       },
       "seo": {
@@ -98,7 +100,7 @@
         "eyebrow": "AI product",
         "headline": "Keep the customer conversation moving when queues are full.",
         "subhead": "Capture intent, answer routine questions, and prepare a brief for the next available agent.",
-        "visual": "/images/products/ai-call-center-platform.svg",
+        "visual": "/images/products/ai-call-center-platform.png",
         "visualAlt": "AI Call Center Platform conversation and agent handover"
       },
       "seo": {
@@ -171,7 +173,7 @@
         "eyebrow": "AI product",
         "headline": "Give trading operations a clearer watch over the workflow.",
         "subhead": "Summarize alerts, check procedure steps, and escalate exceptions to the people who own risk.",
-        "visual": "/images/products/ai-trading-platform.svg",
+        "visual": "/images/products/ai-trading-platform.png",
         "visualAlt": "AI Trading Platform operational alerts and workflow view"
       },
       "seo": {
@@ -243,7 +245,7 @@
         "eyebrow": "Business software",
         "headline": "See the operation and the numbers in one system.",
         "subhead": "A structured record for processes that currently live across spreadsheets, inboxes, and disconnected tools.",
-        "visual": "/images/products/erp-system.svg",
+        "visual": "/images/products/erp-system.png",
         "visualAlt": "ERP System dashboard with operational and finance records"
       },
       "seo": {
@@ -317,7 +319,7 @@
         "eyebrow": "Business software",
         "headline": "See every account, conversation, and next step.",
         "subhead": "Keep sales and account teams aligned around a single customer record.",
-        "visual": "/images/products/crm-system.svg",
+        "visual": "/images/products/crm-system.png",
         "visualAlt": "CRM System pipeline and account workspace"
       },
       "seo": {
@@ -391,7 +393,7 @@
         "eyebrow": "Business software",
         "headline": "Run facilities with a clearer operating picture.",
         "subhead": "Work orders, assets, maintenance, and vendor activity in one place.",
-        "visual": "/images/products/facility-management-system.svg",
+        "visual": "/images/products/facility-management-system.png",
         "visualAlt": "Facility Management System work orders and asset status"
       },
       "seo": {
@@ -465,7 +467,7 @@
         "eyebrow": "Business software",
         "headline": "Every request gets an owner and a path to close.",
         "subhead": "Intake, queues, replies, and resolution in one service workspace.",
-        "visual": "/images/products/helpdesk-system.svg",
+        "visual": "/images/products/helpdesk-system.png",
         "visualAlt": "Helpdesk System ticket queue and conversation thread"
       },
       "seo": {
@@ -539,7 +541,7 @@
         "eyebrow": "Business software",
         "headline": "Sell with a storefront that operations can actually run.",
         "subhead": "Catalog, checkout, orders, and accounts — with a path into ERP and CRM.",
-        "visual": "/images/products/ecommerce-platform.svg",
+        "visual": "/images/products/ecommerce-platform.png",
         "visualAlt": "E-Commerce Platform catalog and order workspace"
       },
       "seo": {
@@ -613,7 +615,7 @@
         "eyebrow": "Business software",
         "headline": "Keep family history as a system, not a pile of files.",
         "subhead": "People, relationships, sources, and search in a structured record.",
-        "visual": "/images/products/genealogy-management-system.svg",
+        "visual": "/images/products/genealogy-management-system.png",
         "visualAlt": "Genealogy Management System lineage and people records"
       },
       "seo": {
@@ -686,7 +688,7 @@
         "eyebrow": "Custom development",
         "headline": "Build the application around your process — not the other way around.",
         "subhead": "Oqtane-based applications for organizations that need a tailored modular system with a clear path to support.",
-        "visual": "/images/products/oqtane-custom-application-development.svg",
+        "visual": "/images/products/oqtane-custom-application-development.png",
         "visualAlt": "Oqtane custom application architecture and modules"
       },
       "seo": {

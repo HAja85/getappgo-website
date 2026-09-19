@@ -80,6 +80,7 @@ export interface ProductCategoryMeta {
   id: ProductCategory;
   label: string;
   tagline: string;
+  visual?: string;
 }
 
 export interface Industry {
@@ -96,6 +97,7 @@ export interface Solution {
   name: string;
   tagline: string;
   description: string;
+  visual?: string;
   productSlugs: string[];
 }
 
@@ -134,7 +136,7 @@ export interface SiteContent {
     legalName: string;
     tagline: string;
     description: string;
-    logo: { mark: string; wordmark: string };
+    logo: { mark: string; wordmark: string; lockup?: string };
   };
   seo: {
     titleTemplate: string;
@@ -149,6 +151,8 @@ export interface SiteContent {
     subhead: string;
     primaryCta: Cta;
     secondaryCta: Cta;
+    visual?: string;
+    visualAlt?: string;
   };
   proof: ProofItem[];
   contact: {
@@ -175,7 +179,7 @@ export interface SiteContent {
     body: string;
     values: TextBlock[];
   };
-  process: { step: number; title: string; body: string }[];
+  process: { step: number; title: string; body: string; icon?: string }[];
   social: {
     linkedin: string;
     x: string;

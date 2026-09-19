@@ -1,7 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
-  <rect width="1200" height="800" fill="#120E1F"/>
-  <circle cx="380" cy="260" r="220" fill="hsla(412,70%,62%,0.28)"/>
-  <circle cx="860" cy="520" r="260" fill="hsla(92,75%,55%,0.22)"/>
-  <rect x="180" y="180" width="840" height="440" rx="48" stroke="rgba(239,234,252,0.18)" stroke-width="2"/>
-  <text x="600" y="410" text-anchor="middle" fill="#EFEAFC" font-family="Outfit, Inter, sans-serif" font-size="42" font-weight="600">Oqtane Custom Application Development</text>
-</svg>
+  <rect width="1200" height="800" fill="#0C0A14"/>
+  <circle cx="360" cy="220" r="260" fill="#8B7CFF" opacity="0.28"/>
+  <circle cx="900" cy="560" r="300" fill="#4F46E5" opacity="0.22"/>
+  <rect width="1200" height="800" fill="url(#grid)" opacity="0.35"/>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#EFEAFC" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect x="90" y="90" width="1020" height="620" rx="28" fill="#161225" stroke="rgba(239,234,252,0.16)"/>
+  <circle cx="118" cy="116" r="6" fill="#FF6B7A"/>
+  <circle cx="140" cy="116" r="6" fill="#F5C542"/>
+  <circle cx="162" cy="116" r="6" fill="#49D17D"/>
+  <rect x="200" y="106" width="220" height="20" rx="10" fill="#EFEAFC" fill-opacity="0.08"/>
+  <rect x="106" y="142" width="188" height="552" rx="18" fill="#0C0A14" fill-opacity="0.55"/>
+  <rect x="126" y="168" width="148" height="14" rx="7" fill="#EFEAFC" fill-opacity="0.28"/><rect x="126" y="214" width="148" height="14" rx="7" fill="#EFEAFC" fill-opacity="0.1"/><rect x="126" y="260" width="148" height="14" rx="7" fill="#EFEAFC" fill-opacity="0.1"/><rect x="126" y="306" width="148" height="14" rx="7" fill="#EFEAFC" fill-opacity="0.1"/><rect x="126" y="352" width="148" height="14" rx="7" fill="#EFEAFC" fill-opacity="0.1"/>
+  <g transform="translate(310 158)">
+      <rect x="0" y="0" width="520" height="76" rx="16" fill="#EFEAFC" fill-opacity="0.05" stroke="rgba(239,234,252,0.16)"/><rect x="0" y="92" width="740" height="76" rx="16" fill="#EFEAFC" fill-opacity="0.1" stroke="rgba(239,234,252,0.16)"/><rect x="0" y="184" width="520" height="76" rx="16" fill="#EFEAFC" fill-opacity="0.05" stroke="rgba(239,234,252,0.16)"/><rect x="0" y="276" width="520" height="76" rx="16" fill="#EFEAFC" fill-opacity="0.1" stroke="rgba(239,234,252,0.16)"/><rect x="0" y="368" width="520" height="76" rx="16" fill="#EFEAFC" fill-opacity="0.05" stroke="rgba(239,234,252,0.16)"/>
+      <g transform="translate(560 184)">
+        <rect width="180" height="260" rx="16" fill="#8B7CFF" fill-opacity="0.18" stroke="#8B7CFF"/>
+        <rect x="18" y="24" width="144" height="48" rx="10" fill="#EFEAFC" fill-opacity="0.12"/><rect x="18" y="94" width="144" height="48" rx="10" fill="#EFEAFC" fill-opacity="0.12"/><rect x="18" y="164" width="144" height="48" rx="10" fill="#EFEAFC" fill-opacity="0.12"/>
+      </g>
+    </g><text x="600" y="770" text-anchor="middle" fill="#B7B0CC" font-family="Outfit, Inter, sans-serif" font-size="18">Oqtane Custom Development</text></svg>

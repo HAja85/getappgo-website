@@ -5,6 +5,7 @@
       "name": "Intelligent Operations",
       "tagline": "AI platforms that assist workforce, service, and trading teams.",
       "description": "Deploy AI where coordination, conversations, and monitored workflows need a consistent first response — then hand off to people and systems.",
+      "visual": "/images/solutions/intelligent-operations.png",
       "productSlugs": ["ai-workforce-platform", "ai-call-center-platform", "ai-trading-platform"]
     },
     {
@@ -19,13 +20,15 @@
         "helpdesk-system",
         "ecommerce-platform",
         "genealogy-management-system"
-      ]
+      ],
+      "visual": "/images/solutions/business-systems.png"
     },
     {
       "slug": "custom-development",
       "name": "Custom Development",
       "tagline": "Oqtane applications designed around your process.",
       "description": "When the catalog is not the right fit, we design, build, and support custom applications on the Oqtane platform.",
+      "visual": "/images/solutions/custom-development.png",
       "productSlugs": ["oqtane-custom-application-development"]
     }
   ]

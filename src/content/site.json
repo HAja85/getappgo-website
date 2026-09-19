@@ -6,14 +6,15 @@
     "description": "GetAppGo builds and delivers business applications and AI platforms for operations, customer service, commerce, and custom .NET development.",
     "logo": {
       "mark": "/images/brand/mark.svg",
-      "wordmark": "/images/brand/wordmark.svg"
+      "wordmark": "/images/brand/wordmark.svg",
+      "lockup": "/images/brand/lockup.svg"
     }
   },
   "seo": {
     "titleTemplate": "%s · GetAppGo",
     "defaultTitle": "GetAppGo · Enterprise Software and AI Platforms",
     "defaultDescription": "Business applications and AI platforms for workforce, call center, trading, ERP, CRM, facilities, helpdesk, commerce, genealogy, and custom Oqtane development.",
-    "ogImage": "/images/og/default.svg",
+    "ogImage": "/images/og/default.png",
     "canonicalOrigin": "https://www.example.com"
   },
   "hero": {
@@ -21,7 +22,9 @@
     "headline": "Software that runs the operation. Platforms that extend the team.",
     "subhead": "GetAppGo delivers business systems and AI platforms — from ERP, CRM, and facilities to workforce, call center, and trading — plus custom Oqtane application development.",
     "primaryCta": { "label": "Request a demo", "action": "demo" },
-    "secondaryCta": { "label": "Explore products", "href": "/products" }
+    "secondaryCta": { "label": "Explore products", "href": "/products" },
+    "visual": "/images/graphics/hero-home.png",
+    "visualAlt": "GetAppGo product platforms shown as a cinematic software collage"
   },
   "proof": [
     { "value": 3, "suffix": "", "label": "AI platforms" },
@@ -59,10 +62,10 @@
     ]
   },
   "process": [
-    { "step": 1, "title": "Discover", "body": "Understand current systems, workflows, and the outcome you need." },
-    { "step": 2, "title": "Design", "body": "Map modules, integrations, and where AI platforms should assist." },
-    { "step": 3, "title": "Implement", "body": "Configure, migrate, and train teams against real operating scenarios." },
-    { "step": 4, "title": "Operate", "body": "Support, iterate, and expand to additional products over time." }
+    { "step": 1, "title": "Discover", "body": "Understand current systems, workflows, and the outcome you need.", "icon": "/images/icons/process-1.svg" },
+    { "step": 2, "title": "Design", "body": "Map modules, integrations, and where AI platforms should assist.", "icon": "/images/icons/process-2.svg" },
+    { "step": 3, "title": "Implement", "body": "Configure, migrate, and train teams against real operating scenarios.", "icon": "/images/icons/process-3.svg" },
+    { "step": 4, "title": "Operate", "body": "Support, iterate, and expand to additional products over time.", "icon": "/images/icons/process-4.svg" }
   ],
   "social": {
     "linkedin": "https://www.linkedin.com/",

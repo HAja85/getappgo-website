@@ -1,7 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
-  <rect width="1200" height="800" fill="#120E1F"/>
-  <circle cx="380" cy="260" r="220" fill="hsla(268,70%,62%,0.28)"/>
-  <circle cx="860" cy="520" r="260" fill="hsla(308,75%,55%,0.22)"/>
-  <rect x="180" y="180" width="840" height="440" rx="48" stroke="rgba(239,234,252,0.18)" stroke-width="2"/>
-  <text x="600" y="410" text-anchor="middle" fill="#EFEAFC" font-family="Outfit, Inter, sans-serif" font-size="42" font-weight="600">AI Call Center Platform</text>
-</svg>
+  <rect width="1200" height="800" fill="#0C0A14"/>
+  <circle cx="360" cy="220" r="260" fill="#8B7CFF" opacity="0.28"/>
+  <circle cx="900" cy="560" r="300" fill="#4F46E5" opacity="0.22"/>
+  <rect width="1200" height="800" fill="url(#grid)" opacity="0.35"/>
+  <defs>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#EFEAFC" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect x="90" y="90" width="1020" height="620" rx="28" fill="#161225" stroke="rgba(239,234,252,0.16)"/>
+  <circle cx="118" cy="116" r="6" fill="#FF6B7A"/>
+  <circle cx="140" cy="116" r="6" fill="#F5C542"/>
+  <circle cx="162" cy="116" r="6" fill="#49D17D"/>
+  <rect x="200" y="106" width="220" height="20" rx="10" fill="#EFEAFC" fill-opacity="0.08"/>
+  <rect x="106" y="142" width="188" height="552" rx="18" fill="#0C0A14" fill-opacity="0.55"/>
+  <rect x="126" y="168" width="148" height="14" rx="7" fill="#EFEAFC" fill-opacity="0.28"/><rect x="126" y="214" width="148" height="14" rx="7" fill="#EFEAFC" fill-opacity="0.1"/><rect x="126" y="260" width="148" height="14" rx="7" fill="#EFEAFC" fill-opacity="0.1"/><rect x="126" y="306" width="148" height="14" rx="7" fill="#EFEAFC" fill-opacity="0.1"/><rect x="126" y="352" width="148" height="14" rx="7" fill="#EFEAFC" fill-opacity="0.1"/>
+  <g transform="translate(310 158)">
+      <path d="M0 90 L16 110.26009873654641 L32 126.9894577496375 L48 137.3510866511107 L64 139.7555357051197 L80 134.1631566075541 L96 122.07426819285095 L112 106.20993726188362 L128 89.948780643502 L144 76.63458483443077 L160 68.89560025220695 L176 68.11381283155336 L192 74.151852433802 L208 85.39269573073867 L224 99.083630090277 L240 111.91400558718765 L256 120.70869915628938 L272 123.09562028371045 L288 118.01079688286012 L304 105.93753772410291 L320 88.83018201937028 L336 69.73704793623307 L352 52.19836045619266 L368 39.54074977219658 L384 34.21105661000163 L400 37.28436070476816 L416 48.245944805980315 L432 65.09146110936341 L448 84.72513233989216 L464 103.57547374723647 L480 118.30401288246603 L496 126.46374201289309 L512 126.97436376766174 L528 120.31868246921128 L544 108.421174967274 L560 94.23433280644939 L576 81.11769125666953 L592 72.13650360829634 L608 69.4232454837395 L624 73.73225218747838 L640 84.27842318573832 L656 98.89307255377378" stroke="#8B7CFF" stroke-width="3" fill="none"/>
+      <g transform="translate(0 180)"><rect x="0" y="0" width="220" height="132" rx="18" fill="#EFEAFC" fill-opacity="0.06" stroke="rgba(239,234,252,0.16)"/>
+      <rect x="18" y="22" width="120" height="10" rx="5" fill="#8B7CFF" opacity="0.7"/>
+      <rect x="18" y="46" width="170" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.18"/>
+      <rect x="18" y="66" width="140" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.1"/><rect x="240" y="0" width="220" height="132" rx="18" fill="#EFEAFC" fill-opacity="0.06" stroke="rgba(239,234,252,0.16)"/>
+      <rect x="258" y="22" width="120" height="10" rx="5" fill="#8B7CFF" opacity="0.7"/>
+      <rect x="258" y="46" width="170" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.18"/>
+      <rect x="258" y="66" width="140" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.1"/><rect x="0" y="150" width="220" height="132" rx="18" fill="#EFEAFC" fill-opacity="0.06" stroke="rgba(239,234,252,0.16)"/>
+      <rect x="18" y="172" width="120" height="10" rx="5" fill="#8B7CFF" opacity="0.7"/>
+      <rect x="18" y="196" width="170" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.18"/>
+      <rect x="18" y="216" width="140" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.1"/><rect x="240" y="150" width="220" height="132" rx="18" fill="#EFEAFC" fill-opacity="0.06" stroke="rgba(239,234,252,0.16)"/>
+      <rect x="258" y="172" width="120" height="10" rx="5" fill="#8B7CFF" opacity="0.7"/>
+      <rect x="258" y="196" width="170" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.18"/>
+      <rect x="258" y="216" width="140" height="8" rx="4" fill="#EFEAFC" fill-opacity="0.1"/></g>
+      <circle cx="680" cy="90" r="54" fill="#8B7CFF" fill-opacity="0.2" stroke="#8B7CFF"/>
+      <circle cx="680" cy="90" r="10" fill="#8B7CFF"/>
+    </g><text x="600" y="770" text-anchor="middle" fill="#B7B0CC" font-family="Outfit, Inter, sans-serif" font-size="18">AI Call Center Platform</text></svg>

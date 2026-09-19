@@ -20,10 +20,15 @@ export function IndustriesPage() {
             <Link
               key={industry.slug}
               to={`/industries/${industry.slug}`}
-              className="rounded-[24px] border border-line p-6 hover:border-accent/50"
+              className="overflow-hidden rounded-[24px] border border-line hover:border-accent/50"
             >
-              <h2 className="font-display text-xl text-mist">{industry.name}</h2>
-              <p className="mt-2 text-sm text-muted">{industry.tagline}</p>
+              <div className="visual-frame h-40 overflow-hidden">
+                <img src={industry.heroVisual} alt="" width={800} height={450} className="h-full w-full object-cover" />
+              </div>
+              <div className="p-6">
+                <h2 className="font-display text-xl text-mist">{industry.name}</h2>
+                <p className="mt-2 text-sm text-muted">{industry.tagline}</p>
+              </div>
             </Link>
           ))}
         </div>

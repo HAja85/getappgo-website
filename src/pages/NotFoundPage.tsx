@@ -7,6 +7,7 @@ export function NotFoundPage() {
     <>
       <Seo path="/404" title="Not found" description="This page does not exist." />
       <Container className="pb-24">
+        <img src="/images/graphics/not-found.svg" alt="" width={320} height={112} className="mb-8 h-28 w-auto" />
         <h1 className="font-display text-4xl text-white">Page not found</h1>
         <p className="mt-4 text-muted">The page you requested is not in the catalog.</p>
         <Link to="/" className="mt-6 inline-flex text-accent-strong">

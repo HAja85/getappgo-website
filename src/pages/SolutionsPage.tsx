@@ -21,10 +21,17 @@ export function SolutionsPage() {
             <Link
               key={solution.slug}
               to={`/solutions/${solution.slug}`}
-              className="rounded-[28px] border border-line bg-ink-soft p-6 hover:border-accent/50"
+              className="overflow-hidden rounded-[28px] border border-line bg-ink-soft hover:border-accent/50"
             >
-              <h2 className="font-display text-2xl text-mist">{solution.name}</h2>
-              <p className="mt-3 text-sm leading-6 text-muted">{solution.tagline}</p>
+              {solution.visual ? (
+                <div className="visual-frame h-40 overflow-hidden">
+                  <img src={solution.visual} alt="" width={800} height={450} className="h-full w-full object-cover" />
+                </div>
+              ) : null}
+              <div className="p-6">
+                <h2 className="font-display text-2xl text-mist">{solution.name}</h2>
+                <p className="mt-3 text-sm leading-6 text-muted">{solution.tagline}</p>
+              </div>
             </Link>
           ))}
         </div>
