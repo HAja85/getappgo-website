@@ -1,0 +1,29 @@
+{
+  "enabled": true,
+  "items": [
+    {
+      "id": "t1",
+      "quote": "We needed one place to see open operational work. The picture is now shared across the team.",
+      "name": "Operations Director",
+      "role": "Operations",
+      "company": "Example Campus Group",
+      "productSlugs": ["facility-management-system", "ai-workforce-platform"]
+    },
+    {
+      "id": "t2",
+      "quote": "Sales stopped losing context between the first enquiry and the follow-up call.",
+      "name": "Head of Sales",
+      "role": "Commercial",
+      "company": "Example Services Co.",
+      "productSlugs": ["crm-system", "ai-call-center-platform"]
+    },
+    {
+      "id": "t3",
+      "quote": "The custom Oqtane application matched our process instead of forcing us into a generic template.",
+      "name": "IT Lead",
+      "role": "Technology",
+      "company": "Example Enterprise",
+      "productSlugs": ["oqtane-custom-application-development"]
+    }
+  ]
+}

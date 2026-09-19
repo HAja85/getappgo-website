@@ -1,0 +1,32 @@
+{
+  "primary": [
+    {
+      "id": "products",
+      "label": "Products",
+      "href": "/products",
+      "mega": true,
+      "groups": [
+        { "id": "business-software", "label": "Business Software", "filter": { "category": "business-software" } },
+        { "id": "ai-products", "label": "AI Products", "filter": { "category": "ai-products" } }
+      ]
+    },
+    { "id": "solutions", "label": "Solutions", "href": "/solutions" },
+    { "id": "industries", "label": "Industries", "href": "/industries" },
+    { "id": "about", "label": "About", "href": "/about" }
+  ],
+  "cta": { "id": "demo", "label": "Request a demo", "action": "demo" },
+  "footer": {
+    "columns": [
+      { "title": "Business Software", "from": "products", "filter": { "category": "business-software" } },
+      { "title": "AI Products", "from": "products", "filter": { "category": "ai-products" } },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About", "href": "/about" },
+          { "label": "Contact", "href": "/contact" },
+          { "label": "Privacy", "href": "/privacy" }
+        ]
+      }
+    ]
+  }
+}

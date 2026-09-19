@@ -1,0 +1,78 @@
+{
+  "brand": {
+    "name": "GetAppGo",
+    "legalName": "GetAppGo",
+    "tagline": "Enterprise software and AI platforms, delivered.",
+    "description": "GetAppGo builds and delivers business applications and AI platforms for operations, customer service, commerce, and custom .NET development.",
+    "logo": {
+      "mark": "/images/brand/mark.svg",
+      "wordmark": "/images/brand/wordmark.svg"
+    }
+  },
+  "seo": {
+    "titleTemplate": "%s · GetAppGo",
+    "defaultTitle": "GetAppGo · Enterprise Software and AI Platforms",
+    "defaultDescription": "Business applications and AI platforms for workforce, call center, trading, ERP, CRM, facilities, helpdesk, commerce, genealogy, and custom Oqtane development.",
+    "ogImage": "/images/og/default.svg",
+    "canonicalOrigin": "https://www.example.com"
+  },
+  "hero": {
+    "eyebrow": "Enterprise software · AI platforms",
+    "headline": "Software that runs the operation. Platforms that extend the team.",
+    "subhead": "GetAppGo delivers business systems and AI platforms — from ERP, CRM, and facilities to workforce, call center, and trading — plus custom Oqtane application development.",
+    "primaryCta": { "label": "Request a demo", "action": "demo" },
+    "secondaryCta": { "label": "Explore products", "href": "/products" }
+  },
+  "proof": [
+    { "value": 3, "suffix": "", "label": "AI platforms" },
+    { "value": 6, "suffix": "", "label": "Business systems" },
+    { "value": 1, "suffix": "", "label": "Custom development practice" }
+  ],
+  "contact": {
+    "email": "hello@example.com",
+    "phone": "+971000000000",
+    "whatsapp": {
+      "e164": "+971000000000",
+      "display": "+971 00 000 0000",
+      "defaultMessage": "Hi, I'm interested in GetAppGo. I'd like to talk to an expert."
+    },
+    "locations": [
+      { "city": "Dubai", "country": "UAE", "label": "Regional office" }
+    ]
+  },
+  "demo": {
+    "title": "Request a demo",
+    "subtitle": "Tell us about your operation. We'll follow up with the right product specialist.",
+    "expertTitle": "Talk to an expert",
+    "expertSubtitle": "Share a little context and we'll connect you with a specialist — by email or WhatsApp.",
+    "successTitle": "Request received",
+    "successBody": "Thank you. A specialist will contact you shortly.",
+    "submitMode": "mailto"
+  },
+  "about": {
+    "headline": "Built for operators who need reliable software and intelligent platforms.",
+    "body": "GetAppGo designs enterprise applications and AI platforms as one portfolio. Teams can start with a system of record, add an AI platform, or commission a custom Oqtane application.",
+    "values": [
+      { "title": "Operational clarity", "body": "Software should make complex work easier to see and run." },
+      { "title": "Measured automation", "body": "AI is introduced where it reduces load, not where it creates noise." },
+      { "title": "Enterprise trust", "body": "Security, access control, and support are part of the product, not extras." }
+    ]
+  },
+  "process": [
+    { "step": 1, "title": "Discover", "body": "Understand current systems, workflows, and the outcome you need." },
+    { "step": 2, "title": "Design", "body": "Map modules, integrations, and where AI platforms should assist." },
+    { "step": 3, "title": "Implement", "body": "Configure, migrate, and train teams against real operating scenarios." },
+    { "step": 4, "title": "Operate", "body": "Support, iterate, and expand to additional products over time." }
+  ],
+  "social": {
+    "linkedin": "https://www.linkedin.com/",
+    "x": ""
+  },
+  "labels": {
+    "requestDemo": "Request a demo",
+    "talkToExpert": "Talk to an expert",
+    "viewDetails": "View details",
+    "viewAllProducts": "View all products",
+    "exploreProducts": "Explore products"
+  }
+}

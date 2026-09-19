@@ -1,0 +1,32 @@
+{
+  "solutions": [
+    {
+      "slug": "intelligent-operations",
+      "name": "Intelligent Operations",
+      "tagline": "AI platforms that assist workforce, service, and trading teams.",
+      "description": "Deploy AI where coordination, conversations, and monitored workflows need a consistent first response — then hand off to people and systems.",
+      "productSlugs": ["ai-workforce-platform", "ai-call-center-platform", "ai-trading-platform"]
+    },
+    {
+      "slug": "business-systems",
+      "name": "Business Systems",
+      "tagline": "Systems of record for the operation.",
+      "description": "ERP, CRM, facilities, helpdesk, commerce, and genealogy applications that give teams a shared operating picture.",
+      "productSlugs": [
+        "erp-system",
+        "crm-system",
+        "facility-management-system",
+        "helpdesk-system",
+        "ecommerce-platform",
+        "genealogy-management-system"
+      ]
+    },
+    {
+      "slug": "custom-development",
+      "name": "Custom Development",
+      "tagline": "Oqtane applications designed around your process.",
+      "description": "When the catalog is not the right fit, we design, build, and support custom applications on the Oqtane platform.",
+      "productSlugs": ["oqtane-custom-application-development"]
+    }
+  ]
+}

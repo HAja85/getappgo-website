@@ -1,0 +1,60 @@
+{
+  "industries": [
+    {
+      "slug": "enterprise-operations",
+      "name": "Enterprise Operations",
+      "tagline": "Core systems for running the business.",
+      "description": "ERP, facilities, and workforce platforms for organizations that need a reliable operating layer.",
+      "heroVisual": "/images/industries/enterprise-operations.svg",
+      "productSlugs": ["erp-system", "facility-management-system", "ai-workforce-platform"]
+    },
+    {
+      "slug": "customer-service",
+      "name": "Customer Service",
+      "tagline": "Calls, tickets, and customer history.",
+      "description": "Call center, helpdesk, and CRM products for teams that own the customer conversation.",
+      "heroVisual": "/images/industries/customer-service.svg",
+      "productSlugs": ["ai-call-center-platform", "helpdesk-system", "crm-system"]
+    },
+    {
+      "slug": "commerce",
+      "name": "Commerce",
+      "tagline": "Catalogs, orders, and accounts.",
+      "description": "E-commerce, ERP, and CRM for teams selling and fulfilling across channels.",
+      "heroVisual": "/images/industries/commerce.svg",
+      "productSlugs": ["ecommerce-platform", "erp-system", "crm-system"]
+    },
+    {
+      "slug": "financial-services",
+      "name": "Financial Services",
+      "tagline": "Trading workflows and enterprise records.",
+      "description": "AI trading and ERP capabilities for firms that need operational control around markets and finance.",
+      "heroVisual": "/images/industries/financial-services.svg",
+      "productSlugs": ["ai-trading-platform", "erp-system"]
+    },
+    {
+      "slug": "facilities-property",
+      "name": "Facilities & Property",
+      "tagline": "Buildings, assets, and service requests.",
+      "description": "Facility management and service tools for campuses, sites, and building operations.",
+      "heroVisual": "/images/industries/facilities-property.svg",
+      "productSlugs": ["facility-management-system", "helpdesk-system", "ai-workforce-platform"]
+    },
+    {
+      "slug": "heritage-records",
+      "name": "Heritage & Records",
+      "tagline": "Family history, archives, and structured lineage.",
+      "description": "Genealogy management for organizations and families that need a durable record system.",
+      "heroVisual": "/images/industries/heritage-records.svg",
+      "productSlugs": ["genealogy-management-system"]
+    },
+    {
+      "slug": "custom-software",
+      "name": "Custom Software",
+      "tagline": "Oqtane applications built around your process.",
+      "description": "When a packaged product is not enough, GetAppGo designs and delivers custom applications on Oqtane.",
+      "heroVisual": "/images/industries/custom-software.svg",
+      "productSlugs": ["oqtane-custom-application-development"]
+    }
+  ]
+}

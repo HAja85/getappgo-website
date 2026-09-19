@@ -1,0 +1,16 @@
+{
+  "items": [
+    { "id": "workforce-what", "question": "What is the AI Workforce Platform?", "answer": "It helps operations teams with status, briefings, and coordination across connected systems." },
+    { "id": "callcenter-what", "question": "What is the AI Call Center Platform?", "answer": "It assists inbound and outbound conversations, captures context, and prepares a handover for human agents." },
+    { "id": "trading-what", "question": "What is the AI Trading Platform?", "answer": "It supports monitored trading workflows, alerts, and operational oversight. It is not a brokerage and does not provide investment advice." },
+    { "id": "erp-what", "question": "What does the ERP System cover?", "answer": "A practical enterprise record for finance, inventory, and operational processes. Exact modules are confirmed in a demo." },
+    { "id": "crm-what", "question": "Is this a full CRM?", "answer": "It is a customer relationship platform for accounts, pipeline, and shared history." },
+    { "id": "fms-what", "question": "What is the Facility Management System?", "answer": "Software for assets, work orders, maintenance, and vendor coordination." },
+    { "id": "helpdesk-what", "question": "Can Helpdesk be used internally and externally?", "answer": "Yes. The same request-and-resolve loop can support customers or employees." },
+    { "id": "ecom-what", "question": "What does the E-Commerce Platform include?", "answer": "Catalog, cart, orders, and customer accounts. Integrations and payment setup are scoped during implementation." },
+    { "id": "genealogy-what", "question": "Who is Genealogy Management for?", "answer": "Families, societies, and organizations that need structured lineage records and search." },
+    { "id": "oqtane-what", "question": "What is Oqtane custom development?", "answer": "We design and build custom applications on the Oqtane platform when a packaged product is not the right fit." },
+    { "id": "agent-human", "question": "Do AI platforms replace staff?", "answer": "No. They assist with intake, answers, and briefing. Ownership and sensitive actions stay with people." },
+    { "id": "demo-timeline", "question": "How do we start?", "answer": "Request a demo. We review your operation and recommend the right product sequence." }
+  ]
+}
