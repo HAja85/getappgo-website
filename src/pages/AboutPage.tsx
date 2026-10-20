@@ -1,4 +1,6 @@
+import { Link } from "react-router";
 import { Seo } from "@/components/seo/Seo";
+import { Icon } from "@/components/zillion/Icon";
 import { PageHero } from "@/components/inner/PageHero";
 import { IconTile, Pill, SectionTitle } from "@/components/inner/Blocks";
 import { CtaBand } from "@/components/inner/CtaBand";
@@ -27,13 +29,40 @@ export function AboutPage() {
           </ul>
 
           <div className="mx-auto mt-20 max-w-4xl">
-            <h2 className="text-center font-heading text-3xl font-bold text-slate-900 md:text-4xl">{about.storyTitle}</h2>
+            <h2 className="text-center font-heading text-3xl font-bold text-slate-900 md:text-4xl">{copy.company.overviewTitle}</h2>
             <div className="mx-auto mt-3 h-[3px] w-16 rounded-full bg-gradient-to-r from-[#182793] to-[#D97817]" />
             <div className="mt-8 grid gap-4 text-sm leading-7 text-slate-600 md:text-base">
-              {about.story.map((paragraph) => (
+              {copy.company.overview.map((paragraph) => (
                 <p key={paragraph.slice(0, 24)}>{paragraph}</p>
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gradient-to-b from-white to-slate-50 py-20">
+        <div className="cs-container">
+          <SectionTitle pill={copy.company.modelPill} pillIcon="workflow" title={copy.company.modelTitle} body={copy.company.modelBody} />
+          <ol className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {copy.company.pillars.map((pillar, index) => (
+              <li key={pillar.title} className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
+                <div className="flex items-center justify-between">
+                  <IconTile icon={pillar.icon} />
+                  <span className="text-3xl font-bold text-gray-200">{String(index + 1).padStart(2, "0")}</span>
+                </div>
+                <h3 className="mt-5 font-heading text-lg font-bold text-slate-900">{pillar.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{pillar.body}</p>
+              </li>
+            ))}
+          </ol>
+          <div className="mt-10 flex flex-wrap justify-center gap-3">
+            <Link to="/packages" className="btn-primary px-6 py-3 text-sm">
+              {copy.nav.packages}
+              <Icon name="arrowRight" size={16} className="rtl:-scale-x-100" />
+            </Link>
+            <Link to="/leadership" className="focus-ring rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 hover:border-[#505FD0] hover:text-[#182793]">
+              {copy.nav.leadership}
+            </Link>
           </div>
         </div>
       </section>

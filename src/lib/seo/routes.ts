@@ -10,6 +10,8 @@ export function getPrerenderRoutes(): string[] {
     "/",
     ...serviceSlugs.map((slug) => `/services/${slug}`),
     "/ai-voice-agents",
+    "/packages",
+    "/leadership",
     "/products",
     ...getProducts().map((product) => `/products/${product.slug}`),
     "/solutions",

@@ -235,9 +235,12 @@ html[lang="ar"] body * {
   color: transparent;
 }
 
-html[dir="rtl"] .text-gradient-4,
-html[dir="rtl"] .text-gradient-hero {
+html[dir="rtl"] .text-gradient-4 {
   background-image: linear-gradient(270deg, #182793 2.4%, #7b3368 49.04%, #d97817);
+}
+
+html[dir="rtl"] .text-gradient-hero {
+  background-image: linear-gradient(270deg, #07a0e7, #9ea9ff 45%, #d97817);
 }
 
 .divider-cyan {

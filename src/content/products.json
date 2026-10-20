@@ -36,55 +36,147 @@
       },
       "overview": "Built for operations, facilities, and service teams who spend too much time chasing status. The platform assists; ownership stays with people.",
       "features": [
-        { "title": "Status answers", "body": "Ask about open work in plain language." },
-        { "title": "Routing assistance", "body": "Suggest owners based on your team rules." },
-        { "title": "Shift briefing", "body": "Summarize what changed since the last handover." }
+        {
+          "title": "Status answers",
+          "body": "Ask about open work in plain language."
+        },
+        {
+          "title": "Routing assistance",
+          "body": "Suggest owners based on your team rules."
+        },
+        {
+          "title": "Shift briefing",
+          "body": "Summarize what changed since the last handover."
+        }
       ],
       "capabilities": [
-        { "title": "Process-aware replies", "body": "Answers follow your queues and job types." },
-        { "title": "Human confirmation", "body": "Sensitive actions stay with a supervisor." }
+        {
+          "title": "Process-aware replies",
+          "body": "Answers follow your queues and job types."
+        },
+        {
+          "title": "Human confirmation",
+          "body": "Sensitive actions stay with a supervisor."
+        }
       ],
       "benefits": [
-        { "title": "Less status chatter", "body": "Teams ask the platform before pinging five people." },
-        { "title": "Cleaner handovers", "body": "Incoming shifts get a digest, not a scavenger hunt." }
+        {
+          "title": "Less status chatter",
+          "body": "Teams ask the platform before pinging five people."
+        },
+        {
+          "title": "Cleaner handovers",
+          "body": "Incoming shifts get a digest, not a scavenger hunt."
+        }
       ],
       "useCases": [
-        { "title": "Facilities operations", "body": "Ask about open work orders and overdue jobs." },
-        { "title": "Enterprise operations", "body": "Brief supervisors on blocked processes." }
+        {
+          "title": "Facilities operations",
+          "body": "Ask about open work orders and overdue jobs."
+        },
+        {
+          "title": "Enterprise operations",
+          "body": "Brief supervisors on blocked processes."
+        }
       ],
       "conversation": [
-        { "title": "Ask", "body": "A supervisor requests the current load." },
-        { "title": "Retrieve", "body": "The platform reads open items from connected systems." },
-        { "title": "Summarize", "body": "It returns owners, risk, and next actions." },
-        { "title": "Escalate", "body": "Exceptions are handed to a human." }
+        {
+          "title": "Ask",
+          "body": "A supervisor requests the current load."
+        },
+        {
+          "title": "Retrieve",
+          "body": "The platform reads open items from connected systems."
+        },
+        {
+          "title": "Summarize",
+          "body": "It returns owners, risk, and next actions."
+        },
+        {
+          "title": "Escalate",
+          "body": "Exceptions are handed to a human."
+        }
       ],
       "howItWorks": [
-        { "title": "Connect", "body": "Link operational systems such as facilities, ERP, or helpdesk." },
-        { "title": "Define rules", "body": "Set which questions the platform may answer." },
-        { "title": "Assist", "body": "Teams use it for briefing and coordination." }
+        {
+          "title": "Connect",
+          "body": "Link operational systems such as facilities, ERP, or helpdesk."
+        },
+        {
+          "title": "Define rules",
+          "body": "Set which questions the platform may answer."
+        },
+        {
+          "title": "Assist",
+          "body": "Teams use it for briefing and coordination."
+        }
       ],
-      "industries": ["enterprise-operations", "facilities-property"],
+      "industries": [
+        "enterprise-operations",
+        "facilities-property"
+      ],
       "integrations": [
-        { "name": "Facility Management System", "body": "Work orders and asset context." },
-        { "name": "Helpdesk System", "body": "Open tickets and queues." }
+        {
+          "name": "Facility Management System",
+          "body": "Work orders and asset context."
+        },
+        {
+          "name": "Helpdesk System",
+          "body": "Open tickets and queues."
+        }
       ],
-      "related": ["facility-management-system", "helpdesk-system", "ai-call-center-platform"],
-      "faqIds": ["workforce-what", "agent-human", "demo-timeline"],
+      "related": [
+        "facility-management-system",
+        "helpdesk-system",
+        "ai-call-center-platform"
+      ],
+      "faqIds": [
+        "workforce-what",
+        "agent-human",
+        "demo-timeline"
+      ],
       "cta": {
-        "primary": { "label": "Request a demo", "action": "demo" },
-        "secondary": { "label": "Talk to an expert", "action": "expert" }
+        "primary": {
+          "label": "Request a demo",
+          "action": "demo"
+        },
+        "secondary": {
+          "label": "Talk to an expert",
+          "action": "expert"
+        }
       },
       "sections": [
-        { "type": "hero" },
-        { "type": "overview", "title": "What the platform does" },
-        { "type": "capabilities" },
-        { "type": "conversation" },
-        { "type": "use-cases" },
-        { "type": "industries" },
-        { "type": "how-it-works" },
-        { "type": "faqs" },
-        { "type": "related" },
-        { "type": "cta" }
+        {
+          "type": "hero"
+        },
+        {
+          "type": "overview",
+          "title": "What the platform does"
+        },
+        {
+          "type": "capabilities"
+        },
+        {
+          "type": "conversation"
+        },
+        {
+          "type": "use-cases"
+        },
+        {
+          "type": "industries"
+        },
+        {
+          "type": "how-it-works"
+        },
+        {
+          "type": "faqs"
+        },
+        {
+          "type": "related"
+        },
+        {
+          "type": "cta"
+        }
       ]
     },
     {
@@ -109,55 +201,147 @@
       },
       "overview": "Designed to sit beside your helpdesk and CRM. It is an assistant around the service process, not a replacement for agents.",
       "features": [
-        { "title": "Guided intake", "body": "Collect the reason for contact and key details." },
-        { "title": "Approved answers", "body": "Respond from product and policy language you control." },
-        { "title": "Agent brief", "body": "Hand a summary to the human who takes the call or ticket." }
+        {
+          "title": "Guided intake",
+          "body": "Collect the reason for contact and key details."
+        },
+        {
+          "title": "Approved answers",
+          "body": "Respond from product and policy language you control."
+        },
+        {
+          "title": "Agent brief",
+          "body": "Hand a summary to the human who takes the call or ticket."
+        }
       ],
       "capabilities": [
-        { "title": "Queue-aware assistance", "body": "Support high-volume periods without losing context." },
-        { "title": "CRM-aware context", "body": "Designed to sit beside your customer record, not in a silo." }
+        {
+          "title": "Queue-aware assistance",
+          "body": "Support high-volume periods without losing context."
+        },
+        {
+          "title": "CRM-aware context",
+          "body": "Designed to sit beside your customer record, not in a silo."
+        }
       ],
       "benefits": [
-        { "title": "Fewer dropped contacts", "body": "Interest and issues are captured before they go cold." },
-        { "title": "Better agent prep", "body": "People start with a brief, not a blank screen." }
+        {
+          "title": "Fewer dropped contacts",
+          "body": "Interest and issues are captured before they go cold."
+        },
+        {
+          "title": "Better agent prep",
+          "body": "People start with a brief, not a blank screen."
+        }
       ],
       "useCases": [
-        { "title": "Inbound service", "body": "Qualify and route customer requests." },
-        { "title": "Sales follow-up", "body": "Capture interest and pass it to CRM." }
+        {
+          "title": "Inbound service",
+          "body": "Qualify and route customer requests."
+        },
+        {
+          "title": "Sales follow-up",
+          "body": "Capture interest and pass it to CRM."
+        }
       ],
       "conversation": [
-        { "title": "Greet", "body": "Identify the caller and the reason for contact." },
-        { "title": "Understand", "body": "Collect account, issue, and urgency." },
-        { "title": "Guide", "body": "Share approved answers or next steps." },
-        { "title": "Handover", "body": "Write a brief for an agent or create a ticket." }
+        {
+          "title": "Greet",
+          "body": "Identify the caller and the reason for contact."
+        },
+        {
+          "title": "Understand",
+          "body": "Collect account, issue, and urgency."
+        },
+        {
+          "title": "Guide",
+          "body": "Share approved answers or next steps."
+        },
+        {
+          "title": "Handover",
+          "body": "Write a brief for an agent or create a ticket."
+        }
       ],
       "howItWorks": [
-        { "title": "Configure", "body": "Load approved answers and qualification questions." },
-        { "title": "Connect", "body": "Link helpdesk and CRM." },
-        { "title": "Review", "body": "Supervisors inspect briefs and continue the conversation." }
+        {
+          "title": "Configure",
+          "body": "Load approved answers and qualification questions."
+        },
+        {
+          "title": "Connect",
+          "body": "Link helpdesk and CRM."
+        },
+        {
+          "title": "Review",
+          "body": "Supervisors inspect briefs and continue the conversation."
+        }
       ],
-      "industries": ["customer-service", "commerce"],
+      "industries": [
+        "customer-service",
+        "commerce"
+      ],
       "integrations": [
-        { "name": "Helpdesk System", "body": "Create tickets from conversations." },
-        { "name": "CRM System", "body": "Update accounts and notes." }
+        {
+          "name": "Helpdesk System",
+          "body": "Create tickets from conversations."
+        },
+        {
+          "name": "CRM System",
+          "body": "Update accounts and notes."
+        }
       ],
-      "related": ["helpdesk-system", "crm-system", "ai-workforce-platform"],
-      "faqIds": ["callcenter-what", "agent-human", "demo-timeline"],
+      "related": [
+        "helpdesk-system",
+        "crm-system",
+        "ai-workforce-platform"
+      ],
+      "faqIds": [
+        "callcenter-what",
+        "agent-human",
+        "demo-timeline"
+      ],
       "cta": {
-        "primary": { "label": "Request a demo", "action": "demo" },
-        "secondary": { "label": "Talk to an expert", "action": "expert" }
+        "primary": {
+          "label": "Request a demo",
+          "action": "demo"
+        },
+        "secondary": {
+          "label": "Talk to an expert",
+          "action": "expert"
+        }
       },
       "sections": [
-        { "type": "hero" },
-        { "type": "overview", "title": "What the platform does" },
-        { "type": "capabilities" },
-        { "type": "conversation" },
-        { "type": "use-cases" },
-        { "type": "industries" },
-        { "type": "how-it-works" },
-        { "type": "faqs" },
-        { "type": "related" },
-        { "type": "cta" }
+        {
+          "type": "hero"
+        },
+        {
+          "type": "overview",
+          "title": "What the platform does"
+        },
+        {
+          "type": "capabilities"
+        },
+        {
+          "type": "conversation"
+        },
+        {
+          "type": "use-cases"
+        },
+        {
+          "type": "industries"
+        },
+        {
+          "type": "how-it-works"
+        },
+        {
+          "type": "faqs"
+        },
+        {
+          "type": "related"
+        },
+        {
+          "type": "cta"
+        }
       ]
     },
     {
@@ -182,54 +366,376 @@
       },
       "overview": "Intended for operations around trading activity — alerts, checklists, and escalation — not automated investment decisions.",
       "features": [
-        { "title": "Alert summaries", "body": "Group operational alerts into a readable brief." },
-        { "title": "Procedure prompts", "body": "Walk teams through approved operating steps." },
-        { "title": "Escalation path", "body": "Send exceptions to a named owner." }
+        {
+          "title": "Alert summaries",
+          "body": "Group operational alerts into a readable brief."
+        },
+        {
+          "title": "Procedure prompts",
+          "body": "Walk teams through approved operating steps."
+        },
+        {
+          "title": "Escalation path",
+          "body": "Send exceptions to a named owner."
+        }
       ],
       "capabilities": [
-        { "title": "Supervised workflows", "body": "Sensitive actions require a human." },
-        { "title": "Audit-friendly notes", "body": "Keep a record of what was asked and handed over." }
+        {
+          "title": "Supervised workflows",
+          "body": "Sensitive actions require a human."
+        },
+        {
+          "title": "Audit-friendly notes",
+          "body": "Keep a record of what was asked and handed over."
+        }
       ],
       "benefits": [
-        { "title": "Faster operational response", "body": "Teams see what needs attention without scanning every screen." },
-        { "title": "Clearer ownership", "body": "Exceptions land with a person, not in a shared inbox." }
+        {
+          "title": "Faster operational response",
+          "body": "Teams see what needs attention without scanning every screen."
+        },
+        {
+          "title": "Clearer ownership",
+          "body": "Exceptions land with a person, not in a shared inbox."
+        }
       ],
       "useCases": [
-        { "title": "Trading operations", "body": "Monitor workflow health and escalate breaks." },
-        { "title": "Control functions", "body": "Support checklist-driven reviews." }
+        {
+          "title": "Trading operations",
+          "body": "Monitor workflow health and escalate breaks."
+        },
+        {
+          "title": "Control functions",
+          "body": "Support checklist-driven reviews."
+        }
       ],
       "conversation": [
-        { "title": "Observe", "body": "The platform reads configured operational alerts." },
-        { "title": "Summarize", "body": "It groups what changed and what looks blocked." },
-        { "title": "Prompt", "body": "It suggests the next approved procedure step." },
-        { "title": "Escalate", "body": "A human confirms or takes over." }
+        {
+          "title": "Observe",
+          "body": "The platform reads configured operational alerts."
+        },
+        {
+          "title": "Summarize",
+          "body": "It groups what changed and what looks blocked."
+        },
+        {
+          "title": "Prompt",
+          "body": "It suggests the next approved procedure step."
+        },
+        {
+          "title": "Escalate",
+          "body": "A human confirms or takes over."
+        }
       ],
       "howItWorks": [
-        { "title": "Define scope", "body": "Agree which workflows the platform may observe." },
-        { "title": "Connect sources", "body": "Link operational feeds your team already uses." },
-        { "title": "Supervise", "body": "People remain responsible for risk and execution." }
+        {
+          "title": "Define scope",
+          "body": "Agree which workflows the platform may observe."
+        },
+        {
+          "title": "Connect sources",
+          "body": "Link operational feeds your team already uses."
+        },
+        {
+          "title": "Supervise",
+          "body": "People remain responsible for risk and execution."
+        }
       ],
-      "industries": ["financial-services"],
+      "industries": [
+        "financial-services"
+      ],
       "integrations": [
-        { "name": "ERP System", "body": "Operational and finance records where relevant." }
+        {
+          "name": "ERP System",
+          "body": "Operational and finance records where relevant."
+        }
       ],
-      "related": ["erp-system", "ai-workforce-platform"],
-      "faqIds": ["trading-what", "agent-human", "demo-timeline"],
+      "related": [
+        "erp-system",
+        "ai-workforce-platform"
+      ],
+      "faqIds": [
+        "trading-what",
+        "agent-human",
+        "demo-timeline"
+      ],
       "cta": {
-        "primary": { "label": "Request a demo", "action": "demo" },
-        "secondary": { "label": "Talk to an expert", "action": "expert" }
+        "primary": {
+          "label": "Request a demo",
+          "action": "demo"
+        },
+        "secondary": {
+          "label": "Talk to an expert",
+          "action": "expert"
+        }
       },
       "sections": [
-        { "type": "hero" },
-        { "type": "overview", "title": "What the platform does" },
-        { "type": "capabilities" },
-        { "type": "conversation" },
-        { "type": "use-cases" },
-        { "type": "industries" },
-        { "type": "how-it-works" },
-        { "type": "faqs" },
-        { "type": "related" },
-        { "type": "cta" }
+        {
+          "type": "hero"
+        },
+        {
+          "type": "overview",
+          "title": "What the platform does"
+        },
+        {
+          "type": "capabilities"
+        },
+        {
+          "type": "conversation"
+        },
+        {
+          "type": "use-cases"
+        },
+        {
+          "type": "industries"
+        },
+        {
+          "type": "how-it-works"
+        },
+        {
+          "type": "faqs"
+        },
+        {
+          "type": "related"
+        },
+        {
+          "type": "cta"
+        }
+      ]
+    },
+    {
+      "id": "siteagent",
+      "slug": "siteagent",
+      "name": "SiteAgent for Oqtane",
+      "type": "ai-agent",
+      "category": "ai-products",
+      "status": "active",
+      "tagline": "Less navigating. More doing. AI with control built in.",
+      "description": "SiteAgent is an AI-powered administration module for Oqtane that lets administrators inspect their site, diagnose issues, plan changes and execute approved actions using natural language, with governance, audit trails and safety controls.",
+      "hero": {
+        "eyebrow": "Introducing SiteAgent",
+        "headline": "Administer your Oqtane site by simply asking.",
+        "subhead": "AI-powered administration that helps you inspect your site, diagnose issues, plan changes, and execute approved actions with governance, audit trails, and safety controls.",
+        "visual": "/images/products/siteagent.png",
+        "visualAlt": "SiteAgent for Oqtane: conversational AI administration with a governance and control center"
+      },
+      "seo": {
+        "title": "SiteAgent for Oqtane",
+        "description": "Conversational AI administration for Oqtane with governance, control and accountability: inspect, diagnose, plan and execute approved actions."
+      },
+      "overview": "SiteAgent is an administrative module for Oqtane that allows administrators to interact with their site using natural language. Instead of manually navigating through administrative screens for every operation, you can ask questions, investigate issues, plan changes, and request actions conversationally.",
+      "features": [
+        {
+          "title": "Natural language",
+          "body": "Describe what you need, such as showing site health issues or reviewing inactive users."
+        },
+        {
+          "title": "AI planning",
+          "body": "SiteAgent understands your intent, discovers the relevant tools and plans the operations."
+        },
+        {
+          "title": "Governance controls",
+          "body": "Every plan is checked against policies and approvals before anything changes."
+        },
+        {
+          "title": "Approved execution",
+          "body": "Approved operations are performed for you, with recovery support where available."
+        },
+        {
+          "title": "Audit trail",
+          "body": "Every request, decision and action is recorded."
+        }
+      ],
+      "capabilities": [
+        {
+          "title": "Risk assessment",
+          "body": "Classify and evaluate operation risk before execution."
+        },
+        {
+          "title": "Approval workflow",
+          "body": "Require approval for sensitive actions."
+        },
+        {
+          "title": "Audit ledger",
+          "body": "An immutable record of all activity."
+        },
+        {
+          "title": "Read-only mode",
+          "body": "Restrict SiteAgent to inspection and discovery."
+        },
+        {
+          "title": "Recovery support",
+          "body": "Snapshots and undo where supported."
+        },
+        {
+          "title": "Safety validation",
+          "body": "Prompt-injection detection and safeguards."
+        },
+        {
+          "title": "Policy enforcement",
+          "body": "Apply your organisational policies to every action."
+        },
+        {
+          "title": "Secret protection",
+          "body": "Redaction and secure handling of sensitive values."
+        }
+      ],
+      "benefits": [
+        {
+          "title": "Less navigating, more doing",
+          "body": "Ask for what you need instead of clicking through administration screens."
+        },
+        {
+          "title": "AI with control built in",
+          "body": "Governance, approvals and audit trails are part of every operation."
+        }
+      ],
+      "useCases": [
+        {
+          "title": "Site health checks",
+          "body": "Ask for site health issues and get a clear diagnosis."
+        },
+        {
+          "title": "Content operations",
+          "body": "Request new pages, such as a product documentation page, and review the plan before it runs."
+        },
+        {
+          "title": "User administration",
+          "body": "Review inactive users and plan follow-up actions."
+        },
+        {
+          "title": "Security planning",
+          "body": "Plan security updates with risk assessment and approvals."
+        }
+      ],
+      "conversation": [
+        {
+          "title": "Ask",
+          "body": "An administrator asks: “Show me site health issues.”"
+        },
+        {
+          "title": "Plan",
+          "body": "SiteAgent analyses the request, identifies relevant tools and plans safe execution."
+        },
+        {
+          "title": "Govern",
+          "body": "The plan is checked against policy and risk, and sent for approval if required."
+        },
+        {
+          "title": "Execute and record",
+          "body": "Approved actions run and everything is recorded in the audit ledger."
+        }
+      ],
+      "howItWorks": [
+        {
+          "title": "Install",
+          "body": "Add the SiteAgent administration module to your Oqtane site."
+        },
+        {
+          "title": "Configure governance",
+          "body": "Set policies, approval rules, read-only mode and secret protection."
+        },
+        {
+          "title": "Administer by asking",
+          "body": "Ask questions, investigate issues, plan changes and request actions conversationally."
+        }
+      ],
+      "industries": [
+        "custom-software",
+        "enterprise-operations"
+      ],
+      "integrations": [
+        {
+          "name": "Oqtane",
+          "body": "Runs as an administrative module inside your Oqtane site."
+        },
+        {
+          "name": "Custom Application Development",
+          "body": "Extend SiteAgent alongside your Oqtane applications."
+        }
+      ],
+      "related": [
+        "oqtane-custom-application-development",
+        "ai-workforce-platform",
+        "helpdesk-system"
+      ],
+      "faqIds": [
+        "agent-human",
+        "demo-timeline"
+      ],
+      "cta": {
+        "primary": {
+          "label": "Request a demo",
+          "action": "demo"
+        },
+        "secondary": {
+          "label": "Talk to an expert",
+          "action": "expert"
+        }
+      },
+      "sections": [
+        {
+          "type": "hero"
+        },
+        {
+          "type": "overview",
+          "title": "What SiteAgent does"
+        },
+        {
+          "type": "modules",
+          "title": "Natural language to audited action"
+        },
+        {
+          "type": "capabilities",
+          "title": "Governance & Control Center"
+        },
+        {
+          "type": "conversation",
+          "title": "From question to audited action"
+        },
+        {
+          "type": "benefits"
+        },
+        {
+          "type": "use-cases"
+        },
+        {
+          "type": "how-it-works"
+        },
+        {
+          "type": "integrations"
+        },
+        {
+          "type": "faqs"
+        },
+        {
+          "type": "related"
+        },
+        {
+          "type": "cta"
+        }
+      ],
+      "modules": [
+        {
+          "title": "Natural language",
+          "body": "Describe what you need, such as showing site health issues or reviewing inactive users."
+        },
+        {
+          "title": "AI planning",
+          "body": "SiteAgent understands your intent, discovers the relevant tools and plans the operations."
+        },
+        {
+          "title": "Governance controls",
+          "body": "Every plan is checked against policies and approvals before anything changes."
+        },
+        {
+          "title": "Approved execution",
+          "body": "Approved operations are performed for you, with recovery support where available."
+        },
+        {
+          "title": "Audit trail",
+          "body": "Every request, decision and action is recorded."
+        }
       ]
     },
     {
@@ -254,56 +760,149 @@
       },
       "overview": "Designed as a reliable system of record — not a claim to replace every specialist tool on day one. Modules are confirmed in a demo.",
       "features": [
-        { "title": "Operational records", "body": "Keep core processes in one place." },
-        { "title": "Inventory visibility", "body": "Track stock and movement at a practical level." },
-        { "title": "Finance references", "body": "Connect operational activity to financial follow-up." }
+        {
+          "title": "Operational records",
+          "body": "Keep core processes in one place."
+        },
+        {
+          "title": "Inventory visibility",
+          "body": "Track stock and movement at a practical level."
+        },
+        {
+          "title": "Finance references",
+          "body": "Connect operational activity to financial follow-up."
+        }
       ],
       "capabilities": [
-        { "title": "Shared master data", "body": "Customers, items, and vendors without five versions." },
-        { "title": "Process tracking", "body": "See what is open, delayed, or complete." }
+        {
+          "title": "Shared master data",
+          "body": "Customers, items, and vendors without five versions."
+        },
+        {
+          "title": "Process tracking",
+          "body": "See what is open, delayed, or complete."
+        }
       ],
       "benefits": [
-        { "title": "Fewer spreadsheet islands", "body": "Teams work from a common record." },
-        { "title": "Cleaner month-end", "body": "Operational data is easier to reconcile." }
+        {
+          "title": "Fewer spreadsheet islands",
+          "body": "Teams work from a common record."
+        },
+        {
+          "title": "Cleaner month-end",
+          "body": "Operational data is easier to reconcile."
+        }
       ],
       "useCases": [
-        { "title": "Mid-market operations", "body": "Companies outgrowing disconnected tools." },
-        { "title": "Multi-department businesses", "body": "Finance and operations that need a shared picture." }
+        {
+          "title": "Mid-market operations",
+          "body": "Companies outgrowing disconnected tools."
+        },
+        {
+          "title": "Multi-department businesses",
+          "body": "Finance and operations that need a shared picture."
+        }
       ],
       "modules": [
-        { "title": "Records", "body": "Parties, items, and documents." },
-        { "title": "Operations", "body": "Core process tracking." },
-        { "title": "Inventory", "body": "Stock visibility." }
+        {
+          "title": "Records",
+          "body": "Parties, items, and documents."
+        },
+        {
+          "title": "Operations",
+          "body": "Core process tracking."
+        },
+        {
+          "title": "Inventory",
+          "body": "Stock visibility."
+        }
       ],
       "workflow": [
-        { "title": "Capture", "body": "Record the business event." },
-        { "title": "Process", "body": "Move it through agreed steps." },
-        { "title": "Review", "body": "Finance and operations inspect exceptions." },
-        { "title": "Close", "body": "Complete the cycle with an audit trail." }
+        {
+          "title": "Capture",
+          "body": "Record the business event."
+        },
+        {
+          "title": "Process",
+          "body": "Move it through agreed steps."
+        },
+        {
+          "title": "Review",
+          "body": "Finance and operations inspect exceptions."
+        },
+        {
+          "title": "Close",
+          "body": "Complete the cycle with an audit trail."
+        }
       ],
-      "industries": ["enterprise-operations", "commerce", "financial-services"],
+      "industries": [
+        "enterprise-operations",
+        "commerce",
+        "financial-services"
+      ],
       "integrations": [
-        { "name": "CRM System", "body": "Customer and commercial context." },
-        { "name": "E-Commerce Platform", "body": "Orders and catalog references." }
+        {
+          "name": "CRM System",
+          "body": "Customer and commercial context."
+        },
+        {
+          "name": "E-Commerce Platform",
+          "body": "Orders and catalog references."
+        }
       ],
-      "related": ["crm-system", "ecommerce-platform", "ai-workforce-platform"],
-      "faqIds": ["erp-what", "demo-timeline"],
+      "related": [
+        "crm-system",
+        "ecommerce-platform",
+        "ai-workforce-platform"
+      ],
+      "faqIds": [
+        "erp-what",
+        "demo-timeline"
+      ],
       "cta": {
-        "primary": { "label": "Request a demo", "action": "demo" },
-        "secondary": { "label": "Talk to an expert", "action": "expert" }
+        "primary": {
+          "label": "Request a demo",
+          "action": "demo"
+        },
+        "secondary": {
+          "label": "Talk to an expert",
+          "action": "expert"
+        }
       },
       "sections": [
-        { "type": "hero" },
-        { "type": "overview" },
-        { "type": "capabilities" },
-        { "type": "workflow" },
-        { "type": "modules" },
-        { "type": "industries" },
-        { "type": "benefits" },
-        { "type": "integrations" },
-        { "type": "faqs" },
-        { "type": "related" },
-        { "type": "cta" }
+        {
+          "type": "hero"
+        },
+        {
+          "type": "overview"
+        },
+        {
+          "type": "capabilities"
+        },
+        {
+          "type": "workflow"
+        },
+        {
+          "type": "modules"
+        },
+        {
+          "type": "industries"
+        },
+        {
+          "type": "benefits"
+        },
+        {
+          "type": "integrations"
+        },
+        {
+          "type": "faqs"
+        },
+        {
+          "type": "related"
+        },
+        {
+          "type": "cta"
+        }
       ]
     },
     {
@@ -328,56 +927,149 @@
       },
       "overview": "A practical commercial system: who the customer is, where they are in the pipeline, and what happens next.",
       "features": [
-        { "title": "Accounts and contacts", "body": "Company and people records in one place." },
-        { "title": "Pipeline", "body": "Stages, owners, and expected next actions." },
-        { "title": "Activity history", "body": "Notes and follow-ups on the record." }
+        {
+          "title": "Accounts and contacts",
+          "body": "Company and people records in one place."
+        },
+        {
+          "title": "Pipeline",
+          "body": "Stages, owners, and expected next actions."
+        },
+        {
+          "title": "Activity history",
+          "body": "Notes and follow-ups on the record."
+        }
       ],
       "capabilities": [
-        { "title": "Shared customer view", "body": "Sales and service can see the same history." },
-        { "title": "Follow-up reminders", "body": "Reduce dropped conversations." }
+        {
+          "title": "Shared customer view",
+          "body": "Sales and service can see the same history."
+        },
+        {
+          "title": "Follow-up reminders",
+          "body": "Reduce dropped conversations."
+        }
       ],
       "benefits": [
-        { "title": "Less lost context", "body": "Handovers no longer depend on private inboxes." },
-        { "title": "Clearer pipeline", "body": "Forecasting lives in a system, not a personal sheet." }
+        {
+          "title": "Less lost context",
+          "body": "Handovers no longer depend on private inboxes."
+        },
+        {
+          "title": "Clearer pipeline",
+          "body": "Forecasting lives in a system, not a personal sheet."
+        }
       ],
       "useCases": [
-        { "title": "B2B sales teams", "body": "Managing accounts through qualification to close." },
-        { "title": "Account management", "body": "Keeping existing customers visible after the first deal." }
+        {
+          "title": "B2B sales teams",
+          "body": "Managing accounts through qualification to close."
+        },
+        {
+          "title": "Account management",
+          "body": "Keeping existing customers visible after the first deal."
+        }
       ],
       "modules": [
-        { "title": "Accounts", "body": "Companies and contacts." },
-        { "title": "Pipeline", "body": "Opportunities and stages." },
-        { "title": "Activities", "body": "Notes and follow-ups." }
+        {
+          "title": "Accounts",
+          "body": "Companies and contacts."
+        },
+        {
+          "title": "Pipeline",
+          "body": "Opportunities and stages."
+        },
+        {
+          "title": "Activities",
+          "body": "Notes and follow-ups."
+        }
       ],
       "workflow": [
-        { "title": "Capture", "body": "Log the lead or account." },
-        { "title": "Qualify", "body": "Record need, owner, and next step." },
-        { "title": "Advance", "body": "Move stages as the relationship develops." },
-        { "title": "Handover", "body": "Pass context to service or delivery." }
+        {
+          "title": "Capture",
+          "body": "Log the lead or account."
+        },
+        {
+          "title": "Qualify",
+          "body": "Record need, owner, and next step."
+        },
+        {
+          "title": "Advance",
+          "body": "Move stages as the relationship develops."
+        },
+        {
+          "title": "Handover",
+          "body": "Pass context to service or delivery."
+        }
       ],
-      "industries": ["customer-service", "commerce", "enterprise-operations"],
+      "industries": [
+        "customer-service",
+        "commerce",
+        "enterprise-operations"
+      ],
       "integrations": [
-        { "name": "Helpdesk System", "body": "Tickets linked to accounts." },
-        { "name": "AI Call Center Platform", "body": "Conversation briefs and intake." }
+        {
+          "name": "Helpdesk System",
+          "body": "Tickets linked to accounts."
+        },
+        {
+          "name": "AI Call Center Platform",
+          "body": "Conversation briefs and intake."
+        }
       ],
-      "related": ["helpdesk-system", "ai-call-center-platform", "erp-system"],
-      "faqIds": ["crm-what", "demo-timeline"],
+      "related": [
+        "helpdesk-system",
+        "ai-call-center-platform",
+        "erp-system"
+      ],
+      "faqIds": [
+        "crm-what",
+        "demo-timeline"
+      ],
       "cta": {
-        "primary": { "label": "Request a demo", "action": "demo" },
-        "secondary": { "label": "Talk to an expert", "action": "expert" }
+        "primary": {
+          "label": "Request a demo",
+          "action": "demo"
+        },
+        "secondary": {
+          "label": "Talk to an expert",
+          "action": "expert"
+        }
       },
       "sections": [
-        { "type": "hero" },
-        { "type": "overview" },
-        { "type": "capabilities" },
-        { "type": "workflow" },
-        { "type": "modules" },
-        { "type": "industries" },
-        { "type": "benefits" },
-        { "type": "integrations" },
-        { "type": "faqs" },
-        { "type": "related" },
-        { "type": "cta" }
+        {
+          "type": "hero"
+        },
+        {
+          "type": "overview"
+        },
+        {
+          "type": "capabilities"
+        },
+        {
+          "type": "workflow"
+        },
+        {
+          "type": "modules"
+        },
+        {
+          "type": "industries"
+        },
+        {
+          "type": "benefits"
+        },
+        {
+          "type": "integrations"
+        },
+        {
+          "type": "faqs"
+        },
+        {
+          "type": "related"
+        },
+        {
+          "type": "cta"
+        }
       ]
     },
     {
@@ -402,56 +1094,148 @@
       },
       "overview": "For organizations that need a reliable system for day-to-day facility operations, not a patchwork of spreadsheets and inboxes.",
       "features": [
-        { "title": "Work order management", "body": "Create, assign, and close maintenance requests." },
-        { "title": "Asset register", "body": "Keep equipment, locations, and service history together." },
-        { "title": "Preventive maintenance", "body": "Schedule recurring tasks before failures interrupt operations." }
+        {
+          "title": "Work order management",
+          "body": "Create, assign, and close maintenance requests."
+        },
+        {
+          "title": "Asset register",
+          "body": "Keep equipment, locations, and service history together."
+        },
+        {
+          "title": "Preventive maintenance",
+          "body": "Schedule recurring tasks before failures interrupt operations."
+        }
       ],
       "capabilities": [
-        { "title": "Operations dashboard", "body": "See open jobs, overdue work, and site status." },
-        { "title": "Location hierarchy", "body": "Organize campuses, buildings, floors, and rooms." }
+        {
+          "title": "Operations dashboard",
+          "body": "See open jobs, overdue work, and site status."
+        },
+        {
+          "title": "Location hierarchy",
+          "body": "Organize campuses, buildings, floors, and rooms."
+        }
       ],
       "benefits": [
-        { "title": "Fewer missed jobs", "body": "Requests stop disappearing across email and chat." },
-        { "title": "Better asset visibility", "body": "Teams know what they own and what needs attention." }
+        {
+          "title": "Fewer missed jobs",
+          "body": "Requests stop disappearing across email and chat."
+        },
+        {
+          "title": "Better asset visibility",
+          "body": "Teams know what they own and what needs attention."
+        }
       ],
       "useCases": [
-        { "title": "Corporate campuses", "body": "Central facilities teams coordinating multiple buildings." },
-        { "title": "Industrial sites", "body": "Maintenance crews supporting plant and warehouse facilities." }
+        {
+          "title": "Corporate campuses",
+          "body": "Central facilities teams coordinating multiple buildings."
+        },
+        {
+          "title": "Industrial sites",
+          "body": "Maintenance crews supporting plant and warehouse facilities."
+        }
       ],
       "modules": [
-        { "title": "Assets", "body": "Registry and service history." },
-        { "title": "Work orders", "body": "Intake, assignment, and completion." },
-        { "title": "Vendors", "body": "Contractors linked to jobs and sites." }
+        {
+          "title": "Assets",
+          "body": "Registry and service history."
+        },
+        {
+          "title": "Work orders",
+          "body": "Intake, assignment, and completion."
+        },
+        {
+          "title": "Vendors",
+          "body": "Contractors linked to jobs and sites."
+        }
       ],
       "workflow": [
-        { "title": "Request", "body": "A job is logged by staff or supervisor." },
-        { "title": "Assign", "body": "The right internal team or vendor is selected." },
-        { "title": "Execute", "body": "Work is updated as it happens." },
-        { "title": "Close", "body": "Completion and notes are recorded." }
+        {
+          "title": "Request",
+          "body": "A job is logged by staff or supervisor."
+        },
+        {
+          "title": "Assign",
+          "body": "The right internal team or vendor is selected."
+        },
+        {
+          "title": "Execute",
+          "body": "Work is updated as it happens."
+        },
+        {
+          "title": "Close",
+          "body": "Completion and notes are recorded."
+        }
       ],
-      "industries": ["facilities-property", "enterprise-operations"],
+      "industries": [
+        "facilities-property",
+        "enterprise-operations"
+      ],
       "integrations": [
-        { "name": "Helpdesk System", "body": "Service requests that become facility jobs." },
-        { "name": "AI Workforce Platform", "body": "Status and briefing assistance." }
+        {
+          "name": "Helpdesk System",
+          "body": "Service requests that become facility jobs."
+        },
+        {
+          "name": "AI Workforce Platform",
+          "body": "Status and briefing assistance."
+        }
       ],
-      "related": ["helpdesk-system", "ai-workforce-platform", "erp-system"],
-      "faqIds": ["fms-what", "demo-timeline"],
+      "related": [
+        "helpdesk-system",
+        "ai-workforce-platform",
+        "erp-system"
+      ],
+      "faqIds": [
+        "fms-what",
+        "demo-timeline"
+      ],
       "cta": {
-        "primary": { "label": "Request a demo", "action": "demo" },
-        "secondary": { "label": "Talk to an expert", "action": "expert" }
+        "primary": {
+          "label": "Request a demo",
+          "action": "demo"
+        },
+        "secondary": {
+          "label": "Talk to an expert",
+          "action": "expert"
+        }
       },
       "sections": [
-        { "type": "hero" },
-        { "type": "overview" },
-        { "type": "capabilities" },
-        { "type": "workflow" },
-        { "type": "modules" },
-        { "type": "industries" },
-        { "type": "benefits" },
-        { "type": "integrations" },
-        { "type": "faqs" },
-        { "type": "related" },
-        { "type": "cta" }
+        {
+          "type": "hero"
+        },
+        {
+          "type": "overview"
+        },
+        {
+          "type": "capabilities"
+        },
+        {
+          "type": "workflow"
+        },
+        {
+          "type": "modules"
+        },
+        {
+          "type": "industries"
+        },
+        {
+          "type": "benefits"
+        },
+        {
+          "type": "integrations"
+        },
+        {
+          "type": "faqs"
+        },
+        {
+          "type": "related"
+        },
+        {
+          "type": "cta"
+        }
       ]
     },
     {
@@ -476,56 +1260,149 @@
       },
       "overview": "Built for teams who cannot afford requests to disappear across inboxes, WhatsApp, and verbal handoffs.",
       "features": [
-        { "title": "Ticket intake", "body": "Capture requests in a shared workspace." },
-        { "title": "Queues and assignment", "body": "Route work to the right agent or team." },
-        { "title": "SLA visibility", "body": "See what is due, overdue, or waiting." }
+        {
+          "title": "Ticket intake",
+          "body": "Capture requests in a shared workspace."
+        },
+        {
+          "title": "Queues and assignment",
+          "body": "Route work to the right agent or team."
+        },
+        {
+          "title": "SLA visibility",
+          "body": "See what is due, overdue, or waiting."
+        }
       ],
       "capabilities": [
-        { "title": "Shared inbox logic", "body": "One queue instead of personal mailboxes." },
-        { "title": "Customer history", "body": "Previous tickets stay attached to the account." }
+        {
+          "title": "Shared inbox logic",
+          "body": "One queue instead of personal mailboxes."
+        },
+        {
+          "title": "Customer history",
+          "body": "Previous tickets stay attached to the account."
+        }
       ],
       "benefits": [
-        { "title": "Faster response discipline", "body": "Open work is visible to the whole team." },
-        { "title": "Better memory", "body": "Agents do not start from zero on every ticket." }
+        {
+          "title": "Faster response discipline",
+          "body": "Open work is visible to the whole team."
+        },
+        {
+          "title": "Better memory",
+          "body": "Agents do not start from zero on every ticket."
+        }
       ],
       "useCases": [
-        { "title": "Customer support", "body": "External requests from clients and users." },
-        { "title": "Internal support", "body": "Employee requests with the same close loop." }
+        {
+          "title": "Customer support",
+          "body": "External requests from clients and users."
+        },
+        {
+          "title": "Internal support",
+          "body": "Employee requests with the same close loop."
+        }
       ],
       "modules": [
-        { "title": "Tickets", "body": "Request records and thread." },
-        { "title": "Queues", "body": "Team inboxes and assignment." },
-        { "title": "Knowledge", "body": "Reusable replies and articles." }
+        {
+          "title": "Tickets",
+          "body": "Request records and thread."
+        },
+        {
+          "title": "Queues",
+          "body": "Team inboxes and assignment."
+        },
+        {
+          "title": "Knowledge",
+          "body": "Reusable replies and articles."
+        }
       ],
       "workflow": [
-        { "title": "Intake", "body": "Request is logged." },
-        { "title": "Assign", "body": "An owner takes the ticket." },
-        { "title": "Respond", "body": "Conversation and notes stay on the record." },
-        { "title": "Resolve", "body": "Close with reason and follow-up if needed." }
+        {
+          "title": "Intake",
+          "body": "Request is logged."
+        },
+        {
+          "title": "Assign",
+          "body": "An owner takes the ticket."
+        },
+        {
+          "title": "Respond",
+          "body": "Conversation and notes stay on the record."
+        },
+        {
+          "title": "Resolve",
+          "body": "Close with reason and follow-up if needed."
+        }
       ],
-      "industries": ["customer-service", "facilities-property", "enterprise-operations"],
+      "industries": [
+        "customer-service",
+        "facilities-property",
+        "enterprise-operations"
+      ],
       "integrations": [
-        { "name": "CRM System", "body": "Tickets linked to accounts." },
-        { "name": "AI Call Center Platform", "body": "Conversation intake and briefs." }
+        {
+          "name": "CRM System",
+          "body": "Tickets linked to accounts."
+        },
+        {
+          "name": "AI Call Center Platform",
+          "body": "Conversation intake and briefs."
+        }
       ],
-      "related": ["crm-system", "ai-call-center-platform", "facility-management-system"],
-      "faqIds": ["helpdesk-what", "demo-timeline"],
+      "related": [
+        "crm-system",
+        "ai-call-center-platform",
+        "facility-management-system"
+      ],
+      "faqIds": [
+        "helpdesk-what",
+        "demo-timeline"
+      ],
       "cta": {
-        "primary": { "label": "Request a demo", "action": "demo" },
-        "secondary": { "label": "Talk to an expert", "action": "expert" }
+        "primary": {
+          "label": "Request a demo",
+          "action": "demo"
+        },
+        "secondary": {
+          "label": "Talk to an expert",
+          "action": "expert"
+        }
       },
       "sections": [
-        { "type": "hero" },
-        { "type": "overview" },
-        { "type": "capabilities" },
-        { "type": "workflow" },
-        { "type": "modules" },
-        { "type": "industries" },
-        { "type": "benefits" },
-        { "type": "integrations" },
-        { "type": "faqs" },
-        { "type": "related" },
-        { "type": "cta" }
+        {
+          "type": "hero"
+        },
+        {
+          "type": "overview"
+        },
+        {
+          "type": "capabilities"
+        },
+        {
+          "type": "workflow"
+        },
+        {
+          "type": "modules"
+        },
+        {
+          "type": "industries"
+        },
+        {
+          "type": "benefits"
+        },
+        {
+          "type": "integrations"
+        },
+        {
+          "type": "faqs"
+        },
+        {
+          "type": "related"
+        },
+        {
+          "type": "cta"
+        }
       ]
     },
     {
@@ -550,56 +1427,147 @@
       },
       "overview": "Built as a commerce system of record, not only a marketing page. Payment and logistics integrations are scoped during implementation.",
       "features": [
-        { "title": "Catalog", "body": "Products, variants, and merchandising." },
-        { "title": "Orders", "body": "A workspace for checkout through fulfilment status." },
-        { "title": "Customer accounts", "body": "Order history attached to the buyer." }
+        {
+          "title": "Catalog",
+          "body": "Products, variants, and merchandising."
+        },
+        {
+          "title": "Orders",
+          "body": "A workspace for checkout through fulfilment status."
+        },
+        {
+          "title": "Customer accounts",
+          "body": "Order history attached to the buyer."
+        }
       ],
       "capabilities": [
-        { "title": "Storefront and back office", "body": "Customers buy; teams operate." },
-        { "title": "Operational handoff", "body": "Orders can flow toward ERP." }
+        {
+          "title": "Storefront and back office",
+          "body": "Customers buy; teams operate."
+        },
+        {
+          "title": "Operational handoff",
+          "body": "Orders can flow toward ERP."
+        }
       ],
       "benefits": [
-        { "title": "Fewer disconnected shops", "body": "Catalog and orders live together." },
-        { "title": "Clearer fulfilment", "body": "Operations see what was sold." }
+        {
+          "title": "Fewer disconnected shops",
+          "body": "Catalog and orders live together."
+        },
+        {
+          "title": "Clearer fulfilment",
+          "body": "Operations see what was sold."
+        }
       ],
       "useCases": [
-        { "title": "Direct-to-customer", "body": "Brands running their own storefront." },
-        { "title": "B2B catalogs", "body": "Account-based ordering with a commercial record." }
+        {
+          "title": "Direct-to-customer",
+          "body": "Brands running their own storefront."
+        },
+        {
+          "title": "B2B catalogs",
+          "body": "Account-based ordering with a commercial record."
+        }
       ],
       "modules": [
-        { "title": "Catalog", "body": "Products and merchandising." },
-        { "title": "Cart and checkout", "body": "Purchase flow." },
-        { "title": "Orders", "body": "Post-purchase workspace." }
+        {
+          "title": "Catalog",
+          "body": "Products and merchandising."
+        },
+        {
+          "title": "Cart and checkout",
+          "body": "Purchase flow."
+        },
+        {
+          "title": "Orders",
+          "body": "Post-purchase workspace."
+        }
       ],
       "workflow": [
-        { "title": "Browse", "body": "Customer finds products." },
-        { "title": "Purchase", "body": "Checkout creates an order." },
-        { "title": "Fulfil", "body": "Operations process the job." },
-        { "title": "Support", "body": "Service uses the same order history." }
+        {
+          "title": "Browse",
+          "body": "Customer finds products."
+        },
+        {
+          "title": "Purchase",
+          "body": "Checkout creates an order."
+        },
+        {
+          "title": "Fulfil",
+          "body": "Operations process the job."
+        },
+        {
+          "title": "Support",
+          "body": "Service uses the same order history."
+        }
       ],
-      "industries": ["commerce"],
+      "industries": [
+        "commerce"
+      ],
       "integrations": [
-        { "name": "ERP System", "body": "Orders and inventory references." },
-        { "name": "CRM System", "body": "Customer history." }
+        {
+          "name": "ERP System",
+          "body": "Orders and inventory references."
+        },
+        {
+          "name": "CRM System",
+          "body": "Customer history."
+        }
       ],
-      "related": ["erp-system", "crm-system", "helpdesk-system"],
-      "faqIds": ["ecom-what", "demo-timeline"],
+      "related": [
+        "erp-system",
+        "crm-system",
+        "helpdesk-system"
+      ],
+      "faqIds": [
+        "ecom-what",
+        "demo-timeline"
+      ],
       "cta": {
-        "primary": { "label": "Request a demo", "action": "demo" },
-        "secondary": { "label": "Talk to an expert", "action": "expert" }
+        "primary": {
+          "label": "Request a demo",
+          "action": "demo"
+        },
+        "secondary": {
+          "label": "Talk to an expert",
+          "action": "expert"
+        }
       },
       "sections": [
-        { "type": "hero" },
-        { "type": "overview" },
-        { "type": "capabilities" },
-        { "type": "workflow" },
-        { "type": "modules" },
-        { "type": "industries" },
-        { "type": "benefits" },
-        { "type": "integrations" },
-        { "type": "faqs" },
-        { "type": "related" },
-        { "type": "cta" }
+        {
+          "type": "hero"
+        },
+        {
+          "type": "overview"
+        },
+        {
+          "type": "capabilities"
+        },
+        {
+          "type": "workflow"
+        },
+        {
+          "type": "modules"
+        },
+        {
+          "type": "industries"
+        },
+        {
+          "type": "benefits"
+        },
+        {
+          "type": "integrations"
+        },
+        {
+          "type": "faqs"
+        },
+        {
+          "type": "related"
+        },
+        {
+          "type": "cta"
+        }
       ]
     },
     {
@@ -624,55 +1592,142 @@
       },
       "overview": "Built for societies, family offices, and organizations that need lineage data to remain usable as it grows.",
       "features": [
-        { "title": "People records", "body": "A durable profile for each person." },
-        { "title": "Relationships", "body": "Lineage links that can be searched and reviewed." },
-        { "title": "Sources", "body": "Attach documents and notes to the record." }
+        {
+          "title": "People records",
+          "body": "A durable profile for each person."
+        },
+        {
+          "title": "Relationships",
+          "body": "Lineage links that can be searched and reviewed."
+        },
+        {
+          "title": "Sources",
+          "body": "Attach documents and notes to the record."
+        }
       ],
       "capabilities": [
-        { "title": "Structured search", "body": "Find people and families without scrolling folders." },
-        { "title": "Archive discipline", "body": "Keep sources next to the claim they support." }
+        {
+          "title": "Structured search",
+          "body": "Find people and families without scrolling folders."
+        },
+        {
+          "title": "Archive discipline",
+          "body": "Keep sources next to the claim they support."
+        }
       ],
       "benefits": [
-        { "title": "Less lost research", "body": "Work survives beyond one researcher’s files." },
-        { "title": "Clearer lineage", "body": "Relationships are visible, not implied." }
+        {
+          "title": "Less lost research",
+          "body": "Work survives beyond one researcher’s files."
+        },
+        {
+          "title": "Clearer lineage",
+          "body": "Relationships are visible, not implied."
+        }
       ],
       "useCases": [
-        { "title": "Family archives", "body": "Private lineage projects with multiple contributors." },
-        { "title": "Societies and institutions", "body": "Collections that need a searchable people system." }
+        {
+          "title": "Family archives",
+          "body": "Private lineage projects with multiple contributors."
+        },
+        {
+          "title": "Societies and institutions",
+          "body": "Collections that need a searchable people system."
+        }
       ],
       "modules": [
-        { "title": "People", "body": "Individual records." },
-        { "title": "Lineage", "body": "Relationship graph." },
-        { "title": "Sources", "body": "Documents and citations." }
+        {
+          "title": "People",
+          "body": "Individual records."
+        },
+        {
+          "title": "Lineage",
+          "body": "Relationship graph."
+        },
+        {
+          "title": "Sources",
+          "body": "Documents and citations."
+        }
       ],
       "workflow": [
-        { "title": "Collect", "body": "Add people and source material." },
-        { "title": "Link", "body": "Record relationships and evidence." },
-        { "title": "Review", "body": "Resolve conflicts with notes." },
-        { "title": "Publish", "body": "Share an approved view of the archive." }
+        {
+          "title": "Collect",
+          "body": "Add people and source material."
+        },
+        {
+          "title": "Link",
+          "body": "Record relationships and evidence."
+        },
+        {
+          "title": "Review",
+          "body": "Resolve conflicts with notes."
+        },
+        {
+          "title": "Publish",
+          "body": "Share an approved view of the archive."
+        }
       ],
-      "industries": ["heritage-records"],
+      "industries": [
+        "heritage-records"
+      ],
       "integrations": [
-        { "name": "Custom Oqtane applications", "body": "When the archive needs a tailored public or member portal." }
+        {
+          "name": "Custom Oqtane applications",
+          "body": "When the archive needs a tailored public or member portal."
+        }
       ],
-      "related": ["oqtane-custom-application-development", "crm-system"],
-      "faqIds": ["genealogy-what", "demo-timeline"],
+      "related": [
+        "oqtane-custom-application-development",
+        "crm-system"
+      ],
+      "faqIds": [
+        "genealogy-what",
+        "demo-timeline"
+      ],
       "cta": {
-        "primary": { "label": "Request a demo", "action": "demo" },
-        "secondary": { "label": "Talk to an expert", "action": "expert" }
+        "primary": {
+          "label": "Request a demo",
+          "action": "demo"
+        },
+        "secondary": {
+          "label": "Talk to an expert",
+          "action": "expert"
+        }
       },
       "sections": [
-        { "type": "hero" },
-        { "type": "overview" },
-        { "type": "capabilities" },
-        { "type": "workflow" },
-        { "type": "modules" },
-        { "type": "industries" },
-        { "type": "benefits" },
-        { "type": "integrations" },
-        { "type": "faqs" },
-        { "type": "related" },
-        { "type": "cta" }
+        {
+          "type": "hero"
+        },
+        {
+          "type": "overview"
+        },
+        {
+          "type": "capabilities"
+        },
+        {
+          "type": "workflow"
+        },
+        {
+          "type": "modules"
+        },
+        {
+          "type": "industries"
+        },
+        {
+          "type": "benefits"
+        },
+        {
+          "type": "integrations"
+        },
+        {
+          "type": "faqs"
+        },
+        {
+          "type": "related"
+        },
+        {
+          "type": "cta"
+        }
       ]
     },
     {
@@ -697,55 +1752,145 @@
       },
       "overview": "A delivery practice, not a single SKU. We use Oqtane when you need modular .NET applications with a maintainable structure.",
       "features": [
-        { "title": "Discovery and design", "body": "Map the process before writing modules." },
-        { "title": "Modular build", "body": "Deliver in pieces your team can operate." },
-        { "title": "Handover and support", "body": "Documentation, training, and a path to iterate." }
+        {
+          "title": "Discovery and design",
+          "body": "Map the process before writing modules."
+        },
+        {
+          "title": "Modular build",
+          "body": "Deliver in pieces your team can operate."
+        },
+        {
+          "title": "Handover and support",
+          "body": "Documentation, training, and a path to iterate."
+        }
       ],
       "capabilities": [
-        { "title": "Oqtane platform", "body": "Modular applications on a known .NET foundation." },
-        { "title": "Integration-minded", "body": "Connect to the systems you already run where it is practical." }
+        {
+          "title": "Oqtane platform",
+          "body": "Modular applications on a known .NET foundation."
+        },
+        {
+          "title": "Integration-minded",
+          "body": "Connect to the systems you already run where it is practical."
+        }
       ],
       "benefits": [
-        { "title": "Fit to process", "body": "The application follows how you work." },
-        { "title": "A maintainable base", "body": "Custom does not have to mean unsupportable." }
+        {
+          "title": "Fit to process",
+          "body": "The application follows how you work."
+        },
+        {
+          "title": "A maintainable base",
+          "body": "Custom does not have to mean unsupportable."
+        }
       ],
       "useCases": [
-        { "title": "Process-specific systems", "body": "When ERP or CRM would be forced to stretch too far." },
-        { "title": "Member or portal applications", "body": "Tailored experiences on a modular platform." }
+        {
+          "title": "Process-specific systems",
+          "body": "When ERP or CRM would be forced to stretch too far."
+        },
+        {
+          "title": "Member or portal applications",
+          "body": "Tailored experiences on a modular platform."
+        }
       ],
       "modules": [
-        { "title": "Discovery", "body": "Workshops and information architecture." },
-        { "title": "Build", "body": "Oqtane modules and integrations." },
-        { "title": "Operate", "body": "Support and iteration." }
+        {
+          "title": "Discovery",
+          "body": "Workshops and information architecture."
+        },
+        {
+          "title": "Build",
+          "body": "Oqtane modules and integrations."
+        },
+        {
+          "title": "Operate",
+          "body": "Support and iteration."
+        }
       ],
       "workflow": [
-        { "title": "Discover", "body": "Understand users, data, and constraints." },
-        { "title": "Design", "body": "Agree modules and interfaces." },
-        { "title": "Build", "body": "Implement and review in stages." },
-        { "title": "Launch", "body": "Train, support, and plan the next increment." }
+        {
+          "title": "Discover",
+          "body": "Understand users, data, and constraints."
+        },
+        {
+          "title": "Design",
+          "body": "Agree modules and interfaces."
+        },
+        {
+          "title": "Build",
+          "body": "Implement and review in stages."
+        },
+        {
+          "title": "Launch",
+          "body": "Train, support, and plan the next increment."
+        }
       ],
-      "industries": ["custom-software", "enterprise-operations", "heritage-records"],
+      "industries": [
+        "custom-software",
+        "enterprise-operations",
+        "heritage-records"
+      ],
       "integrations": [
-        { "name": "Existing business systems", "body": "ERP, CRM, or helpdesk where a connection is required." }
+        {
+          "name": "Existing business systems",
+          "body": "ERP, CRM, or helpdesk where a connection is required."
+        }
       ],
-      "related": ["erp-system", "crm-system", "genealogy-management-system"],
-      "faqIds": ["oqtane-what", "demo-timeline"],
+      "related": [
+        "erp-system",
+        "crm-system",
+        "genealogy-management-system"
+      ],
+      "faqIds": [
+        "oqtane-what",
+        "demo-timeline"
+      ],
       "cta": {
-        "primary": { "label": "Request a demo", "action": "demo" },
-        "secondary": { "label": "Talk to an expert", "action": "expert" }
+        "primary": {
+          "label": "Request a demo",
+          "action": "demo"
+        },
+        "secondary": {
+          "label": "Talk to an expert",
+          "action": "expert"
+        }
       },
       "sections": [
-        { "type": "hero" },
-        { "type": "overview" },
-        { "type": "capabilities" },
-        { "type": "workflow" },
-        { "type": "modules" },
-        { "type": "industries" },
-        { "type": "benefits" },
-        { "type": "integrations" },
-        { "type": "faqs" },
-        { "type": "related" },
-        { "type": "cta" }
+        {
+          "type": "hero"
+        },
+        {
+          "type": "overview"
+        },
+        {
+          "type": "capabilities"
+        },
+        {
+          "type": "workflow"
+        },
+        {
+          "type": "modules"
+        },
+        {
+          "type": "industries"
+        },
+        {
+          "type": "benefits"
+        },
+        {
+          "type": "integrations"
+        },
+        {
+          "type": "faqs"
+        },
+        {
+          "type": "related"
+        },
+        {
+          "type": "cta"
+        }
       ]
     }
   ]

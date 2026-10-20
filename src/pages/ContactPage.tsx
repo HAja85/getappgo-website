@@ -132,6 +132,13 @@ export function ContactPage() {
                         </option>
                       ))}
                     </optgroup>
+                    <optgroup label={copy.nav.packages}>
+                      {copy.packages.items.map((item) => (
+                        <option key={item.id} value={item.id}>
+                          {item.number}: {item.title}
+                        </option>
+                      ))}
+                    </optgroup>
                     <optgroup label={form.groups.agents}>
                       {getAiAgents().map((agent) => (
                         <option key={agent.slug} value={agent.slug}>

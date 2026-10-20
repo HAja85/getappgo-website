@@ -6,7 +6,12 @@
       "tagline": "Core systems for running the business.",
       "description": "ERP, facilities, and workforce platforms for organizations that need a reliable operating layer.",
       "heroVisual": "/images/industries/enterprise-operations.png",
-      "productSlugs": ["erp-system", "facility-management-system", "ai-workforce-platform"]
+      "productSlugs": [
+        "erp-system",
+        "facility-management-system",
+        "ai-workforce-platform",
+        "siteagent"
+      ]
     },
     {
       "slug": "customer-service",
@@ -14,7 +19,11 @@
       "tagline": "Calls, tickets, and customer history.",
       "description": "Call center, helpdesk, and CRM products for teams that own the customer conversation.",
       "heroVisual": "/images/industries/customer-service.png",
-      "productSlugs": ["ai-call-center-platform", "helpdesk-system", "crm-system"]
+      "productSlugs": [
+        "ai-call-center-platform",
+        "helpdesk-system",
+        "crm-system"
+      ]
     },
     {
       "slug": "commerce",
@@ -22,7 +31,11 @@
       "tagline": "Catalogs, orders, and accounts.",
       "description": "E-commerce, ERP, and CRM for teams selling and fulfilling across channels.",
       "heroVisual": "/images/industries/commerce.png",
-      "productSlugs": ["ecommerce-platform", "erp-system", "crm-system"]
+      "productSlugs": [
+        "ecommerce-platform",
+        "erp-system",
+        "crm-system"
+      ]
     },
     {
       "slug": "financial-services",
@@ -30,7 +43,10 @@
       "tagline": "Trading workflows and enterprise records.",
       "description": "AI trading and ERP capabilities for firms that need operational control around markets and finance.",
       "heroVisual": "/images/industries/financial-services.png",
-      "productSlugs": ["ai-trading-platform", "erp-system"]
+      "productSlugs": [
+        "ai-trading-platform",
+        "erp-system"
+      ]
     },
     {
       "slug": "facilities-property",
@@ -38,7 +54,11 @@
       "tagline": "Buildings, assets, and service requests.",
       "description": "Facility management and service tools for campuses, sites, and building operations.",
       "heroVisual": "/images/industries/facilities-property.png",
-      "productSlugs": ["facility-management-system", "helpdesk-system", "ai-workforce-platform"]
+      "productSlugs": [
+        "facility-management-system",
+        "helpdesk-system",
+        "ai-workforce-platform"
+      ]
     },
     {
       "slug": "heritage-records",
@@ -46,7 +66,9 @@
       "tagline": "Family history, archives, and structured lineage.",
       "description": "Genealogy management for organizations and families that need a durable record system.",
       "heroVisual": "/images/industries/heritage-records.png",
-      "productSlugs": ["genealogy-management-system"]
+      "productSlugs": [
+        "genealogy-management-system"
+      ]
     },
     {
       "slug": "custom-software",
@@ -54,7 +76,10 @@
       "tagline": "Oqtane applications built around your process.",
       "description": "When a packaged product is not enough, ZillionAI designs and delivers custom applications on Oqtane.",
       "heroVisual": "/images/industries/custom-software.png",
-      "productSlugs": ["oqtane-custom-application-development"]
+      "productSlugs": [
+        "oqtane-custom-application-development",
+        "siteagent"
+      ]
     }
   ]
 }

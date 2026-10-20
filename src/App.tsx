@@ -13,6 +13,8 @@ import { LegalPage } from "@/pages/LegalPage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
 import { ServicePage } from "@/pages/ServicePage";
 import { VoiceAgentsPage } from "@/pages/VoiceAgentsPage";
+import { PackagesPage } from "@/pages/PackagesPage";
+import { LeadershipPage } from "@/pages/LeadershipPage";
 
 export function App() {
   return (
@@ -22,6 +24,8 @@ export function App() {
         <Route path="/services" element={<Navigate to="/services/software-services" replace />} />
         <Route path="/services/:slug" element={<ServicePage />} />
         <Route path="/ai-voice-agents" element={<VoiceAgentsPage />} />
+        <Route path="/packages" element={<PackagesPage />} />
+        <Route path="/leadership" element={<LeadershipPage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/products/:slug" element={<ProductDetailsPage />} />
         <Route path="/solutions" element={<SolutionsPage />} />

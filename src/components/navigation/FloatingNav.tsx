@@ -7,17 +7,18 @@ import { useCopy } from "@/i18n/LanguageProvider";
 import { cn } from "@/lib/cn";
 import type { ServiceLineId } from "@/content/zillion";
 
-type NavKey = "home" | "about" | "services" | "industries" | "contact";
+type NavKey = "home" | "about" | "services" | "packages" | "contact";
 
 function activeKey(pathname: string): NavKey | null {
   if (pathname === "/") return "home";
-  if (pathname.startsWith("/about")) return "about";
-  if (pathname.startsWith("/industries")) return "industries";
+  if (pathname.startsWith("/about") || pathname.startsWith("/leadership")) return "about";
+  if (pathname.startsWith("/packages")) return "packages";
   if (pathname.startsWith("/contact")) return "contact";
   if (
     pathname.startsWith("/services") ||
     pathname.startsWith("/products") ||
     pathname.startsWith("/solutions") ||
+    pathname.startsWith("/industries") ||
     pathname.startsWith("/ai-voice-agents")
   ) {
     return "services";
@@ -38,7 +39,7 @@ export function FloatingNav() {
     { key: "home", label: copy.nav.home, href: "/" },
     { key: "about", label: copy.nav.about, href: "/about" },
     { key: "services", label: copy.nav.services, href: "/services/software-services" },
-    { key: "industries", label: copy.nav.industries, href: "/industries" },
+    { key: "packages", label: copy.nav.packages, href: "/packages" },
     { key: "contact", label: copy.nav.contact, href: "/contact" },
   ];
   const current = activeKey(location.pathname);
