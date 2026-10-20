@@ -1,35 +1,53 @@
 {
   "brand": {
-    "name": "GetAppGo",
-    "legalName": "GetAppGo",
-    "tagline": "Enterprise software and AI platforms, delivered.",
-    "description": "GetAppGo builds and delivers business applications and AI platforms for operations, customer service, commerce, and custom .NET development.",
+    "name": "ZillionAI",
+    "legalName": "ZillionAI",
+    "tagline": "Software, AI and business IT hardware, delivered by one team.",
+    "description": "ZillionAI builds custom software and business applications, delivers AI applications, integration and automation, and sources, buys and sells business IT hardware.",
     "logo": {
-      "mark": "/images/brand/mark.svg",
-      "wordmark": "/images/brand/wordmark.svg",
-      "lockup": "/images/brand/lockup.svg"
+      "mark": "/images/zillion/mark.svg",
+      "wordmark": "/images/zillion/mark.svg",
+      "lockup": "/images/zillion/mark.svg"
     }
   },
   "seo": {
-    "titleTemplate": "%s · GetAppGo",
-    "defaultTitle": "GetAppGo — AI Voice Agents for Modern Businesses",
-    "defaultDescription": "AI voice agents that speak Arabic and English, qualify leads, book appointments, support customers, and automate business conversations.",
+    "titleTemplate": "%s · ZillionAI",
+    "defaultTitle": "ZillionAI — Software, AI & Hardware Solutions",
+    "defaultDescription": "Custom software and business applications, AI applications with system integration and workflow automation, and business IT hardware procurement from ZillionAI.",
     "ogImage": "/images/og/default.png",
     "canonicalOrigin": "https://www.example.com"
   },
   "hero": {
-    "eyebrow": "GetAppGo AI Voice Agents",
+    "eyebrow": "ZillionAI AI Voice Agents",
     "headline": "AI agents that speak,\nunderstand, and take action.",
     "subhead": "Human-like AI voice agents that speak Arabic and English, qualify leads, book appointments, support customers, conduct interviews, and automate business conversations — 24/7.",
-    "primaryCta": { "label": "Explore AI Voice Agents", "href": "/#ai-voice-workforce" },
-    "secondaryCta": { "label": "Talk to an Expert", "action": "expert" },
+    "primaryCta": {
+      "label": "Explore AI Voice Agents",
+      "href": "/ai-voice-agents#ai-voice-workforce"
+    },
+    "secondaryCta": {
+      "label": "Talk to an Expert",
+      "action": "expert"
+    },
     "visual": "/images/graphics/hero-home.png",
-    "visualAlt": "GetAppGo product platforms shown as a cinematic software collage"
+    "visualAlt": "ZillionAI product platforms shown as a cinematic software collage"
   },
   "proof": [
-    { "value": 3, "suffix": "", "label": "AI platforms" },
-    { "value": 6, "suffix": "", "label": "Business systems" },
-    { "value": 1, "suffix": "", "label": "Custom development practice" }
+    {
+      "value": 3,
+      "suffix": "",
+      "label": "AI platforms"
+    },
+    {
+      "value": 6,
+      "suffix": "",
+      "label": "Business systems"
+    },
+    {
+      "value": 1,
+      "suffix": "",
+      "label": "Custom development practice"
+    }
   ],
   "contact": {
     "email": "hello@example.com",
@@ -37,10 +55,14 @@
     "whatsapp": {
       "e164": "+971000000000",
       "display": "+971 00 000 0000",
-      "defaultMessage": "Hi, I'm interested in GetAppGo. I'd like to talk to an expert."
+      "defaultMessage": "Hi, I'm interested in ZillionAI. I'd like to talk to an expert."
     },
     "locations": [
-      { "city": "Dubai", "country": "UAE", "label": "Regional office" }
+      {
+        "city": "Dubai",
+        "country": "UAE",
+        "label": "Regional office"
+      }
     ]
   },
   "demo": {
@@ -54,18 +76,47 @@
   },
   "about": {
     "headline": "Built for operators who need reliable software and intelligent platforms.",
-    "body": "GetAppGo designs enterprise applications and AI platforms as one portfolio. Teams can start with a system of record, add an AI platform, or commission a custom Oqtane application.",
+    "body": "ZillionAI designs enterprise applications and AI platforms as one portfolio. Teams can start with a system of record, add an AI platform, or commission a custom Oqtane application.",
     "values": [
-      { "title": "Operational clarity", "body": "Software should make complex work easier to see and run." },
-      { "title": "Measured automation", "body": "AI is introduced where it reduces load, not where it creates noise." },
-      { "title": "Enterprise trust", "body": "Security, access control, and support are part of the product, not extras." }
+      {
+        "title": "Operational clarity",
+        "body": "Software should make complex work easier to see and run."
+      },
+      {
+        "title": "Measured automation",
+        "body": "AI is introduced where it reduces load, not where it creates noise."
+      },
+      {
+        "title": "Enterprise trust",
+        "body": "Security, access control, and support are part of the product, not extras."
+      }
     ]
   },
   "process": [
-    { "step": 1, "title": "Discover", "body": "Understand current systems, workflows, and the outcome you need.", "icon": "/images/icons/process-1.svg" },
-    { "step": 2, "title": "Design", "body": "Map modules, integrations, and where AI platforms should assist.", "icon": "/images/icons/process-2.svg" },
-    { "step": 3, "title": "Implement", "body": "Configure, migrate, and train teams against real operating scenarios.", "icon": "/images/icons/process-3.svg" },
-    { "step": 4, "title": "Operate", "body": "Support, iterate, and expand to additional products over time.", "icon": "/images/icons/process-4.svg" }
+    {
+      "step": 1,
+      "title": "Discover",
+      "body": "Understand current systems, workflows, and the outcome you need.",
+      "icon": "/images/icons/process-1.svg"
+    },
+    {
+      "step": 2,
+      "title": "Design",
+      "body": "Map modules, integrations, and where AI platforms should assist.",
+      "icon": "/images/icons/process-2.svg"
+    },
+    {
+      "step": 3,
+      "title": "Implement",
+      "body": "Configure, migrate, and train teams against real operating scenarios.",
+      "icon": "/images/icons/process-3.svg"
+    },
+    {
+      "step": 4,
+      "title": "Operate",
+      "body": "Support, iterate, and expand to additional products over time.",
+      "icon": "/images/icons/process-4.svg"
+    }
   ],
   "social": {
     "linkedin": "https://www.linkedin.com/",

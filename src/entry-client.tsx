@@ -4,6 +4,8 @@ import { BrowserRouter } from "react-router";
 import { HelmetProvider } from "react-helmet-async";
 import { DemoProvider } from "@/components/contact/DemoProvider";
 import { App } from "@/App";
+import { LanguageProvider } from "@/i18n/LanguageProvider";
+import "@/fonts";
 import "@/styles/index.css";
 
 const root = document.getElementById("root");
@@ -13,9 +15,11 @@ const tree = (
   <StrictMode>
     <HelmetProvider>
       <BrowserRouter>
-        <DemoProvider>
-          <App />
-        </DemoProvider>
+        <LanguageProvider>
+          <DemoProvider>
+            <App />
+          </DemoProvider>
+        </LanguageProvider>
       </BrowserRouter>
     </HelmetProvider>
   </StrictMode>

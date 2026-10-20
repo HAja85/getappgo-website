@@ -1,7 +1,8 @@
 import { useSearchParams } from "react-router";
 import { Seo } from "@/components/seo/Seo";
 import { Container } from "@/components/ui/Container";
-import { SectionHeader } from "@/components/ui/SectionHeader";
+import { PageHero } from "@/components/inner/PageHero";
+import { useCopy } from "@/i18n/LanguageProvider";
 import { ProductGrid } from "@/components/products/ProductGrid";
 import type { ProductCategory } from "@/types";
 
@@ -13,21 +14,17 @@ export function ProductsPage() {
       ? (familyParam as ProductCategory)
       : "all";
 
+  const hero = useCopy().pageHeroes.products;
   return (
     <>
       <Seo
         path="/products"
         title="Products"
-        description="Explore GetAppGo business software and AI platforms."
+        description="Explore ZillionAI business software and AI platforms."
       />
-      <Container className="pb-20">
-        <SectionHeader
-          align="left"
-          eyebrow="Catalog"
-          title="Products"
-          description="Business systems and AI platforms in one portfolio. Filter by family, then open any product for details."
-        />
-        <div className="mt-10">
+      <PageHero badge={hero.badge} badgeIcon="grid" title={hero.title} accent={hero.accent} body={hero.body} image="/images/categories/business-software.png" compact />
+      <Container className="py-20">
+        <div>
           <ProductGrid key={initial} initialCategory={initial} />
         </div>
       </Container>

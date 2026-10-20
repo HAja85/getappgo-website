@@ -5,6 +5,8 @@ import { ActionCta } from "@/components/ui/ActionCta";
 import { Container } from "@/components/ui/Container";
 import { ProductCard } from "@/components/products/ProductCard";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { PageHero } from "@/components/inner/PageHero";
+import { CtaBand } from "@/components/inner/CtaBand";
 import {
   getFaqsByIds,
   getIndustriesForProduct,
@@ -47,34 +49,32 @@ export function ProductSections({ product }: { product: Product }) {
 
 function ProductHero({ product }: SectionProps) {
   return (
-    <section className="pb-16">
-      <Container>
-        <div className="grid items-center gap-10 lg:grid-cols-2">
-          <div>
-            <p className="text-xs tracking-[0.18em] text-accent-strong uppercase">{product.hero.eyebrow}</p>
-            <h1 className="font-display mt-4 text-4xl leading-tight font-semibold tracking-tight text-white md:text-5xl">
-              {product.hero.headline}
-            </h1>
-            <p className="mt-5 max-w-xl text-base leading-7 text-muted">{product.hero.subhead}</p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <ActionCta cta={product.cta.primary} productSlug={product.slug} />
-              {product.cta.secondary ? (
-                <ActionCta cta={product.cta.secondary} productSlug={product.slug} variant="secondary" />
-              ) : null}
-            </div>
-          </div>
-          <div className="visual-frame min-h-[22rem] overflow-hidden rounded-[32px]">
-            <img src={product.hero.visual} alt={product.hero.visualAlt} className="h-full w-full object-cover" />
-          </div>
+    <PageHero
+      badge={product.hero.eyebrow}
+      badgeIcon="layers"
+      title={product.hero.headline}
+      body={product.hero.subhead}
+      image={product.hero.visual}
+      actions={
+        <>
+          <ActionCta cta={product.cta.primary} productSlug={product.slug} />
+          {product.cta.secondary ? (
+            <ActionCta cta={product.cta.secondary} productSlug={product.slug} variant="secondary" className="border-white/70! bg-transparent! text-white! hover:bg-white/10!" />
+          ) : null}
+        </>
+      }
+      aside={
+        <div className="overflow-hidden rounded-3xl border-4 border-white/15 bg-[#0f1235] shadow-2xl">
+          <img src={product.hero.visual} alt={product.hero.visualAlt} width={1280} height={720} className="h-auto w-full max-w-xl object-cover" />
         </div>
-      </Container>
-    </section>
+      }
+    />
   );
 }
 
 function OverviewSection({ product, section }: SectionProps) {
   return (
-    <section className="py-12">
+    <section className="py-16 even:bg-slate-50">
       <Container>
         <SectionHeader
           align="left"
@@ -90,7 +90,7 @@ function BlocksSection({ product, section }: SectionProps) {
   const blocks = blocksFor(product, section.type);
   if (blocks.length === 0) return null;
   return (
-    <section className="py-12">
+    <section className="py-16 even:bg-slate-50">
       <Container>
         <SectionHeader title={section.title ?? labelFor(section.type)} />
         <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -115,7 +115,7 @@ function StepsSection({ product, section }: SectionProps) {
         : product.workflow ?? [];
   if (steps.length === 0) return null;
   return (
-    <section className="py-12">
+    <section className="py-16 even:bg-slate-50">
       <Container>
         <SectionHeader title={section.title ?? labelFor(section.type)} />
         <ol className="mt-10 grid gap-4 md:grid-cols-4">
@@ -135,7 +135,7 @@ function StepsSection({ product, section }: SectionProps) {
 function IntegrationsSection({ product }: SectionProps) {
   if (product.integrations.length === 0) return null;
   return (
-    <section className="py-12">
+    <section className="py-16 even:bg-slate-50">
       <Container>
         <SectionHeader title="Integrations" />
         <div className="mt-10 grid gap-4 md:grid-cols-2">
@@ -155,7 +155,7 @@ function ProductIndustriesSection({ product }: SectionProps) {
   const industries = getIndustriesForProduct(product);
   if (industries.length === 0) return null;
   return (
-    <section className="py-12">
+    <section className="py-16 even:bg-slate-50">
       <Container>
         <SectionHeader title="Industries" />
         <div className="mt-8 flex flex-wrap gap-3">
@@ -178,7 +178,7 @@ function FaqsSection({ product }: SectionProps) {
   const faqs = getFaqsByIds(product.faqIds);
   if (faqs.length === 0) return null;
   return (
-    <section className="py-12">
+    <section className="py-16 even:bg-slate-50">
       <Container>
         <SectionHeader title="Frequently asked questions" />
         <Accordion.Root type="single" collapsible className="mx-auto mt-10 max-w-3xl">
@@ -202,7 +202,7 @@ function RelatedSection({ product }: SectionProps) {
   const related = getRelatedProducts(product);
   if (related.length === 0) return null;
   return (
-    <section className="py-12">
+    <section className="py-16 even:bg-slate-50">
       <Container>
         <SectionHeader title="Related products" />
         <div className="mt-10 grid gap-5 md:grid-cols-3">
@@ -217,19 +217,11 @@ function RelatedSection({ product }: SectionProps) {
 
 function ProductCtaSection({ product }: SectionProps) {
   return (
-    <section className="py-12">
-      <Container>
-        <div className="rounded-[32px] border border-line bg-ink-elevated px-6 py-12 text-center">
-          <h2 className="font-display text-3xl text-white">See {product.name} in your operation.</h2>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <ActionCta cta={product.cta.primary} productSlug={product.slug} />
-            {product.cta.secondary ? (
-              <ActionCta cta={product.cta.secondary} productSlug={product.slug} variant="secondary" />
-            ) : null}
-          </div>
-        </div>
-      </Container>
-    </section>
+    <CtaBand
+      title={`See ${product.name} in your operation.`}
+      body="Request a demo or talk to an expert. WhatsApp and email stay available if you prefer a direct conversation."
+      productSlug={product.slug}
+    />
   );
 }
 

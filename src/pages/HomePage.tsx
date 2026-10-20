@@ -1,42 +1,29 @@
 import { Seo } from "@/components/seo/Seo";
-import { VoiceSceneProvider } from "@/components/ai-voice/voice-scene";
-import { VoiceHero } from "@/components/ai-voice/VoiceHero";
-import { AgentMarketplace } from "@/components/ai-voice/AgentMarketplace";
-import { AgentOutcomes } from "@/components/ai-voice/AgentOutcomes";
-import { AgentCollaboration } from "@/components/ai-voice/AgentCollaboration";
-import { BusinessActionRail } from "@/components/ai-voice/BusinessActionRail";
-import { PlatformSplit } from "@/components/sections/PlatformSplit";
-import { ProductCatalog } from "@/components/sections/ProductCatalog";
-import { IndustriesRail } from "@/components/sections/IndustriesRail";
-import { SolutionsPreview } from "@/components/sections/SolutionsPreview";
-import { DeliveryProcess } from "@/components/sections/DeliveryProcess";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { FinalCta } from "@/components/sections/FinalCta";
-import { getSite } from "@/lib/content/repository";
+import { HomeHero } from "@/components/home/HomeHero";
+import { WhatWeDo } from "@/components/home/WhatWeDo";
+import { SoftwareCarousel } from "@/components/home/SoftwareCarousel";
+import { AutomationSimulator } from "@/components/home/AutomationSimulator";
+import { HardwareSourcing } from "@/components/home/HardwareSourcing";
+import { PoweredByAi } from "@/components/home/PoweredByAi";
+import { useCopy } from "@/i18n/LanguageProvider";
 
+/**
+ * Section order follows the reference homepage:
+ * hero → what we do (+ marquee, trust card) → core service carousel → live simulator →
+ * direct sourcing tiles → powered-by-AI horizontal track → footer.
+ * (Awards and Insights were removed by request.)
+ */
 export function HomePage() {
-  const site = getSite();
+  const copy = useCopy();
   return (
     <>
-      <Seo path="/" description={site.seo.defaultDescription} />
-      <VoiceSceneProvider>
-        <VoiceHero />
-        <AgentMarketplace />
-        <AgentOutcomes />
-        <AgentCollaboration />
-      </VoiceSceneProvider>
-      <BusinessActionRail />
-      <PlatformSplit />
-      <ProductCatalog
-        eyebrow="Business applications"
-        title="Systems the agents can update."
-        description="CRM, facilities, helpdesk, commerce, and custom applications remain in the same catalog."
-      />
-      <SolutionsPreview />
-      <IndustriesRail />
-      <DeliveryProcess />
-      <Testimonials />
-      <FinalCta />
+      <Seo path="/" title={undefined} description={copy.meta.homeDescription} />
+      <HomeHero />
+      <WhatWeDo />
+      <SoftwareCarousel />
+      <AutomationSimulator />
+      <HardwareSourcing />
+      <PoweredByAi />
     </>
   );
 }

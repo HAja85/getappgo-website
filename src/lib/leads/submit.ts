@@ -1,3 +1,4 @@
+import { serviceName } from "@/lib/services";
 import { getAiAgentBySlug, getProductBySlug, getSite } from "@/lib/content/repository";
 import type { DemoRequest } from "@/types";
 
@@ -5,7 +6,7 @@ export function buildMailto(request: DemoRequest): string {
   const site = getSite();
   const product = getProductBySlug(request.productSlug);
   const agent = getAiAgentBySlug(request.productSlug);
-  const offering = product?.name ?? agent?.name ?? request.productSlug;
+  const offering = product?.name ?? agent?.name ?? serviceName(request.productSlug) ?? request.productSlug;
   const intentLabel = request.intent === "expert" ? "Talk to an expert" : "Request a demo";
   const subject = `${intentLabel}: ${offering}`;
   const body = [

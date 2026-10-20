@@ -1,3 +1,4 @@
+import { serviceName } from "@/lib/services";
 import { getAiAgentBySlug, getProductBySlug, getSite } from "@/lib/content/repository";
 
 function digitsOnly(value: string): string {
@@ -8,7 +9,7 @@ export function buildWhatsAppUrl(productSlug?: string): string {
   const site = getSite();
   const product = productSlug ? getProductBySlug(productSlug) : undefined;
   const agent = productSlug ? getAiAgentBySlug(productSlug) : undefined;
-  const offering = product?.name ?? agent?.name;
+  const offering = product?.name ?? agent?.name ?? serviceName(productSlug);
   const message = offering
     ? `Hi, I'm interested in ${offering}. I'd like to request a demo.`
     : site.contact.whatsapp.defaultMessage;

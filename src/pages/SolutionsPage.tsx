@@ -1,27 +1,24 @@
 import { Link } from "react-router";
 import { Seo } from "@/components/seo/Seo";
 import { Container } from "@/components/ui/Container";
-import { SectionHeader } from "@/components/ui/SectionHeader";
+import { PageHero } from "@/components/inner/PageHero";
+import { useCopy } from "@/i18n/LanguageProvider";
 import { getSolutions } from "@/lib/content/repository";
 
 export function SolutionsPage() {
   const solutions = getSolutions();
+  const hero = useCopy().pageHeroes.solutions;
   return (
     <>
-      <Seo path="/solutions" title="Solutions" description="Outcome-led ways to combine GetAppGo products." />
-      <Container className="pb-20">
-        <SectionHeader
-          align="left"
-          eyebrow="Solutions"
-          title="Start from the outcome."
-          description="Each solution is a lens over the same product catalog — not a second set of applications."
-        />
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+      <Seo path="/solutions" title="Solutions" description="Outcome-led ways to combine ZillionAI products." />
+      <PageHero badge={hero.badge} badgeIcon="zap" title={hero.title} accent={hero.accent} body={hero.body} image="/images/solutions/intelligent-operations.png" compact />
+      <Container className="py-20">
+        <div className="grid gap-5 md:grid-cols-3">
           {solutions.map((solution) => (
             <Link
               key={solution.slug}
               to={`/solutions/${solution.slug}`}
-              className="overflow-hidden rounded-[28px] border border-line bg-ink-soft hover:border-accent/50"
+              className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-shadow hover:shadow-xl"
             >
               {solution.visual ? (
                 <div className="visual-frame h-40 overflow-hidden">
@@ -29,7 +26,7 @@ export function SolutionsPage() {
                 </div>
               ) : null}
               <div className="p-6">
-                <h2 className="font-display text-2xl text-mist">{solution.name}</h2>
+                <h2 className="font-heading text-2xl font-bold text-slate-900">{solution.name}</h2>
                 <p className="mt-3 text-sm leading-6 text-muted">{solution.tagline}</p>
               </div>
             </Link>

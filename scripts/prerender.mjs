@@ -39,7 +39,7 @@ for (const url of routes) {
   const extracted = extractLeadingHeadTags(rendered.html);
   const head = [rendered.head, extracted.head].filter(Boolean).join("\n");
   const page = template
-    .replace("<title>GetAppGo</title>", "")
+    .replace("<title>ZillionAI</title>", "")
     .replace("<!--app-head-->", head)
     .replace("<!--app-html-->", extracted.html);
   const outPath =

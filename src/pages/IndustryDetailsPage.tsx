@@ -1,5 +1,6 @@
 import { Link, Navigate, useParams } from "react-router";
 import { Seo } from "@/components/seo/Seo";
+import { PageHero } from "@/components/inner/PageHero";
 import { Container } from "@/components/ui/Container";
 import { ProductCard } from "@/components/products/ProductCard";
 import { FinalCta } from "@/components/sections/FinalCta";
@@ -14,20 +15,15 @@ export function IndustryDetailsPage() {
   return (
     <>
       <Seo path={`/industries/${industry.slug}`} title={industry.name} description={industry.description} image={industry.heroVisual} />
-      <Container className="pb-12">
-        <p className="text-xs tracking-[0.18em] text-accent-strong uppercase">Industry</p>
-        <h1 className="font-display mt-4 text-4xl text-white">{industry.name}</h1>
-        <p className="mt-4 max-w-2xl text-muted">{industry.description}</p>
-        <div className="visual-frame mt-8 aspect-video max-w-3xl overflow-hidden rounded-[28px]">
-          <img src={industry.heroVisual} alt="" width={1200} height={675} className="h-full w-full object-cover object-center" />
-        </div>
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+      <PageHero badge="Industry" badgeIcon="building" title={industry.name} body={industry.description} image={industry.heroVisual} compact />
+      <Container className="py-20">
+        <div className="grid gap-5 md:grid-cols-3">
           {products.map((product) => (
             <ProductCard key={product.slug} product={product} />
           ))}
         </div>
         <p className="mt-8 text-sm">
-          <Link to="/industries" className="text-accent-strong">
+          <Link to="/industries" className="font-semibold text-[#182793]">
             All industries
           </Link>
         </p>

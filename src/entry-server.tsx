@@ -3,6 +3,7 @@ import { StaticRouter } from "react-router";
 import { HelmetProvider, type HelmetServerState } from "react-helmet-async";
 import { DemoProvider } from "@/components/contact/DemoProvider";
 import { App } from "@/App";
+import { LanguageProvider } from "@/i18n/LanguageProvider";
 import { getPrerenderRoutes } from "@/lib/seo/routes";
 
 export type RenderResult = {
@@ -15,9 +16,11 @@ export function render(url: string): RenderResult {
   const html = renderToString(
     <HelmetProvider context={helmetContext}>
       <StaticRouter location={url}>
-        <DemoProvider>
-          <App />
-        </DemoProvider>
+        <LanguageProvider>
+          <DemoProvider>
+            <App />
+          </DemoProvider>
+        </LanguageProvider>
       </StaticRouter>
     </HelmetProvider>,
   );

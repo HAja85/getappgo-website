@@ -8,6 +8,7 @@ import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import { Button } from "@/components/ui/Button";
 import { useDemo } from "./DemoProvider";
 import type { DemoIntent } from "@/types";
+import { serviceOptions } from "@/lib/services";
 
 const emptyForm = {
   name: "",
@@ -70,8 +71,8 @@ export function DemoDialog() {
   return (
     <Dialog.Root open={open} onOpenChange={(next) => !next && closeDemo()}>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 z-[80] bg-black/70" />
-        <Dialog.Content className="fixed top-[8vh] left-1/2 z-[90] max-h-[84vh] w-[calc(100%-1.5rem)] max-w-lg -translate-x-1/2 overflow-auto rounded-[28px] border border-line bg-ink-soft p-6 shadow-[0_24px_80px_rgba(0,0,0,0.45)] md:p-8">
+        <Dialog.Overlay className="fixed inset-0 z-[80] bg-slate-950/60 backdrop-blur-sm" />
+        <Dialog.Content className="fixed top-[8vh] left-1/2 z-[90] max-h-[84vh] w-[calc(100%-1.5rem)] max-w-lg -translate-x-1/2 overflow-auto rounded-[28px] border border-line bg-ink-soft p-6 shadow-[0_24px_80px_rgba(24,39,147,0.25)] md:p-8">
           <Dialog.Title className="font-display text-2xl font-semibold text-mist">{copy.title}</Dialog.Title>
           <Dialog.Description className="mt-2 text-sm leading-6 text-muted">
             {copy.subtitle}
@@ -125,14 +126,24 @@ export function DemoDialog() {
                     <Select.Value placeholder="Select a product" />
                   </Select.Trigger>
                   <Select.Portal>
-                    <Select.Content className="z-[100] overflow-hidden rounded-2xl border border-line bg-ink-elevated">
+                    <Select.Content position="popper" sideOffset={6} className="z-[100] max-h-[50vh] overflow-auto rounded-2xl border border-line bg-ink-elevated">
                       <Select.Viewport className="p-2">
-                        <p className="px-3 py-2 text-[11px] tracking-[0.14em] text-muted uppercase">AI Voice Agents</p>
+                        <p className="px-3 py-2 text-[11px] tracking-[0.14em] text-muted uppercase">Service lines</p>
+                        {serviceOptions.map((option) => (
+                          <Select.Item
+                            key={option.slug}
+                            value={option.slug}
+                            className="cursor-pointer rounded-xl px-3 py-2 text-sm text-mist outline-none data-[highlighted]:bg-accent/10"
+                          >
+                            <Select.ItemText>{option.name}</Select.ItemText>
+                          </Select.Item>
+                        ))}
+                        <p className="mt-2 px-3 py-2 text-[11px] tracking-[0.14em] text-muted uppercase">AI Voice Agents</p>
                         {agents.map((agent) => (
                           <Select.Item
                             key={agent.slug}
                             value={agent.slug}
-                            className="cursor-pointer rounded-xl px-3 py-2 text-sm text-mist outline-none data-[highlighted]:bg-accent/20"
+                            className="cursor-pointer rounded-xl px-3 py-2 text-sm text-mist outline-none data-[highlighted]:bg-accent/10"
                           >
                             <Select.ItemText>{agent.name}</Select.ItemText>
                           </Select.Item>
@@ -142,7 +153,7 @@ export function DemoDialog() {
                           <Select.Item
                             key={product.slug}
                             value={product.slug}
-                            className="cursor-pointer rounded-xl px-3 py-2 text-sm text-mist outline-none data-[highlighted]:bg-accent/20"
+                            className="cursor-pointer rounded-xl px-3 py-2 text-sm text-mist outline-none data-[highlighted]:bg-accent/10"
                           >
                             <Select.ItemText>{product.name}</Select.ItemText>
                           </Select.Item>
@@ -160,7 +171,7 @@ export function DemoDialog() {
                 />
               </Field>
               {status === "error" ? (
-                <p className="text-sm text-red-300">Unable to send your request. Please try WhatsApp or email.</p>
+                <p className="text-sm text-red-600">Unable to send your request. Please try WhatsApp or email.</p>
               ) : null}
               <div className="mt-2 flex flex-col gap-3 sm:flex-row">
                 <Button type="submit" disabled={status === "submitting"}>
@@ -202,7 +213,7 @@ function Field({
         {children}
       </div>
       {error ? (
-        <span className="text-xs text-red-300" role="alert">
+        <span className="text-xs text-red-600" role="alert">
           {error}
         </span>
       ) : null}
