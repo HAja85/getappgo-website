@@ -28,7 +28,7 @@ export function HomeHero() {
             <span className="h-2 w-2 rounded-full bg-[#4ade80]" />
             {hero.badge}
           </p>
-          <h1 className="heading mt-5 max-w-[14ch] text-white">{hero.title}</h1>
+          <h1 className="heading mt-5 max-w-[11ch] text-white rtl:max-w-[640px]">{hero.title}</h1>
           <div className="mt-8 flex flex-col items-start gap-5 lg:flex-row lg:items-center lg:gap-8">
             <button
               type="button"
@@ -44,7 +44,7 @@ export function HomeHero() {
 
         <dl className="grid max-w-[58%] grid-cols-2 gap-x-6 gap-y-4 pb-8 sm:max-w-none sm:gap-8 lg:grid-cols-4 lg:pb-9">
           {hero.stats.map((stat) => (
-            <div key={stat.label} className="flex flex-col-reverse">
+            <div key={stat.label} className="flex flex-col-reverse justify-end">
               <dt className="mt-1 text-[11px] font-bold tracking-[0.05em] text-white/70 uppercase sm:mt-3 sm:text-sm">{stat.label}</dt>
               <dd
                 dir="ltr"
@@ -70,7 +70,7 @@ export function HomeHero() {
             className="-mt-12 h-16 w-16 shrink-0 sm:-mt-16 sm:h-24 sm:w-24 xl:-mt-20 xl:h-[124px] xl:w-[124px]"
           />
           <div className="pb-1">
-            <p className="text-[10px] font-bold tracking-widest uppercase sm:text-sm">{copy.hero.agent.title}</p>
+            <p className="text-[10px] font-bold tracking-wide uppercase sm:text-sm sm:tracking-widest">{copy.hero.agent.title}</p>
             <p className="mt-0.5 hidden text-xs leading-4 text-white/85 sm:block">{copy.hero.agent.body}</p>
           </div>
         </div>

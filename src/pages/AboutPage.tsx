@@ -11,7 +11,7 @@ export function AboutPage() {
     <>
       <Seo path="/about" title="About" description={about.seoDescription} />
       <section className="relative">
-        <PageHero badge={about.hero.badge} badgeIcon="building" title={about.hero.title} accent={about.hero.accent} body={about.hero.body} compact />
+        <PageHero badge={about.hero.badge} badgeIcon="building" title={about.hero.title} accent={about.hero.accent} body={about.hero.body} compact center />
       </section>
 
       <section className="relative z-[1] bg-white pb-20">

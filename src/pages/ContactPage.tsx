@@ -1,4 +1,4 @@
-import { useState, type FormEvent, type ReactNode } from "react";
+import { useEffect, useState, type FormEvent, type ReactNode } from "react";
 import { useSearchParams } from "react-router";
 import { Seo } from "@/components/seo/Seo";
 import { intentFromSearch } from "@/components/contact/DemoDialog";
@@ -32,6 +32,12 @@ export function ContactPage() {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+
+  // Pre-rendered HTML has no query string, so apply ?product= after hydration.
+  const productParam = params.get("product");
+  useEffect(() => {
+    if (productParam) setValues((current) => ({ ...current, productSlug: productParam }));
+  }, [productParam]);
 
   const set = (key: keyof typeof values) => (value: string) => setValues((current) => ({ ...current, [key]: value }));
 

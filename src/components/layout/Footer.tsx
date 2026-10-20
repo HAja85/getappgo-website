@@ -46,7 +46,7 @@ export function Footer() {
         <p
           aria-hidden="true"
           dir="ltr"
-          className="pointer-events-none absolute -bottom-[0.28em] left-1/2 -translate-x-1/2 font-heading text-[150px] leading-none font-bold whitespace-nowrap text-black/5 select-none sm:text-[240px] lg:text-[416px]"
+          className="pointer-events-none absolute -bottom-[0.42em] left-1/2 -translate-x-1/2 font-heading text-[150px] leading-none font-bold whitespace-nowrap text-black/[0.045] select-none sm:text-[240px] lg:text-[416px]"
         >
           {copy.footer.watermark}
         </p>

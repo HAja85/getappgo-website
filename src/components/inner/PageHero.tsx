@@ -12,10 +12,11 @@ type PageHeroProps = {
   actions?: ReactNode;
   aside?: ReactNode;
   compact?: boolean;
+  center?: boolean;
 };
 
 /** Full-bleed dark hero used by every inner page (reference inner-page template). */
-export function PageHero({ badge, badgeIcon = "sparkles", title, accent, body, image = "/images/graphics/hero-home.png", actions, aside, compact }: PageHeroProps) {
+export function PageHero({ badge, badgeIcon = "sparkles", title, accent, body, image = "/images/graphics/hero-home.png", actions, aside, compact, center }: PageHeroProps) {
   return (
     <section
       className={cn(
@@ -27,7 +28,7 @@ export function PageHero({ badge, badgeIcon = "sparkles", title, accent, body, i
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-[#020B50]/95 via-[#0b1677]/80 to-[#2b0f4a]/60 rtl:bg-gradient-to-l" />
       <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:48px_48px]" />
       <div className={cn("cs-container relative grid items-center gap-10", aside ? "lg:grid-cols-[1.25fr_1fr]" : "")}>
-        <div>
+        <div className={cn(center && "mx-auto max-w-4xl text-center")}>
           <p className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold backdrop-blur-sm">
             <Icon name={badgeIcon} size={14} />
             {badge}
@@ -41,8 +42,8 @@ export function PageHero({ badge, badgeIcon = "sparkles", title, accent, body, i
               </>
             ) : null}
           </h1>
-          {body ? <p className="mt-6 max-w-2xl text-sm leading-6 text-white/85 md:text-base">{body}</p> : null}
-          {actions ? <div className="mt-8 flex flex-wrap gap-3">{actions}</div> : null}
+          {body ? <p className={cn("mt-6 max-w-2xl text-sm leading-6 text-white/85 md:text-base", center && "mx-auto")}>{body}</p> : null}
+          {actions ? <div className={cn("mt-8 flex flex-wrap gap-3", center && "justify-center")}>{actions}</div> : null}
         </div>
         {aside ? <div className="lg:justify-self-end">{aside}</div> : null}
       </div>

@@ -93,6 +93,8 @@ export function PoweredByAi() {
   return (
     <section className="relative bg-[#F0F2F8]" aria-labelledby="powered-by-ai">
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="blob top-[120px] left-[2%] h-[420px] w-[560px] bg-[#9FA8DA]/60" style={{ filter: "blur(120px)" }} />
+        <div className="blob top-[260px] right-[-4%] h-[420px] w-[560px] bg-[#D8A1C4]/60" style={{ filter: "blur(120px)" }} />
         <div className="blob top-[18%] left-[5%] h-[560px] w-[620px] bg-[#9FA8DA]/70" style={{ filter: "blur(120px)" }} />
         <div className="blob top-[30%] right-[0%] h-[520px] w-[620px] bg-[#D8A1C4]/70" style={{ filter: "blur(120px)" }} />
         <div className="blob bottom-[5%] left-[30%] h-[400px] w-[500px] bg-[#c7d2fe]/60" style={{ filter: "blur(120px)" }} />

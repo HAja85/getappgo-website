@@ -149,7 +149,9 @@ export function FloatingNav() {
           </div>
 
           <div className="flex items-center gap-2">
-            <LanguageSwitch light={light} className="hidden sm:inline-flex" />
+            <span className="hidden sm:block">
+              <LanguageSwitch light={light} />
+            </span>
             <button
               type="button"
               className={cn("focus-ring rounded-full p-2 transition-colors xl:hidden", light ? "text-[#1F1F1F] hover:bg-black/5" : "text-white hover:bg-white/20")}
