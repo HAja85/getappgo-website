@@ -393,5 +393,5 @@ export const demoRequestSchema = z.object({
   phone: z.string().min(6, "Please enter a phone or WhatsApp number."),
   productSlug: z.string().min(1, "Please select a product."),
   message: z.string().min(8, "Please add a short message."),
-  intent: z.enum(["demo", "expert"]),
+  intent: z.enum(["demo", "expert", "partner", "investor"]),
 });

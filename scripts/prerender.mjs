@@ -39,7 +39,7 @@ for (const url of routes) {
   const extracted = extractLeadingHeadTags(rendered.html);
   const head = [rendered.head, extracted.head].filter(Boolean).join("\n");
   const page = template
-    .replace("<title>ZillionAI</title>", "")
+    .replace("<title>ZillionxAI</title>", "")
     .replace("<!--app-head-->", head)
     .replace("<!--app-html-->", extracted.html);
   const outPath =
@@ -49,7 +49,7 @@ for (const url of routes) {
   console.log(`prerender ${url}`);
 }
 
-const origin = "https://www.example.com";
+const origin = "https://zillionaiuae.vercel.app";
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${routes.map((url) => `  <url><loc>${origin}${url}</loc></url>`).join("\n")}

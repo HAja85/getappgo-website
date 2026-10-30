@@ -8,7 +8,6 @@ const serviceLinks = [
   "/services/software-services",
   "/services/ai-integration-automation",
   "/services/ai-integration-automation#integration",
-  "/services/hardware-procurement",
 ];
 
 export function WhatWeDo() {
@@ -28,17 +27,15 @@ export function WhatWeDo() {
           <span aria-hidden="true" className="h-px flex-1 bg-slate-200" />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           {cards.map((card, index) => (
             <Link
               key={card.title}
               to={serviceLinks[index]}
               className={cn(
                 "group focus-ring relative -mt-px -ms-px border border-gray-200 bg-white p-8 transition-colors duration-300 hover:bg-violet-50 lg:p-10",
-                index === 0 && "rounded-t-xl sm:rounded-none sm:rounded-ss-xl lg:rounded-s-xl",
-                index === cards.length - 1 && "rounded-b-xl sm:rounded-none sm:rounded-ee-xl lg:rounded-e-xl",
-                index === 1 && "sm:rounded-se-xl lg:rounded-none",
-                index === 2 && "sm:rounded-es-xl lg:rounded-none",
+                index === 0 && "rounded-t-xl md:rounded-s-xl md:rounded-e-none",
+                index === cards.length - 1 && "rounded-b-xl md:rounded-e-xl md:rounded-s-none",
               )}
             >
               <span aria-hidden="true" className="absolute -top-px start-0 h-[3px] w-14 bg-gradient-to-r from-[#505FD0] to-[#8B5CF6]" />
@@ -71,7 +68,7 @@ export function WhatWeDo() {
 
         <div className="mt-16 flex flex-col items-center gap-8 rounded-2xl bg-gray-100/70 p-8 text-center shadow-sm md:mt-20 md:flex-row md:p-12 md:text-start">
           <div className="flex w-full justify-center md:w-[30%]">
-            <img src="/images/zillion/mark.svg" alt="" width={160} height={160} className="h-28 w-28 md:h-40 md:w-40" />
+            <img src="/images/zillion/mark.svg" alt="" width={180} height={96} className="h-16 w-auto md:h-20" />
           </div>
           <div className="md:w-[70%]">
             <p className="inline-flex items-center gap-2 text-sm font-semibold text-green-700">

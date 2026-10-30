@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /*
- * ZillionAI design tokens.
+ * ZillionxAI design tokens.
  * Values mirror the reference system documented in docs/connectsaudi-analysis (§3):
  * light theme, navy/plum/orange brand gradients, Oxanium body + Sansation headings.
  * The legacy semantic tokens (ink, mist, muted, line, accent) are remapped to the

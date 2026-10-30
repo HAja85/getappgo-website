@@ -15,13 +15,24 @@ import { ServicePage } from "@/pages/ServicePage";
 import { VoiceAgentsPage } from "@/pages/VoiceAgentsPage";
 import { PackagesPage } from "@/pages/PackagesPage";
 import { LeadershipPage } from "@/pages/LeadershipPage";
+import { PlatformPage } from "@/pages/PlatformPage";
+import { CompanyStoryPage } from "@/pages/CompanyStoryPage";
+import { OfficePage } from "@/pages/OfficePage";
+import { PartnerPage } from "@/pages/PartnerPage";
+import { InvestorPage } from "@/pages/InvestorPage";
 
 export function App() {
   return (
     <Routes>
       <Route element={<AppShell />}>
         <Route path="/" element={<HomePage />} />
+        <Route path="/platform" element={<PlatformPage />} />
+        <Route path="/company/story" element={<CompanyStoryPage />} />
+        <Route path="/company/office" element={<OfficePage />} />
+        <Route path="/company/partner" element={<PartnerPage />} />
+        <Route path="/company/investor" element={<InvestorPage />} />
         <Route path="/services" element={<Navigate to="/services/software-services" replace />} />
+        <Route path="/services/hardware-procurement" element={<Navigate to="/services/software-services" replace />} />
         <Route path="/services/:slug" element={<ServicePage />} />
         <Route path="/ai-voice-agents" element={<VoiceAgentsPage />} />
         <Route path="/packages" element={<PackagesPage />} />

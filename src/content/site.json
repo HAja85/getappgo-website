@@ -1,9 +1,9 @@
 {
   "brand": {
-    "name": "ZillionAI",
-    "legalName": "ZillionAI",
-    "tagline": "Software, AI and business IT hardware, delivered by one team.",
-    "description": "ZillionAI builds custom software and business applications, delivers AI applications, integration and automation, and sources, buys and sells business IT hardware.",
+    "name": "ZillionxAI",
+    "legalName": "ZillionxAI",
+    "tagline": "SaaS, Automation, AI",
+    "description": "ZillionxAI delivers Digital Transformation-as-a-service, combining SaaS, AI, and automation with implementation across systems, processes, and tools.",
     "logo": {
       "mark": "/images/zillion/mark.svg",
       "wordmark": "/images/zillion/mark.svg",
@@ -11,14 +11,14 @@
     }
   },
   "seo": {
-    "titleTemplate": "%s · ZillionAI",
-    "defaultTitle": "ZillionAI — Software, AI & Hardware Solutions",
-    "defaultDescription": "Custom software and business applications, AI applications with system integration and workflow automation, and business IT hardware procurement from ZillionAI.",
+    "titleTemplate": "%s · ZillionxAI",
+    "defaultTitle": "ZillionxAI — Digital Transformation as a Service",
+    "defaultDescription": "ZillionxAI delivers Digital Transformation-as-a-service: SaaS, AI, and automation tailored to business operations on-premises and in the cloud.",
     "ogImage": "/images/og/default.png",
-    "canonicalOrigin": "https://www.example.com"
+    "canonicalOrigin": "https://zillionaiuae.vercel.app"
   },
   "hero": {
-    "eyebrow": "ZillionAI AI Voice Agents",
+    "eyebrow": "ZillionxAI AI Voice Agents",
     "headline": "AI agents that speak,\nunderstand, and take action.",
     "subhead": "Human-like AI voice agents that speak Arabic and English, qualify leads, book appointments, support customers, conduct interviews, and automate business conversations — 24/7.",
     "primaryCta": {
@@ -30,7 +30,7 @@
       "action": "expert"
     },
     "visual": "/images/graphics/hero-home.png",
-    "visualAlt": "ZillionAI product platforms shown as a cinematic software collage"
+    "visualAlt": "ZillionxAI product platforms shown as a cinematic software collage"
   },
   "proof": [
     {
@@ -50,18 +50,18 @@
     }
   ],
   "contact": {
-    "email": "hello@example.com",
-    "phone": "+971000000000",
+    "email": "services@zillionxai.com",
+    "phone": "+971 505774792",
     "whatsapp": {
-      "e164": "+971000000000",
-      "display": "+971 00 000 0000",
-      "defaultMessage": "Hi, I'm interested in ZillionAI. I'd like to talk to an expert."
+      "e164": "+971505774792",
+      "display": "+971 505774792",
+      "defaultMessage": "Hi, I'm interested in ZillionxAI. I'd like to talk to an expert."
     },
     "locations": [
       {
         "city": "Dubai",
         "country": "UAE",
-        "label": "Regional office"
+        "label": "Sheikh Zayed Road"
       }
     ]
   },
@@ -72,11 +72,11 @@
     "expertSubtitle": "Share a little context and we'll connect you with a specialist — by email or WhatsApp.",
     "successTitle": "Request received",
     "successBody": "Thank you. A specialist will contact you shortly.",
-    "submitMode": "mailto"
+    "submitMode": "endpoint"
   },
   "about": {
     "headline": "Built for operators who need reliable software and intelligent platforms.",
-    "body": "ZillionAI designs enterprise applications and AI platforms as one portfolio. Teams can start with a system of record, add an AI platform, or commission a custom Oqtane application.",
+    "body": "ZillionxAI designs enterprise applications and AI platforms as one portfolio. Teams can start with a system of record, add an AI platform, or commission a custom Oqtane application.",
     "values": [
       {
         "title": "Operational clarity",

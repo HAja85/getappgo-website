@@ -32,6 +32,7 @@ export function ContactPage() {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   // Pre-rendered HTML has no query string, so apply ?product= after hydration.
   const productParam = params.get("product");
@@ -58,7 +59,8 @@ export function ContactPage() {
     try {
       await submitDemoRequest(parsed.data);
       setStatus("success");
-    } catch {
+    } catch (error) {
+      setErrorMessage(error instanceof Error ? error.message : form.error);
       setStatus("error");
     }
   }
@@ -167,7 +169,7 @@ export function ContactPage() {
                 </Field>
                 {status === "error" ? (
                   <p role="alert" className="text-sm text-red-600 md:col-span-2">
-                    {form.error}
+                    {errorMessage || form.error}
                   </p>
                 ) : null}
                 <div className="md:col-span-2">

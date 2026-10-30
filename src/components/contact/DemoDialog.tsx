@@ -6,6 +6,7 @@ import { getAiAgents, getProducts, getSite } from "@/lib/content/repository";
 import { submitDemoRequest } from "@/lib/leads/submit";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import { Button } from "@/components/ui/Button";
+import { useCopy } from "@/i18n/LanguageProvider";
 import { useDemo } from "./DemoProvider";
 import type { DemoIntent } from "@/types";
 import { serviceOptions } from "@/lib/services";
@@ -21,30 +22,34 @@ const emptyForm = {
 
 export function DemoDialog() {
   const site = getSite();
+  const zillion = useCopy();
   const products = getProducts();
   const agents = getAiAgents();
   const { open, closeDemo, productSlug, intent } = useDemo();
   const [form, setForm] = useState(emptyForm);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+  const fixedProduct = intent === "partner" || intent === "investor";
 
   useEffect(() => {
     if (!open) return;
     setStatus("idle");
     setErrors({});
+    setErrorMessage("");
+    const preset = intent === "partner" ? "partner" : intent === "investor" ? "investor" : productSlug ?? "";
     setForm({
       ...emptyForm,
-      productSlug: productSlug ?? "",
+      productSlug: preset,
     });
-  }, [open, productSlug]);
+  }, [open, productSlug, intent]);
 
-  const copy = useMemo(
-    () =>
-      intent === "expert"
-        ? { title: site.demo.expertTitle, subtitle: site.demo.expertSubtitle }
-        : { title: site.demo.title, subtitle: site.demo.subtitle },
-    [intent, site.demo],
-  );
+  const copy = useMemo(() => {
+    if (intent === "partner") return { title: zillion.partnerPage.dialogTitle, subtitle: zillion.partnerPage.dialogSubtitle };
+    if (intent === "investor") return { title: zillion.investorPage.dialogTitle, subtitle: zillion.investorPage.dialogSubtitle };
+    if (intent === "expert") return { title: site.demo.expertTitle, subtitle: site.demo.expertSubtitle };
+    return { title: site.demo.title, subtitle: site.demo.subtitle };
+  }, [intent, site.demo, zillion.investorPage.dialogSubtitle, zillion.investorPage.dialogTitle, zillion.partnerPage.dialogSubtitle, zillion.partnerPage.dialogTitle]);
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -63,7 +68,8 @@ export function DemoDialog() {
     try {
       await submitDemoRequest(parsed.data);
       setStatus("success");
-    } catch {
+    } catch (error) {
+      setErrorMessage(error instanceof Error ? error.message : "Unable to send your request right now.");
       setStatus("error");
     }
   }
@@ -117,7 +123,7 @@ export function DemoDialog() {
                   autoComplete="tel"
                 />
               </Field>
-              <Field label="Product" error={errors.productSlug}>
+              {fixedProduct ? null : <Field label="Product" error={errors.productSlug}>
                 <Select.Root
                   value={form.productSlug || undefined}
                   onValueChange={(value) => setForm((current) => ({ ...current, productSlug: value }))}
@@ -162,7 +168,7 @@ export function DemoDialog() {
                     </Select.Content>
                   </Select.Portal>
                 </Select.Root>
-              </Field>
+              </Field>}
               <Field label="Message" error={errors.message}>
                 <textarea
                   rows={4}
@@ -171,7 +177,7 @@ export function DemoDialog() {
                 />
               </Field>
               {status === "error" ? (
-                <p className="text-sm text-red-600">Unable to send your request. Please try WhatsApp or email.</p>
+                <p className="text-sm text-red-600" role="alert">{errorMessage}</p>
               ) : null}
               <div className="mt-2 flex flex-col gap-3 sm:flex-row">
                 <Button type="submit" disabled={status === "submitting"}>
@@ -222,5 +228,6 @@ function Field({
 }
 
 export function intentFromSearch(value: string | null): DemoIntent {
-  return value === "expert" ? "expert" : "demo";
+  if (value === "expert" || value === "partner" || value === "investor") return value;
+  return "demo";
 }

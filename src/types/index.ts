@@ -2,7 +2,7 @@ export type ProductType = "business-software" | "ai-agent";
 export type ProductCategory = "business-software" | "ai-products";
 export type ProductStatus = "active" | "coming-soon";
 export type CtaAction = "demo" | "expert" | "whatsapp" | "route";
-export type DemoIntent = "demo" | "expert";
+export type DemoIntent = "demo" | "expert" | "partner" | "investor";
 export type SubmitMode = "mailto" | "endpoint";
 
 export interface Seo {
