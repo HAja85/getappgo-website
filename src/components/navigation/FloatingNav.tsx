@@ -53,6 +53,9 @@ export function FloatingNav() {
   const current = activeKey(location.pathname);
   const activeIndex = items.findIndex((item) => item.key === current);
   const line = copy.lines.find((entry) => entry.id === lineId) ?? copy.lines[0];
+  const companyGroupHrefs = new Set(["/company/story", "/company/office", "/leadership"]);
+  const companyGroup = copy.companyMenu.filter((item) => companyGroupHrefs.has(item.href));
+  const companyLinks = copy.companyMenu.filter((item) => !companyGroupHrefs.has(item.href));
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -237,21 +240,41 @@ export function FloatingNav() {
                 "radial-gradient(60% 80% at 15% 70%, rgba(209,250,229,0.75), transparent 70%), linear-gradient(110deg, #ffffff 0%, #f1fbf7 45%, #dbeafe 100%)",
             }}
           >
-            <p className="mb-6 text-xs font-semibold tracking-widest text-slate-800 uppercase">{copy.nav.ourCompany}</p>
-            <ul className="grid gap-2 sm:grid-cols-2">
-              {copy.companyMenu.map((item, index) => (
-                <li key={item.href}>
-                  <Link
-                    to={item.href}
-                    className="focus-ring group flex items-center gap-3 rounded-xl px-3 py-3 font-semibold text-slate-800 hover:bg-white/70"
-                  >
-                    <span className="w-6 text-xs text-slate-400">{String(index + 1).padStart(2, "0")}</span>
-                    <span className="flex-1">{item.label}</span>
-                    <Icon name="arrowRight" size={16} className="text-slate-300 group-hover:text-blue-700 rtl:-scale-x-100" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className="grid items-start gap-10 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
+              <section aria-labelledby="company-group-heading">
+                <p id="company-group-heading" className="mb-6 text-xs font-semibold tracking-widest text-slate-800 uppercase">
+                  {copy.nav.ourCompany}
+                </p>
+                <ul className="grid gap-2">
+                  {companyGroup.map((item, index) => (
+                    <li key={item.href}>
+                      <Link
+                        to={item.href}
+                        className="focus-ring group flex items-center gap-3 rounded-xl px-3 py-3 font-semibold text-slate-800 hover:bg-white/70"
+                      >
+                        <span className="w-6 text-xs text-slate-400">{String(index + 1).padStart(2, "0")}</span>
+                        <span className="flex-1">{item.label}</span>
+                        <Icon name="arrowRight" size={16} className="text-slate-300 group-hover:text-blue-700 rtl:-scale-x-100" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+              <div aria-hidden="true" className="hidden w-px self-stretch bg-slate-200/80 md:block" />
+              <ul className="grid content-start gap-2">
+                {companyLinks.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      to={item.href}
+                      className="focus-ring group flex items-center gap-3 rounded-xl px-3 py-3 font-semibold text-slate-800 hover:bg-white/70"
+                    >
+                      <span className="flex-1">{item.label}</span>
+                      <Icon name="arrowRight" size={16} className="text-slate-300 group-hover:text-blue-700 rtl:-scale-x-100" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         ) : null}
 
@@ -300,9 +323,18 @@ export function FloatingNav() {
             </ul>
             <p className="mt-4 font-medium text-slate-900">{copy.nav.ourCompany}</p>
             <ul>
-              {copy.companyMenu.map((item) => (
+              {companyGroup.map((item) => (
                 <li key={item.href}>
                   <Link to={item.href} className="focus-ring block rounded py-1.5 text-sm text-slate-800">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <ul className="mt-3 border-t border-slate-200/70 pt-2">
+              {companyLinks.map((item) => (
+                <li key={item.href} className="border-b border-slate-200/70 last:border-b-0">
+                  <Link to={item.href} className="focus-ring block rounded py-2 font-medium text-slate-900">
                     {item.label}
                   </Link>
                 </li>
