@@ -419,11 +419,11 @@ const ar: ZillionCopy = {
       },
       {
         ...en.leadership.people[1],
-        name: "Abdul Malick",
+        name: "Abdul Samad",
         role: "Director - Business Development and Delivery",
         quote: "Clients should feel the same team from the first meeting to go-live and beyond.",
         story: [
-          "يقود Abdul Malick ما قبل البيع والتنفيذ في ZillionxAI، فيبقى من يفهم احتياجات العميل مسؤولًا حتى الإطلاق والخدمات المُدارة.",
+          "يقود Abdul Samad ما قبل البيع والتنفيذ في ZillionxAI، فيبقى من يفهم احتياجات العميل مسؤولًا حتى الإطلاق والخدمات المُدارة.",
           "يرافق العملاء من المحادثة الأولى مرورًا بتحديد النطاق والعرض والتنفيذ، مع إبقاء الخطة مرتبطة بالنتائج المتفق عليها منذ البداية.",
           "يشرف على التنفيذ عبر منظومة الشركاء، وينسق بين المختصين ليسير كل مشروع وفق خطة وجدول ومعايير جودة واضحة.",
           "يولي أهمية كبيرة للتواصل والشفافية، مع مراجعات منتظمة ليعرف العملاء دائمًا ما تم إنجازه وما هو قادم.",
@@ -432,11 +432,11 @@ const ar: ZillionCopy = {
       },
       {
         ...en.leadership.people[2],
-        name: "Sarafudeen",
+        name: "Sharafudeen",
         role: "Product Management",
         quote: "Good products make powerful technology simple, safe and accountable.",
         story: [
-          "يقود Sarafudeen إدارة منتجات منصات SaaS والذكاء الاصطناعي في ZillionxAI.",
+          "يقود Sharafudeen إدارة منتجات منصات SaaS والذكاء الاصطناعي في ZillionxAI.",
           "يحوّل احتياجات العملاء ورؤى السوق إلى خرائط طريق لمنتجات SaaS والذكاء الاصطناعي: ماذا نبني، وبأي ترتيب، وكيف نقيس النجاح.",
           "يضع في نهجه الحوكمة والتحكم أولًا، فتُصمم الميزات مع الموافقات وسجلات التدقيق وضوابط الأمان منذ البداية.",
           "يعمل عن قرب مع فرق الهندسة والتنفيذ لتكون المنتجات مصممة جيدًا وعملية في التنفيذ والدعم.",

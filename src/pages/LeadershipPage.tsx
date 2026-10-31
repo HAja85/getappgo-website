@@ -28,7 +28,7 @@ export function LeadershipPage() {
               >
                 <div className={cn("relative min-h-[300px] bg-gradient-to-br", PANEL[index % PANEL.length])}>
                   {person.photo ? (
-                    <img src={person.photo} alt={person.name} className="absolute inset-0 h-full w-full object-cover" />
+                    <img src={person.photo} alt={person.name} className="absolute inset-0 h-full w-full object-cover object-[center_18%]" />
                   ) : (
                     <span aria-hidden="true" className="absolute inset-0 flex items-center justify-center">
                       <span className="flex h-40 w-40 items-center justify-center rounded-full border-4 border-white/30 bg-white/10 font-heading text-7xl font-bold text-white">

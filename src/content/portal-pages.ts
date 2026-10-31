@@ -278,6 +278,14 @@ export const portalEn = {
       "Leverage our technical resources to accelerate mass-scale customer and project requirements, including using our existing solutions in SaaS, AI, and Automation, and building a new custom application.",
       "Boost your business growth through progressive tiers that offer increasing levels of support and profit-sharing incentive benefits.",
     ],
+    diagram: {
+      title: "Global Partner Network",
+      nodes: [
+        { title: "Channel / VAR", body: "Resells SaaS and owns SIP lines" },
+        { title: "Technology", body: "Integrates APIs with a local CRM" },
+        { title: "Marketing", body: "Refers qualified B2B pipelines" },
+      ],
+    },
     diagramAlt:
       "Global Partner Network. Channel / VAR resells SaaS and owns SIP lines. Technology integrates APIs with a local CRM. Marketing refers qualified B2B pipelines.",
     rulesTitle: "General Legal Rules & Asset Rights",
@@ -614,8 +622,16 @@ export const portalAr: typeof portalEn = {
       "استفد من مواردنا التقنية لتسريع متطلبات العملاء والمشاريع على نطاق واسع، بما في ذلك استخدام حلولنا القائمة في SaaS والذكاء الاصطناعي والأتمتة، وبناء تطبيق مخصص جديد.",
       "عزّز نمو أعمالك عبر مستويات متدرجة تقدّم دعمًا متزايدًا ومزايا مشاركة في الأرباح.",
     ],
+    diagram: {
+      title: "شبكة الشركاء العالمية",
+      nodes: [
+        { title: "Channel / VAR", body: "يعيد بيع SaaS ويملك خطوط SIP" },
+        { title: "Technology", body: "يدمج واجهات API مع CRM محلي" },
+        { title: "Marketing", body: "يحيل مسارات B2B مؤهلة" },
+      ],
+    },
     diagramAlt:
-      "شبكة الشركاء العالمية. Channel / VAR يعيد بيع SaaS ويملك خطوط SIP. Technology يدمج واجهات API مع CRM محلي. Marketing يحيلك إلى مسارات B2B مؤهلة.",
+      "شبكة الشركاء العالمية. Channel / VAR يعيد بيع SaaS ويملك خطوط SIP. Technology يدمج واجهات API مع CRM محلي. Marketing يحيل مسارات B2B مؤهلة.",
     rulesTitle: "القواعد القانونية العامة وحقوق الأصول",
     principles: [
       {

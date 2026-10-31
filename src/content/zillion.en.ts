@@ -510,7 +510,7 @@ const en = {
         id: "shahul",
         name: "Dr. Shahul Hameed",
         role: "Managing Director",
-        photo: "",
+        photo: "/images/zillion/shahul-hameed.png",
         initials: "SH",
         quote: "Technology should do more than digitize business. Every engagement should end with a result the business can measure.",
         story: [
@@ -523,13 +523,13 @@ const en = {
       },
       {
         id: "malick",
-        name: "Abdul Malick",
+        name: "Abdul Samad",
         role: "Director - Business Development and Delivery",
         photo: "",
-        initials: "AM",
+        initials: "AS",
         quote: "Clients should feel the same team from the first meeting to go-live and beyond.",
         story: [
-          "Abdul Malick leads presales and delivery at ZillionxAI, so the people who understand a client's needs stay accountable through go-live and managed services.",
+          "Abdul Samad leads presales and delivery at ZillionxAI, so the people who understand a client's needs stay accountable through go-live and managed services.",
           "He guides clients from the first conversation through scoping, proposal and implementation, keeping the plan tied to the outcomes agreed at the start.",
           "He oversees delivery across the partner ecosystem, coordinating specialists and making sure every project runs to a clear plan, timeline and quality standard.",
           "He places strong emphasis on communication and transparency, with regular reviews so clients always know what has been delivered and what comes next.",
@@ -538,13 +538,13 @@ const en = {
       },
       {
         id: "sarafudeen",
-        name: "Sarafudeen",
+        name: "Sharafudeen",
         role: "Product Management",
         photo: "",
         initials: "SR",
         quote: "Good products make powerful technology simple, safe and accountable.",
         story: [
-          "Sarafudeen leads product management for ZillionxAI SaaS and AI platforms.",
+          "Sharafudeen leads product management for ZillionxAI SaaS and AI platforms.",
           "He turns client needs and market insight into SaaS and AI product roadmaps, deciding what to build, in what order, and how success will be measured.",
           "His product approach puts governance and control first: features are designed with approvals, audit trails, and safety controls built in from the start.",
           "He works closely with engineering and delivery teams so that products are not only well designed but practical to implement and support.",
