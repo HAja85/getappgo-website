@@ -1,17 +1,41 @@
 @import "tailwindcss";
 
+/* Dubai is free for worldwide use. Family name matches the requested DUBAI-REGULAR cut. */
+@font-face {
+  font-family: "DUBAI-REGULAR";
+  src: url("/fonts/Dubai-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DUBAI-REGULAR";
+  src: url("/fonts/Dubai-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DUBAI-REGULAR";
+  src: url("/fonts/Dubai-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*
  * ZillionxAI design tokens.
- * Values mirror the reference system documented in docs/connectsaudi-analysis (§3):
- * light theme, navy/plum/orange brand gradients, Oxanium body + Sansation headings.
+ * Light theme, navy/plum/orange brand gradients, DUBAI-REGULAR for Latin and Arabic.
  * The legacy semantic tokens (ink, mist, muted, line, accent) are remapped to the
  * light palette so existing catalog components keep working without rewrites.
  */
 @theme {
-  --font-sans: "Oxanium", ui-sans-serif, system-ui, sans-serif;
-  --font-heading: "Sansation", "Oxanium", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Plus Jakarta Sans", "Oxanium", ui-sans-serif, sans-serif;
-  --font-arabic: "Cairo", "Noto Naskh Arabic", ui-sans-serif, sans-serif;
+  --font-sans: "DUBAI-REGULAR", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "DUBAI-REGULAR", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "DUBAI-REGULAR", ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: "DUBAI-REGULAR", ui-sans-serif, system-ui, sans-serif;
 
   --color-brand-primary: #182793;
   --color-brand-purple: #7b3368;
@@ -100,7 +124,7 @@ h6,
   font-family: var(--font-display);
 }
 
-/* Arabic: Cairo everywhere. No letter-spacing, so Arabic letters stay joined. */
+/* Arabic uses DUBAI-REGULAR too. No letter-spacing, so Arabic letters stay joined. */
 html[lang="ar"] body,
 html[lang="ar"] body * {
   font-family: var(--font-arabic) !important;

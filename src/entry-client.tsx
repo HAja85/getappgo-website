@@ -5,7 +5,6 @@ import { HelmetProvider } from "react-helmet-async";
 import { DemoProvider } from "@/components/contact/DemoProvider";
 import { App } from "@/App";
 import { LanguageProvider } from "@/i18n/LanguageProvider";
-import "@/fonts";
 import "@/styles/index.css";
 
 const root = document.getElementById("root");
