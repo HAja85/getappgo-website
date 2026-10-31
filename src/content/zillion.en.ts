@@ -540,7 +540,7 @@ const en = {
         id: "sarafudeen",
         name: "Sharafudeen",
         role: "Product Management",
-        photo: "",
+        photo: "/images/zillion/sharafudeen.png",
         initials: "SR",
         quote: "Good products make powerful technology simple, safe and accountable.",
         story: [
