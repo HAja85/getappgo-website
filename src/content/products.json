@@ -506,7 +506,7 @@
     {
       "id": "siteagent",
       "slug": "siteagent",
-      "name": "SiteAgent for Oqtane",
+      "name": "Site Agent",
       "type": "ai-agent",
       "category": "ai-products",
       "status": "active",
@@ -517,10 +517,10 @@
         "headline": "Administer your Oqtane site by simply asking.",
         "subhead": "AI-powered administration that helps you inspect your site, diagnose issues, plan changes, and execute approved actions with governance, audit trails, and safety controls.",
         "visual": "/images/products/siteagent.png",
-        "visualAlt": "SiteAgent for Oqtane: conversational AI administration with a governance and control center"
+        "visualAlt": "Site Agent: conversational AI administration with a governance and control center"
       },
       "seo": {
-        "title": "SiteAgent for Oqtane",
+        "title": "Site Agent",
         "description": "Conversational AI administration for Oqtane with governance, control and accountability: inspect, diagnose, plan and execute approved actions."
       },
       "overview": "SiteAgent is an administrative module for Oqtane that allows administrators to interact with their site using natural language. Instead of manually navigating through administrative screens for every operation, you can ask questions, investigate issues, plan changes, and request actions conversationally.",

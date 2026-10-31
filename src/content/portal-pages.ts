@@ -266,29 +266,36 @@ export const portalEn = {
   },
   partnerPage: {
     seoTitle: "Become a Partner",
-    seoDescription: "Become a ZillionxAI technology service partner. IP stays with its owner, reverse engineering is prohibited, and each party indemnifies the other.",
+    seoDescription:
+      "Become a ZillionxAI Technology Solution Partner. Market and implement SaaS, AI, and automation with defined intellectual property, reverse-engineering, and indemnification rules.",
     hero: {
-      badge: "Technology Service Partner",
-      title: "Deliver with",
-      accent: "ZillionxAI",
-      body: "Implement ZillionxAI solutions with a clear partnership: intellectual property stays with its owner, reverse engineering is not allowed, and each party stands behind its own work.",
+      badge: "Technology Solution Partner (TSP)",
+      title: "Become a Partner",
+      accent: "",
+      body: "ZillionxAI – Technology Solution Partner (TSP)",
     },
+    paragraphs: [
+      "Leverage our technical resources to accelerate mass-scale customer and project requirements, including using our existing solutions in SaaS, AI, and Automation, and building a new custom application.",
+      "Boost your business growth through progressive tiers that offer increasing levels of support and profit-sharing incentive benefits.",
+    ],
+    diagramAlt:
+      "Global Partner Network. Channel / VAR resells SaaS and owns SIP lines. Technology integrates APIs with a local CRM. Marketing refers qualified B2B pipelines.",
+    rulesTitle: "General Legal Rules & Asset Rights",
     principles: [
       {
-        title: "IP retention",
-        body: "Each party retains its pre-existing intellectual property. ZillionxAI platform IP stays with ZillionxAI. Partner materials, methods, and client-owned work stay with their owner. Nothing in the partnership assigns that IP unless a written agreement says so.",
+        title: "Intellectual Property (IP) Retention",
+        body: "This program provides a limited, non-exclusive, revocable right to market and implement our services. All core codebases, application logic, patent portfolios, speech pipelines, dashboard frameworks, and brand assets remain the sole, un-transferable property of our company.",
       },
       {
-        title: "Reverse-engineering ban",
-        body: "Partners may not reverse engineer, decompile, disassemble, or try to derive source code, models, or non-public design from ZillionxAI platforms, agents, or tools. Access is only for delivering the agreed services.",
+        title: "Reverse-Engineering Ban",
+        body: "Partners are explicitly forbidden from reverse-engineering, decompiling, extracting components from, or creating structural clones of our AI processing core, latency management engines, or API wrappers. Breach of this clause triggers immediate termination of partner access without refund and the immediate filing of injunctive legal claims.",
       },
       {
-        title: "Indemnification",
-        body: "Each party indemnifies the other against third-party claims that arise from its own materials, conduct, or breach, including a claim that its contributed IP infringes someone else's rights. Notice, defence, and liability sit in the partner agreement.",
+        title: "Indemnification Limits",
+        body: "Partners agree to defend, indemnify, and hold our company harmless against any third-party legal claims, regulatory fines, or consumer losses resulting from unauthorized partner promises, broken local telecom integrations, or careless data handling by the partner's staff.",
       },
     ],
     apply: "Apply Now to become a Partner",
-    note: "Apply Now sends your request to the ZillionxAI team. It does not sign the partner agreement.",
     dialogTitle: "Apply to become a Partner",
     dialogSubtitle: "Tell us about your company and the services you deliver. We will follow up on the next step.",
   },
@@ -596,29 +603,35 @@ export const portalAr: typeof portalEn = {
   },
   partnerPage: {
     seoTitle: "كن شريكًا",
-    seoDescription: "كن شريك خدمات تقنية مع ZillionxAI. تبقى الملكية الفكرية لمالكها، ويمنع الهندسة العكسية، ويتحمّل كل طرف التعويض عن عمله.",
+    seoDescription: "كن شريك حلول تقنية (TSP) مع ZillionxAI. سوّق خدمات SaaS والذكاء الاصطناعي والأتمتة ونفّذها وفق قواعد الملكية الفكرية والهندسة العكسية والتعويض.",
     hero: {
-      badge: "شريك خدمات تقنية",
-      title: "نفّذ مع",
-      accent: "ZillionxAI",
-      body: "نفّذ حلول ZillionxAI بشراكة واضحة: الملكية الفكرية تبقى لمالكها، والهندسة العكسية غير مسموحة، وكل طرف يقف خلف عمله.",
+      badge: "شريك الحلول التقنية (TSP)",
+      title: "كن شريكًا",
+      accent: "",
+      body: "ZillionxAI – شريك الحلول التقنية (TSP)",
     },
+    paragraphs: [
+      "استفد من مواردنا التقنية لتسريع متطلبات العملاء والمشاريع على نطاق واسع، بما في ذلك استخدام حلولنا القائمة في SaaS والذكاء الاصطناعي والأتمتة، وبناء تطبيق مخصص جديد.",
+      "عزّز نمو أعمالك عبر مستويات متدرجة تقدّم دعمًا متزايدًا ومزايا مشاركة في الأرباح.",
+    ],
+    diagramAlt:
+      "شبكة الشركاء العالمية. Channel / VAR يعيد بيع SaaS ويملك خطوط SIP. Technology يدمج واجهات API مع CRM محلي. Marketing يحيلك إلى مسارات B2B مؤهلة.",
+    rulesTitle: "القواعد القانونية العامة وحقوق الأصول",
     principles: [
       {
-        title: "الاحتفاظ بالملكية الفكرية",
-        body: "يحتفظ كل طرف بملكيته الفكرية السابقة. تبقى ملكية منصة ZillionxAI لها. وتبقى مواد الشريك وأساليبه وعمل العميل لمالكها. لا تنقل الشراكة هذه الملكية إلا إذا نص اتفاق مكتوب على ذلك.",
+        title: "الاحتفاظ بالملكية الفكرية (IP)",
+        body: "يمنح هذا البرنامج حقًا محدودًا وغير حصري وقابلًا للإلغاء لتسويق خدماتنا وتنفيذها. تبقى جميع قواعد الشيفرة الأساسية ومنطق التطبيقات ومحافظ براءات الاختراع ومسارات الكلام وأُطر لوحات المعلومات وأصول العلامة الملكية الوحيدة غير القابلة للنقل لشركتنا.",
       },
       {
         title: "حظر الهندسة العكسية",
-        body: "لا يجوز للشريك إجراء هندسة عكسية أو فك ترجمة أو تفكيك أو محاولة استخراج الشيفرة أو النماذج أو التصميم غير العلني لمنصات ZillionxAI أو وكلائها أو أدواتها. الوصول لتقديم الخدمات المتفق عليها فقط.",
+        body: "يُحظر على الشركاء صراحةً إجراء هندسة عكسية أو فك ترجمة أو استخراج مكوّنات أو إنشاء نسخ بنيوية من نواة معالجة الذكاء الاصطناعي أو محركات إدارة زمن الاستجابة أو أغلفة واجهات API. يؤدي خرق هذا البند إلى إنهاء فوري لوصول الشريك دون استرداد، ورفع دعاوى قضائية فورية بطلب أمر منع.",
       },
       {
-        title: "التعويض",
-        body: "يعوّض كل طرف الطرف الآخر عن مطالبات الغير الناشئة عن مواده أو سلوكه أو إخلاله، بما في ذلك ادعاء أن ملكيته المساهَم بها تنتهك حقوق الغير. الإخطار والدفاع وحدود المسؤولية تكون في اتفاق الشراكة.",
+        title: "حدود التعويض",
+        body: "يوافق الشركاء على الدفاع عن شركتنا وتعويضها وإبراء ذمتها من أي مطالبات قانونية من الغير أو غرامات تنظيمية أو خسائر للمستهلكين ناتجة عن وعود غير مصرّح بها من الشريك، أو تكاملات اتصالات محلية معطلة، أو تعامل غير حذر مع البيانات من موظفي الشريك.",
       },
     ],
     apply: "قدّم الآن لتصبح شريكًا",
-    note: "زر التقديم يرسل طلبك إلى فريق ZillionxAI. وهو لا يوقّع اتفاق الشراكة.",
     dialogTitle: "قدّم لتصبح شريكًا",
     dialogSubtitle: "أخبرنا عن شركتك والخدمات التي تقدّمها. سنتابع معك الخطوة التالية.",
   },

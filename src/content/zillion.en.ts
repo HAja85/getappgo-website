@@ -106,8 +106,8 @@ const en = {
       short: "AI & Automation",
       listTitle: "AI, integration & automation",
       items: [
-        { label: "SiteAgent for Oqtane", href: "/products/siteagent" },
         { label: "AI Voice Agents", href: "/ai-voice-agents" },
+        { label: "Site Agent", href: "/products/siteagent" },
         { label: "AI Workforce Platform", href: "/products/ai-workforce-platform" },
         { label: "AI Call Center Platform", href: "/products/ai-call-center-platform" },
         { label: "AI Trading Platform", href: "/products/ai-trading-platform" },
@@ -136,8 +136,8 @@ const en = {
     eyebrow: "What we do",
     cards: [
       {
-        title: "Software services",
-        body: "Custom software and business applications: ERP, CRM, helpdesk, facilities, commerce and more, built around how you work.",
+        title: "Software as a Service (SaaS)",
+        body: "CRM, ERP, facility management, and custom application development, built around how you work.",
       },
       {
         title: "AI applications",
@@ -152,17 +152,14 @@ const en = {
   platforms: {
     title: "Our platforms",
     items: [
-      { name: "ERP", icon: "layers" },
       { name: "CRM", icon: "users" },
-      { name: "Helpdesk", icon: "headset" },
+      { name: "ERP", icon: "layers" },
       { name: "Facilities", icon: "building" },
-      { name: "E-commerce", icon: "cart" },
-      { name: "Genealogy", icon: "tree" },
       { name: "AI Workforce", icon: "sparkles" },
       { name: "AI Call Center", icon: "phone" },
       { name: "AI Trading", icon: "chart" },
       { name: "Voice Agents", icon: "wave" },
-      { name: "SiteAgent", icon: "shield" },
+      { name: "Site Agent", icon: "shield" },
     ] as { name: string; icon: IconName }[],
   },
   trust: {
@@ -173,19 +170,16 @@ const en = {
   },
   software: {
     crumb: "Core service",
-    title: "Software Services",
+    title: "Software as a Service (SaaS)",
     body: "Ready platforms you can configure quickly, or custom applications built on a modern .NET stack. Every system is designed to integrate with the rest of your operation.",
     prev: "Previous",
     next: "Next",
     learnMore: "Learn More",
     cards: [
-      { slug: "erp-system", chip: "Finance & operations", title: "ERP System", body: "Finance, inventory, purchasing and HR in one system of record.", icon: "layers" },
-      { slug: "crm-system", chip: "Sales pipeline", title: "CRM System", body: "Leads, deals, accounts and follow-ups with a clear pipeline view.", icon: "users" },
+      { slug: "crm-system", chip: "Sales pipeline", title: "CRM", body: "Leads, deals, accounts and follow-ups with a clear pipeline view.", icon: "users" },
+      { slug: "erp-system", chip: "Finance & operations", title: "ERP", body: "Finance, inventory, purchasing and HR in one system of record.", icon: "layers" },
       { slug: "facility-management-system", chip: "Assets & maintenance", title: "Facility Management", body: "Work orders, assets, preventive maintenance and vendor visits.", icon: "building" },
-      { slug: "helpdesk-system", chip: "Customer support", title: "Helpdesk System", body: "Tickets, SLAs and a shared inbox so every request has an owner.", icon: "headset" },
-      { slug: "ecommerce-platform", chip: "Online sales", title: "E-commerce Platform", body: "Catalog, checkout, orders and fulfilment for B2B and B2C stores.", icon: "cart" },
-      { slug: "genealogy-management-system", chip: "Records & archives", title: "Genealogy Management", body: "Family trees, records and archives with controlled access.", icon: "tree" },
-      { slug: "oqtane-custom-application-development", chip: "Built for you", title: "Custom Applications", body: "Business applications designed and built around your exact workflow.", icon: "code" },
+      { slug: "oqtane-custom-application-development", chip: "Built for you", title: "Custom App Development", body: "Business applications designed and built around your exact workflow.", icon: "code" },
     ] as { slug: string; chip: string; title: string; body: string; icon: IconName }[],
   },
   simulator: {
@@ -289,8 +283,8 @@ const en = {
           { label: "Facility Management", href: "/products/facility-management-system" },
           { label: "Custom App Development", href: "/products/oqtane-custom-application-development" },
           { label: "AI Applications & Automation", href: "/services/ai-integration-automation" },
-          { label: "SiteAgent for Oqtane", href: "/products/siteagent" },
           { label: "AI Voice Agents", href: "/ai-voice-agents" },
+          { label: "Site Agent", href: "/products/siteagent" },
           { label: "AI Workforce Platform", href: "/products/ai-workforce-platform" },
           { label: "AI Call Center Platform", href: "/products/ai-call-center-platform" },
           { label: "AI Trading Platform", href: "/products/ai-trading-platform" },
@@ -570,10 +564,10 @@ const en = {
 
 en.servicePages = {
   "software-services": {
-    seoTitle: "Software Services",
-    seoDescription: "Custom software and business applications from ZillionxAI: ERP, CRM, helpdesk, facilities, e-commerce and custom development.",
+    seoTitle: "Software as a Service (SaaS)",
+    seoDescription: "Software as a Service from ZillionxAI: CRM, ERP, Facility Management, and Custom App Development.",
     hero: {
-      badge: "Software services",
+      badge: "Software as a Service (SaaS)",
       title: "Business Software",
       accent: "Built Around You",
       body: "Ready platforms you can configure quickly, or custom business applications designed around your exact workflow, delivered and supported by ZillionxAI.",
@@ -589,16 +583,13 @@ en.servicePages = {
       pill: "Service capabilities",
       title: "Everything your team needs to run",
       body: "Choose a ready platform or commission a custom build. Every system shares the same integration and support model.",
-      sideLabel: "Software services",
+      sideLabel: "Software as a Service (SaaS)",
       sideBody: "Designed to move teams from setup to daily use with clarity and reliable support.",
       items: [
-        { id: "erp", title: "ERP System", body: "Finance, inventory, purchasing and HR in one system of record.", href: "/products/erp-system", icon: "layers" },
-        { id: "crm", title: "CRM System", body: "Leads, deals and accounts with a clear pipeline and follow-up reminders.", href: "/products/crm-system", icon: "users" },
+        { id: "crm", title: "CRM", body: "Leads, deals and accounts with a clear pipeline and follow-up reminders.", href: "/products/crm-system", icon: "users" },
+        { id: "erp", title: "ERP", body: "Finance, inventory, purchasing and HR in one system of record.", href: "/products/erp-system", icon: "layers" },
         { id: "facilities", title: "Facility Management", body: "Work orders, assets and preventive maintenance in one place.", href: "/products/facility-management-system", icon: "building" },
-        { id: "helpdesk", title: "Helpdesk System", body: "Tickets, SLAs and a shared inbox so every request has an owner.", href: "/products/helpdesk-system", icon: "headset" },
-        { id: "ecommerce", title: "E-commerce Platform", body: "Catalog, checkout, orders and fulfilment for B2B and B2C.", href: "/products/ecommerce-platform", icon: "cart" },
-        { id: "genealogy", title: "Genealogy Management", body: "Family trees, records and archives with controlled access.", href: "/products/genealogy-management-system", icon: "tree" },
-        { id: "custom", title: "Custom Application Development", body: "Applications built on a modern .NET stack around your workflow.", href: "/products/oqtane-custom-application-development", icon: "code" },
+        { id: "custom", title: "Custom App Development", body: "Applications built on a modern .NET stack around your workflow.", href: "/products/oqtane-custom-application-development", icon: "code" },
       ],
     },
     why: {
@@ -613,14 +604,14 @@ en.servicePages = {
     },
     useCases: {
       pill: "Best-fit use cases",
-      title: "Where software services help most",
+      title: "Where SaaS helps most",
       items: [
         { title: "Replacing spreadsheets", body: "Move finance, stock or customer lists into a real system of record." },
         { title: "Opening new branches", body: "Roll out the same processes and reporting to every location." },
         { title: "Unifying customer service", body: "Give support, sales and operations one view of every customer." },
         { title: "Unique workflows", body: "Build a custom application where off-the-shelf tools do not fit." },
       ],
-      side: { label: "Built for growing businesses", title: "Software Services", body: "Connect your teams, systems and customers with reliable business software.", checks: ["Ready platforms or custom builds", "Integration with existing tools", "Training and ongoing support"] },
+      side: { label: "Built for growing businesses", title: "Software as a Service (SaaS)", body: "Connect your teams, systems and customers with reliable business software.", checks: ["Ready platforms or custom builds", "Integration with existing tools", "Training and ongoing support"] },
     },
     cta: { title: "Ready to get started?", body: "Share your requirements and our team will recommend the right platform, scope and rollout plan.", primary: "Request Demo", secondary: "Contact us" },
   },
@@ -647,8 +638,8 @@ en.servicePages = {
       sideLabel: "AI & automation",
       sideBody: "Introduced where it reduces load, measured by the work it removes.",
       items: [
-        { id: "siteagent", title: "SiteAgent for Oqtane", body: "Administer your Oqtane site by asking: inspect, diagnose, plan and run approved actions with governance and audit trails.", href: "/products/siteagent", icon: "shield" },
         { id: "voice-agents", title: "AI Voice Agents", body: "Agents that answer calls, qualify leads and book appointments.", href: "/ai-voice-agents", icon: "wave" },
+        { id: "siteagent", title: "Site Agent", body: "Administer your Oqtane site by asking: inspect, diagnose, plan and run approved actions with governance and audit trails.", href: "/products/siteagent", icon: "shield" },
         { id: "workforce", title: "AI Workforce Platform", body: "AI assistants that support employees across daily tasks.", href: "/products/ai-workforce-platform", icon: "sparkles" },
         { id: "call-center", title: "AI Call Center Platform", body: "Routing, transcription and assistance for contact centers.", href: "/products/ai-call-center-platform", icon: "phone" },
         { id: "trading", title: "AI Trading Platform", body: "Signals, analysis and monitoring for trading operations.", href: "/products/ai-trading-platform", icon: "chart" },
