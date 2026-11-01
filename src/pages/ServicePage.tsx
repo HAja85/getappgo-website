@@ -11,7 +11,6 @@ import { serviceSlugs } from "@/content/zillion";
 const HERO_IMAGES: Record<string, string> = {
   "software-services": "/images/categories/business-software.png",
   "ai-integration-automation": "/images/categories/ai-products.png",
-  "hardware-procurement": "/images/solutions/business-systems.png",
 };
 
 export function ServicePage() {

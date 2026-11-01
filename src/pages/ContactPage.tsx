@@ -8,12 +8,19 @@ import { IconTile, Pill } from "@/components/inner/Blocks";
 import { Icon } from "@/components/zillion/Icon";
 import { useCopy } from "@/i18n/LanguageProvider";
 import { demoRequestSchema } from "@/lib/content/schema";
-import { getAiAgents, getProducts, getSite } from "@/lib/content/repository";
+import { getSite } from "@/lib/content/repository";
 import { submitDemoRequest } from "@/lib/leads/submit";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 const inputClass =
   "h-11 w-full rounded-lg border border-slate-200 bg-slate-50 px-3 text-sm text-slate-800 outline-none transition focus:border-[#505FD0] focus:bg-white focus:ring-2 focus:ring-[#505FD0]/20";
+
+function interestSlug(href: string): string {
+  const [path, hash] = href.split("#");
+  if (hash) return hash;
+  const parts = path.split("/").filter(Boolean);
+  return parts[parts.length - 1] ?? href;
+}
 
 export function ContactPage() {
   const copy = useCopy();
@@ -32,6 +39,7 @@ export function ContactPage() {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   // Pre-rendered HTML has no query string, so apply ?product= after hydration.
   const productParam = params.get("product");
@@ -58,7 +66,8 @@ export function ContactPage() {
     try {
       await submitDemoRequest(parsed.data);
       setStatus("success");
-    } catch {
+    } catch (error) {
+      setErrorMessage(error instanceof Error ? error.message : form.error);
       setStatus("error");
     }
   }
@@ -98,7 +107,7 @@ export function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-slate-50 py-20">
+      <section id="inquiry" className="bg-slate-50 py-20">
         <div className="cs-container grid gap-6 lg:grid-cols-[1.6fr_1fr]">
           <div className="rounded-2xl border border-slate-200 bg-white p-6 md:p-8">
             <Pill icon="send">{form.pill}</Pill>
@@ -125,31 +134,19 @@ export function ContactPage() {
                 <Field id="c-interest" label={form.interest} error={errors.productSlug} wide>
                   <select id="c-interest" className={inputClass} value={values.productSlug} onChange={(e) => set("productSlug")(e.target.value)}>
                     <option value="">{form.interestPlaceholder}</option>
-                    <optgroup label={form.groups.services}>
-                      {copy.lines.map((line) => (
-                        <option key={line.slug} value={line.slug}>
-                          {line.label}
-                        </option>
-                      ))}
-                    </optgroup>
+                    {copy.lines.map((line) => (
+                      <optgroup key={line.id} label={line.label}>
+                        {line.items.map((item) => (
+                          <option key={item.href} value={interestSlug(item.href)}>
+                            {item.label}
+                          </option>
+                        ))}
+                      </optgroup>
+                    ))}
                     <optgroup label={copy.nav.packages}>
                       {copy.packages.items.map((item) => (
                         <option key={item.id} value={item.id}>
                           {item.number}: {item.title}
-                        </option>
-                      ))}
-                    </optgroup>
-                    <optgroup label={form.groups.agents}>
-                      {getAiAgents().map((agent) => (
-                        <option key={agent.slug} value={agent.slug}>
-                          {agent.name}
-                        </option>
-                      ))}
-                    </optgroup>
-                    <optgroup label={form.groups.products}>
-                      {getProducts().map((product) => (
-                        <option key={product.slug} value={product.slug}>
-                          {product.name}
                         </option>
                       ))}
                     </optgroup>
@@ -167,7 +164,7 @@ export function ContactPage() {
                 </Field>
                 {status === "error" ? (
                   <p role="alert" className="text-sm text-red-600 md:col-span-2">
-                    {form.error}
+                    {errorMessage || form.error}
                   </p>
                 ) : null}
                 <div className="md:col-span-2">

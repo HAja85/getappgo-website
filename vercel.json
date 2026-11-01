@@ -1,0 +1,10 @@
+{
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/services/hardware-procurement",
+      "destination": "/services/software-services",
+      "permanent": true
+    }
+  ]
+}

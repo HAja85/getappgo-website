@@ -24,20 +24,29 @@ export function LeadershipPage() {
               <article
                 key={person.id}
                 id={person.id}
-                className="grid scroll-mt-32 overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-lg lg:grid-cols-[340px_1fr]"
+                className="scroll-mt-32 rounded-3xl border border-slate-100 bg-white p-6 shadow-lg md:p-8"
               >
-                <div className={cn("relative min-h-[300px] bg-gradient-to-br", PANEL[index % PANEL.length])}>
+                <div className="flex items-start gap-5">
                   {person.photo ? (
-                    <img src={person.photo} alt={person.name} className="absolute inset-0 h-full w-full object-cover" />
+                    <img
+                      src={person.photo}
+                      alt={person.name}
+                      width={120}
+                      height={120}
+                      className="size-[120px] shrink-0 rounded-full object-cover object-[center_18%]"
+                    />
                   ) : (
-                    <span aria-hidden="true" className="absolute inset-0 flex items-center justify-center">
-                      <span className="flex h-40 w-40 items-center justify-center rounded-full border-4 border-white/30 bg-white/10 font-heading text-7xl font-bold text-white">
-                        {person.initials}
-                      </span>
+                    <span
+                      aria-hidden="true"
+                      className={cn(
+                        "flex size-[120px] shrink-0 items-center justify-center rounded-full bg-gradient-to-br font-heading text-3xl font-bold text-white",
+                        PANEL[index % PANEL.length],
+                      )}
+                    >
+                      {person.initials}
                     </span>
                   )}
-                </div>
-                <div className="p-6 md:p-10">
+                  <div className="min-w-0 flex-1">
                   <p className="text-[10px] font-bold tracking-[0.2em] text-[#182793] uppercase">{person.role}</p>
                   <h2 className="mt-1 font-heading text-3xl font-bold text-slate-900">{person.name}</h2>
                   <blockquote className="mt-4 border-s-2 border-[#505FD0] ps-4 text-base text-slate-700 italic">“{person.quote}”</blockquote>
@@ -45,6 +54,7 @@ export function LeadershipPage() {
                     {person.story.map((line) => (
                       <p key={line.slice(0, 32)}>{line}</p>
                     ))}
+                  </div>
                   </div>
                 </div>
               </article>

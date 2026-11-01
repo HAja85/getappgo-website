@@ -5,4 +5,4 @@ export type { ZillionCopy, ServiceLine, ServiceLineId, ServicePage, LinkItem } f
 
 export const zillion = { en, ar };
 
-export const serviceSlugs = ["software-services", "ai-integration-automation", "hardware-procurement"] as const;
+export const serviceSlugs = ["software-services", "ai-integration-automation"] as const;

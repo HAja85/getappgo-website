@@ -8,6 +8,11 @@ import {
 export function getPrerenderRoutes(): string[] {
   return [
     "/",
+    "/platform",
+    "/company/story",
+    "/company/office",
+    "/company/partner",
+    "/company/investor",
     ...serviceSlugs.map((slug) => `/services/${slug}`),
     "/ai-voice-agents",
     "/packages",

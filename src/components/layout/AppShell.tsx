@@ -1,15 +1,33 @@
 import { Outlet, useLocation } from "react-router";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { FloatingNav } from "@/components/navigation/FloatingNav";
 import { Footer } from "@/components/layout/Footer";
 import { DemoDialog } from "@/components/contact/DemoDialog";
 import { FloatingUi } from "@/components/zillion/FloatingUi";
 import { useCopy } from "@/i18n/LanguageProvider";
+import { getSite } from "@/lib/content/repository";
 import { scrollToId } from "@/lib/scroll-to";
 
 export function AppShell() {
   const location = useLocation();
   const copy = useCopy();
+  const site = getSite();
+  const origin = site.seo.canonicalOrigin.replace(/\/$/, "");
+  const organization = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "ZillionxAI",
+    url: origin,
+    email: site.contact.email,
+    telephone: site.contact.phone.replace(/\s/g, ""),
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Sheikh Zayed Road",
+      addressLocality: "Dubai",
+      addressCountry: "AE",
+    },
+  };
 
   useEffect(() => {
     if (location.hash) {
@@ -22,6 +40,9 @@ export function AppShell() {
 
   return (
     <>
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(organization)}</script>
+      </Helmet>
       <a
         href="#main"
         className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded-full focus:bg-[#182793] focus:px-4 focus:py-2 focus:text-white"

@@ -10,7 +10,7 @@ export function SolutionsPage() {
   const hero = useCopy().pageHeroes.solutions;
   return (
     <>
-      <Seo path="/solutions" title="Solutions" description="Outcome-led ways to combine ZillionAI products." />
+      <Seo path="/solutions" title="Solutions" description="Outcome-led ways to combine ZillionxAI products." />
       <PageHero badge={hero.badge} badgeIcon="zap" title={hero.title} accent={hero.accent} body={hero.body} image="/images/solutions/intelligent-operations.png" compact />
       <Container className="py-20">
         <div className="grid gap-5 md:grid-cols-3">

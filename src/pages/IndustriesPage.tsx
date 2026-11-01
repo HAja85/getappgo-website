@@ -10,7 +10,7 @@ export function IndustriesPage() {
   const hero = useCopy().pageHeroes.industries;
   return (
     <>
-      <Seo path="/industries" title="Industries" description="Discover ZillionAI products by industry." />
+      <Seo path="/industries" title="Industries" description="Discover ZillionxAI products by industry." />
       <PageHero badge={hero.badge} badgeIcon="building" title={hero.title} accent={hero.accent} body={hero.body} image="/images/industries/enterprise-operations.png" compact />
       <Container className="py-20">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

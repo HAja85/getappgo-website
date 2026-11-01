@@ -6,6 +6,8 @@ type PageHeroProps = {
   badge: string;
   badgeIcon?: IconName;
   title: string;
+  /** Heading lines between the title and the accent line. */
+  lines?: string[];
   accent?: string;
   body?: string;
   image?: string;
@@ -13,10 +15,12 @@ type PageHeroProps = {
   aside?: ReactNode;
   compact?: boolean;
   center?: boolean;
+  /** One sentence per heading line, at a size that can sit on a single row. */
+  sentence?: boolean;
 };
 
 /** Full-bleed dark hero used by every inner page (reference inner-page template). */
-export function PageHero({ badge, badgeIcon = "sparkles", title, accent, body, image = "/images/graphics/hero-home.png", actions, aside, compact, center }: PageHeroProps) {
+export function PageHero({ badge, badgeIcon = "sparkles", title, lines, accent, body, image = "/images/graphics/hero-home.png", actions, aside, compact, center, sentence }: PageHeroProps) {
   return (
     <section
       className={cn(
@@ -28,19 +32,53 @@ export function PageHero({ badge, badgeIcon = "sparkles", title, accent, body, i
       <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-[#020B50]/95 via-[#0b1677]/80 to-[#2b0f4a]/60 rtl:bg-gradient-to-l" />
       <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:48px_48px]" />
       <div className={cn("cs-container relative grid items-center gap-10", aside ? "lg:grid-cols-[1.25fr_1fr]" : "")}>
-        <div className={cn(center && "mx-auto max-w-4xl text-center")}>
-          <p className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold backdrop-blur-sm">
-            <Icon name={badgeIcon} size={14} />
-            {badge}
-          </p>
-          <h1 className="mt-5 font-heading text-4xl leading-[1.08] font-bold md:text-5xl xl:text-6xl">
-            {title}
-            {accent ? (
+        <div className={cn(center && "mx-auto text-center", center && (sentence ? "max-w-5xl" : "max-w-4xl"))}>
+          {badge ? (
+            <p className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1.5 text-xs font-semibold backdrop-blur-sm">
+              <Icon name={badgeIcon} size={14} />
+              {badge}
+            </p>
+          ) : null}
+          <h1
+            className={cn(
+              "font-heading font-bold",
+              badge && "mt-5",
+              sentence && "text-xl leading-snug sm:text-2xl lg:text-[28px]",
+              !sentence && !lines?.length && "text-4xl leading-[1.08] md:text-5xl xl:text-6xl",
+            )}
+          >
+            {lines?.length ? (
               <>
-                <br />
-                <span className="text-gradient-hero">{accent}</span>
+                <span className="block text-4xl leading-[1.08] md:text-5xl xl:text-6xl">{title}</span>
+                {lines.map((line, index) => (
+                  <span
+                    key={line}
+                    className={cn(
+                      "block",
+                      index === 0 ? "mt-3 text-3xl leading-tight md:text-4xl xl:text-5xl" : "mt-4 text-3xl leading-tight md:text-4xl xl:text-5xl",
+                    )}
+                  >
+                    {line}
+                  </span>
+                ))}
+                {accent ? <span className="mt-1 block text-3xl leading-tight text-gradient-hero md:text-4xl xl:text-5xl">{accent}</span> : null}
               </>
-            ) : null}
+            ) : sentence ? (
+              <>
+                <span className="block">{title}</span>
+                {accent ? <span className="mt-3 block text-gradient-hero">{accent}</span> : null}
+              </>
+            ) : (
+              <>
+                {title}
+                {accent ? (
+                  <>
+                    <br />
+                    <span className="text-gradient-hero">{accent}</span>
+                  </>
+                ) : null}
+              </>
+            )}
           </h1>
           {body ? <p className={cn("mt-6 max-w-2xl text-sm leading-6 text-white/85 md:text-base", center && "mx-auto")}>{body}</p> : null}
           {actions ? <div className={cn("mt-8 flex flex-wrap gap-3", center && "justify-center")}>{actions}</div> : null}

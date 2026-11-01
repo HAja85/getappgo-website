@@ -12,14 +12,11 @@
       "slug": "business-systems",
       "name": "Business Systems",
       "tagline": "Systems of record for the operation.",
-      "description": "ERP, CRM, facilities, helpdesk, commerce, and genealogy applications that give teams a shared operating picture.",
+      "description": "CRM, ERP, and facility management applications that give teams a shared operating picture.",
       "productSlugs": [
-        "erp-system",
         "crm-system",
-        "facility-management-system",
-        "helpdesk-system",
-        "ecommerce-platform",
-        "genealogy-management-system"
+        "erp-system",
+        "facility-management-system"
       ],
       "visual": "/images/solutions/business-systems.png"
     },

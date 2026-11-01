@@ -20,7 +20,7 @@ export function ProductsPage() {
       <Seo
         path="/products"
         title="Products"
-        description="Explore ZillionAI business software and AI platforms."
+        description="Explore ZillionxAI business software and AI platforms."
       />
       <PageHero badge={hero.badge} badgeIcon="grid" title={hero.title} accent={hero.accent} body={hero.body} image="/images/categories/business-software.png" compact />
       <Container className="py-20">

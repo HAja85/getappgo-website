@@ -7,13 +7,21 @@ import { useCopy } from "@/i18n/LanguageProvider";
 import { cn } from "@/lib/cn";
 import type { ServiceLineId } from "@/content/zillion";
 
-type NavKey = "home" | "about" | "services" | "packages" | "contact";
+type NavKey = "home" | "platform" | "solutions" | "packages" | "company";
+type Panel = "solutions" | "company";
 
 function activeKey(pathname: string): NavKey | null {
   if (pathname === "/") return "home";
-  if (pathname.startsWith("/about") || pathname.startsWith("/leadership")) return "about";
+  if (pathname.startsWith("/platform")) return "platform";
   if (pathname.startsWith("/packages")) return "packages";
-  if (pathname.startsWith("/contact")) return "contact";
+  if (
+    pathname.startsWith("/company") ||
+    pathname.startsWith("/leadership") ||
+    pathname.startsWith("/about") ||
+    pathname.startsWith("/contact")
+  ) {
+    return "company";
+  }
   if (
     pathname.startsWith("/services") ||
     pathname.startsWith("/products") ||
@@ -21,7 +29,7 @@ function activeKey(pathname: string): NavKey | null {
     pathname.startsWith("/industries") ||
     pathname.startsWith("/ai-voice-agents")
   ) {
-    return "services";
+    return "solutions";
   }
   return null;
 }
@@ -30,21 +38,24 @@ export function FloatingNav() {
   const copy = useCopy();
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
-  const [megaOpen, setMegaOpen] = useState(false);
+  const [panel, setPanel] = useState<Panel | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [lineId, setLineId] = useState<ServiceLineId>("software");
   const wrapRef = useRef<HTMLDivElement>(null);
 
-  const items: { key: NavKey; label: string; href: string }[] = [
+  const items: { key: NavKey; label: string; href?: string; panel?: Panel }[] = [
     { key: "home", label: copy.nav.home, href: "/" },
-    { key: "about", label: copy.nav.about, href: "/about" },
-    { key: "services", label: copy.nav.services, href: "/services/software-services" },
+    { key: "platform", label: copy.nav.platform, href: "/platform" },
+    { key: "solutions", label: copy.nav.solutions, panel: "solutions" },
     { key: "packages", label: copy.nav.packages, href: "/packages" },
-    { key: "contact", label: copy.nav.contact, href: "/contact" },
+    { key: "company", label: copy.nav.company, panel: "company" },
   ];
   const current = activeKey(location.pathname);
   const activeIndex = items.findIndex((item) => item.key === current);
   const line = copy.lines.find((entry) => entry.id === lineId) ?? copy.lines[0];
+  const companyGroupHrefs = new Set(["/company/story", "/company/office", "/leadership"]);
+  const companyGroup = copy.companyMenu.filter((item) => companyGroupHrefs.has(item.href));
+  const companyLinks = copy.companyMenu.filter((item) => !companyGroupHrefs.has(item.href));
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -54,19 +65,19 @@ export function FloatingNav() {
   }, []);
 
   useEffect(() => {
-    setMegaOpen(false);
+    setPanel(null);
     setMobileOpen(false);
   }, [location.pathname, location.hash]);
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
       if (event.key === "Escape") {
-        setMegaOpen(false);
+        setPanel(null);
         setMobileOpen(false);
       }
     }
     function onPointerDown(event: PointerEvent) {
-      if (!wrapRef.current?.contains(event.target as Node)) setMegaOpen(false);
+      if (!wrapRef.current?.contains(event.target as Node)) setPanel(null);
     }
     window.addEventListener("keydown", onKey);
     window.addEventListener("pointerdown", onPointerDown);
@@ -76,9 +87,9 @@ export function FloatingNav() {
     };
   }, []);
 
-  // Light (scrolled) state also applies while a menu panel is open over the hero.
   const light = scrolled;
   const textColor = light ? "text-[#1F1F1F]" : "text-white";
+  const linkClass = "focus-ring relative flex w-[8.4rem] items-center justify-center gap-1 rounded-full px-3 py-2 text-sm font-medium whitespace-nowrap transition-colors";
 
   return (
     <header className="pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-center p-4">
@@ -94,7 +105,6 @@ export function FloatingNav() {
         >
           <BrandLogo tone={light ? "dark" : "light"} />
 
-          {/* Desktop link pill: 5 equal columns, sliding gradient pill marks the current page */}
           <div
             className={cn(
               "absolute start-1/2 hidden -translate-x-1/2 rounded-full border p-1 backdrop-blur-md xl:block rtl:translate-x-1/2",
@@ -112,35 +122,26 @@ export function FloatingNav() {
               {items.map((item, index) => {
                 const isActive = index === activeIndex;
                 const color = isActive ? "text-white" : textColor;
-                if (item.key === "services") {
+                if (item.panel) {
+                  const open = panel === item.panel;
                   return (
                     <li key={item.key} className="relative">
                       <button
                         type="button"
-                        aria-expanded={megaOpen}
-                        aria-controls="services-mega"
-                        onClick={() => setMegaOpen((open) => !open)}
-                        className={cn(
-                          "focus-ring relative flex w-[116.6px] items-center justify-center gap-1 rounded-full px-5 py-2 text-sm font-medium whitespace-nowrap transition-colors",
-                          color,
-                        )}
+                        aria-expanded={open}
+                        aria-controls={`${item.panel}-mega`}
+                        onClick={() => setPanel((currentPanel) => (currentPanel === item.panel ? null : item.panel ?? null))}
+                        className={cn(linkClass, color)}
                       >
                         {item.label}
-                        <Icon name="chevronDown" size={14} className={cn("transition-transform", megaOpen && "rotate-180")} />
+                        <Icon name="chevronDown" size={14} className={cn("transition-transform", open && "rotate-180")} />
                       </button>
                     </li>
                   );
                 }
                 return (
                   <li key={item.key}>
-                    <Link
-                      to={item.href}
-                      aria-current={isActive ? "page" : undefined}
-                      className={cn(
-                        "focus-ring relative block w-[116.6px] rounded-full px-5 py-2 text-center text-sm font-medium whitespace-nowrap transition-colors",
-                        color,
-                      )}
-                    >
+                    <Link to={item.href ?? "/"} aria-current={isActive ? "page" : undefined} className={cn(linkClass, color)}>
                       {item.label}
                     </Link>
                   </li>
@@ -166,10 +167,9 @@ export function FloatingNav() {
           </div>
         </nav>
 
-        {/* Services mega-menu */}
-        {megaOpen ? (
+        {panel === "solutions" ? (
           <div
-            id="services-mega"
+            id="solutions-mega"
             className="absolute inset-x-0 top-full mt-4 hidden overflow-hidden rounded-[32px] border border-white/60 p-12 shadow-2xl xl:block"
             style={{
               background:
@@ -222,13 +222,7 @@ export function FloatingNav() {
               </div>
               <div className="grid grid-cols-2 grid-rows-[1.6fr_1fr] gap-3">
                 {line.visuals.map((src, index) => (
-                  <div
-                    key={src}
-                    className={cn(
-                      "overflow-hidden rounded-xl border border-white/20 bg-[#0f1235] shadow-sm",
-                      index === 0 && "col-span-2",
-                    )}
-                  >
+                  <div key={src} className={cn("overflow-hidden rounded-xl border border-white/20 bg-[#0f1235] shadow-sm", index === 0 && "col-span-2")}>
                     <img src={src} alt="" className="h-full w-full object-cover" loading="lazy" />
                   </div>
                 ))}
@@ -237,27 +231,70 @@ export function FloatingNav() {
           </div>
         ) : null}
 
-        {/* Mobile / tablet panel */}
+        {panel === "company" ? (
+          <div
+            id="company-mega"
+            className="absolute inset-x-0 top-full mt-4 hidden overflow-hidden rounded-[32px] border border-white/60 p-12 shadow-2xl xl:block"
+            style={{
+              background:
+                "radial-gradient(60% 80% at 15% 70%, rgba(209,250,229,0.75), transparent 70%), linear-gradient(110deg, #ffffff 0%, #f1fbf7 45%, #dbeafe 100%)",
+            }}
+          >
+            <div className="grid items-start gap-10 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
+              <section aria-labelledby="company-group-heading">
+                <p id="company-group-heading" className="mb-6 text-xs font-semibold tracking-widest text-slate-800 uppercase">
+                  {copy.nav.ourCompany}
+                </p>
+                <ul className="grid gap-2">
+                  {companyGroup.map((item, index) => (
+                    <li key={item.href}>
+                      <Link
+                        to={item.href}
+                        className="focus-ring group flex items-center gap-3 rounded-xl px-3 py-3 font-semibold text-slate-800 hover:bg-white/70"
+                      >
+                        <span className="w-6 text-xs text-slate-400">{String(index + 1).padStart(2, "0")}</span>
+                        <span className="flex-1">{item.label}</span>
+                        <Icon name="arrowRight" size={16} className="text-slate-300 group-hover:text-blue-700 rtl:-scale-x-100" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+              <div aria-hidden="true" className="hidden w-px self-stretch bg-slate-200/80 md:block" />
+              <ul className="grid content-start gap-2">
+                {companyLinks.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      to={item.href}
+                      className="focus-ring group flex items-center gap-3 rounded-xl px-3 py-3 font-semibold text-slate-800 hover:bg-white/70"
+                    >
+                      <span className="flex-1">{item.label}</span>
+                      <Icon name="arrowRight" size={16} className="text-slate-300 group-hover:text-blue-700 rtl:-scale-x-100" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ) : null}
+
         {mobileOpen ? (
           <div
             id="mobile-menu"
-            className="fixed inset-x-4 top-24 max-h-[calc(100svh-7rem)] overflow-y-auto rounded-3xl border border-white/50 bg-white/90 p-6 shadow-2xl backdrop-blur-xl xl:hidden"
+            className="fixed inset-x-4 top-24 max-h-[calc(100svh-7rem)] overflow-y-auto rounded-3xl border border-white/50 bg-white/90 p-6 pb-28 shadow-2xl backdrop-blur-xl xl:hidden"
           >
             <ul className="flex flex-col">
               {items
-                .filter((item) => item.key !== "services")
+                .filter((item) => !item.panel)
                 .map((item) => (
                   <li key={item.key} className="border-b border-slate-200/70">
-                    <Link
-                      to={item.href}
-                      className={cn("focus-ring block rounded py-2 font-medium", item.key === current ? "text-blue-600" : "text-slate-900")}
-                    >
+                    <Link to={item.href ?? "/"} className={cn("focus-ring block rounded py-2 font-medium", item.key === current ? "text-blue-600" : "text-slate-900")}>
                       {item.label}
                     </Link>
                   </li>
                 ))}
             </ul>
-            <p className="mt-2 py-2 font-medium text-slate-900">{copy.nav.services}</p>
+            <p className="mt-4 font-medium text-slate-900">{copy.nav.solutions}</p>
             <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-2">
               {copy.lines.map((entry) => (
                 <button
@@ -274,14 +311,31 @@ export function FloatingNav() {
                 </button>
               ))}
             </div>
-            <p className="mt-3 font-heading font-bold text-slate-900">{line.label}</p>
             <ul className="mt-1">
               {line.items.map((item, index) => (
                 <li key={item.href}>
                   <Link to={item.href} className="focus-ring flex items-center gap-3 rounded py-1.5 text-sm text-slate-800">
                     <span className="w-5 text-xs font-semibold">{String(index + 1).padStart(2, "0")}</span>
                     <span className="flex-1">{item.label}</span>
-                    <Icon name="arrowRight" size={16} className="rtl:-scale-x-100" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 font-medium text-slate-900">{copy.nav.ourCompany}</p>
+            <ul>
+              {companyGroup.map((item) => (
+                <li key={item.href}>
+                  <Link to={item.href} className="focus-ring block rounded py-1.5 text-sm text-slate-800">
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <ul className="mt-3 border-t border-slate-200/70 pt-2">
+              {companyLinks.map((item) => (
+                <li key={item.href} className="border-b border-slate-200/70 last:border-b-0">
+                  <Link to={item.href} className="focus-ring block rounded py-2 font-medium text-slate-900">
+                    {item.label}
                   </Link>
                 </li>
               ))}
