@@ -125,7 +125,7 @@ const en = {
     badge: "ZillionxAI",
     title: "Digital Transformation as a Service (DTaaS)",
     sub: "ZillionxAI delivers Digital Transformation-as-a-service, providing a platform and multi-solution implementation with the right combination of SaaS, AI, and automation, tailored to your business operations across systems, processes, and tools, both on-premises and in the cloud. Grow and scale your business on demand without complexity and heavy IT investments.",
-    cta: "Build your DTaaS Solution",
+    cta: "Build your DTaaS solution",
     agent: {
       title: "AI Voice Agent",
       body: "Human-like AI that speaks Arabic and English, ready to answer calls.",
@@ -514,11 +514,10 @@ const en = {
         initials: "SH",
         quote: "Technology should do more than digitize business. Every engagement should end with a result the business can measure.",
         story: [
-          "Dr. Shahul Hameed leads ZillionxAI so growing businesses have a single partner for digital transformation, from the first assessment to the systems they run every day.",
-          "As Managing Director he sets the company's direction and leads DTaaS: advisory, solutions, implementation, and managed services.",
-          "He works directly with business owners and leadership teams to understand where growth is being held back, and to agree what success should look like before any technology is chosen.",
-          "His focus is practical outcomes and return on investment rather than technology for its own sake, which is why every ZillionxAI engagement starts with the business problem.",
-          "He also leads the company's partnerships, bringing the right mix of SaaS, AI, and specialist expertise to each client.",
+          "Dr. Shahul brings the enterprise-tested perspective to making Digital transformation more accessible and practical for growing businesses.",
+          "As Managing Director, he sets the company's direction and leads the Digital Transformation-as-a-Service model: advisory, solutions, implementation, and managed services under one roof. He works directly with business owners and leadership teams to understand what's holding back growth and agree on what success should look like before choosing any technology or product.",
+          "His focus is practical outcomes and return on investment for the customers rather than technology for its own sake, which is why every ZillionxAI package starts with the business problem.",
+          "He also leads the company's partnerships and global expansion and shapes the right mix of SaaS, AI, and Automation solutions.",
         ],
       },
       {
@@ -529,11 +528,11 @@ const en = {
         initials: "AS",
         quote: "Clients should feel the same team from the first meeting to go-live and beyond.",
         story: [
-          "Abdul Samad leads presales and delivery at ZillionxAI, so the people who understand a client's needs stay accountable through go-live and managed services.",
-          "He guides clients from the first conversation through scoping, proposal and implementation, keeping the plan tied to the outcomes agreed at the start.",
-          "He oversees delivery across the partner ecosystem, coordinating specialists and making sure every project runs to a clear plan, timeline and quality standard.",
-          "He places strong emphasis on communication and transparency, with regular reviews so clients always know what has been delivered and what comes next.",
-          "After go-live he stays involved through managed services, helping clients keep improving and expanding what has been built.",
+          "Abdul Samad leads business development and delivery at ZillionxAI, so the people who understand a client's needs stay accountable through the go-live and managed services.",
+          "He guides clients from the first conversation through scoping, proposal, and implementation, keeping the plan tied to the outcomes agreed at the start.",
+          "He oversees delivery across the partner ecosystem, coordinating specialists and making sure every project runs to a clear plan, timeline, and quality standard.",
+          "He places strong emphasis on outcomes and transparency, with regular reviews so clients always know what has been delivered and what comes next.",
+          "After go-live, he stays involved through managed services, helping clients keep improving and expanding what has been built.",
         ],
       },
       {
@@ -594,7 +593,7 @@ en.servicePages = {
     },
     why: {
       pill: "Why ZillionxAI",
-      title: "Business Software Built for Scale",
+      title: "Business Applications built for scale.",
       body: "Systems designed to integrate, grow with your team and stay supported after launch.",
       items: [
         { title: "Fast configuration", body: "Start from proven modules instead of a blank page.", icon: "zap" },

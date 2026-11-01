@@ -60,6 +60,7 @@ export function PlatformPage() {
         badge={page.hero.badge}
         badgeIcon="phone"
         title={page.hero.title}
+        lines={page.hero.lines}
         accent={page.hero.accent}
         body={page.hero.body}
         image="/images/products/ai-call-center-platform.png"

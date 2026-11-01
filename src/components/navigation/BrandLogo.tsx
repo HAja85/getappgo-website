@@ -35,7 +35,7 @@ export function BrandLogo({ tone = "dark", size = "md", className, asLink = true
             tone === "light" ? "text-white/70" : "text-slate-500",
           )}
         >
-          SaaS, Automation, AI
+          SaaS, AI, Automation.
         </span>
       </span>
     </span>

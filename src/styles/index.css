@@ -1,41 +1,73 @@
 @import "tailwindcss";
 
-/* Dubai is free for worldwide use. Family name matches the requested DUBAI-REGULAR cut. */
+/* Inter (OFL). Latin subset; Arabic glyphs fall through to the system stack. */
 @font-face {
-  font-family: "DUBAI-REGULAR";
-  src: url("/fonts/Dubai-Regular.woff2") format("woff2");
+  font-family: "Inter";
+  src: url("/fonts/inter-latin-400-normal.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: "DUBAI-REGULAR";
-  src: url("/fonts/Dubai-Medium.woff2") format("woff2");
+  font-family: "Inter";
+  src: url("/fonts/inter-latin-500-normal.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
-  font-family: "DUBAI-REGULAR";
-  src: url("/fonts/Dubai-Bold.woff2") format("woff2");
+  font-family: "Inter";
+  src: url("/fonts/inter-latin-700-normal.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /*
+ * Dubai faces stay available. To switch back, uncomment these blocks and point
+ * --font-sans, --font-heading, --font-display, and --font-arabic at "DUBAI-REGULAR".
+ *
+ * @font-face {
+ *   font-family: "DUBAI-REGULAR";
+ *   src: url("/fonts/Dubai-Regular.woff2") format("woff2");
+ *   font-weight: 400;
+ *   font-style: normal;
+ *   font-display: swap;
+ * }
+ *
+ * @font-face {
+ *   font-family: "DUBAI-REGULAR";
+ *   src: url("/fonts/Dubai-Medium.woff2") format("woff2");
+ *   font-weight: 500;
+ *   font-style: normal;
+ *   font-display: swap;
+ * }
+ *
+ * @font-face {
+ *   font-family: "DUBAI-REGULAR";
+ *   src: url("/fonts/Dubai-Bold.woff2") format("woff2");
+ *   font-weight: 700;
+ *   font-style: normal;
+ *   font-display: swap;
+ * }
+ */
+
+/*
  * ZillionxAI design tokens.
- * Light theme, navy/plum/orange brand gradients, DUBAI-REGULAR for Latin and Arabic.
+ * Light theme, navy/plum/orange brand gradients. Inter for Latin and Arabic text.
  * The legacy semantic tokens (ink, mist, muted, line, accent) are remapped to the
  * light palette so existing catalog components keep working without rewrites.
  */
 @theme {
-  --font-sans: "DUBAI-REGULAR", ui-sans-serif, system-ui, sans-serif;
-  --font-heading: "DUBAI-REGULAR", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "DUBAI-REGULAR", ui-sans-serif, system-ui, sans-serif;
-  --font-arabic: "DUBAI-REGULAR", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-arabic: "Inter", ui-sans-serif, system-ui, sans-serif;
 
   --color-brand-primary: #182793;
   --color-brand-purple: #7b3368;
@@ -124,7 +156,7 @@ h6,
   font-family: var(--font-display);
 }
 
-/* Arabic uses DUBAI-REGULAR too. No letter-spacing, so Arabic letters stay joined. */
+/* Arabic uses the same family variable. No letter-spacing, so Arabic letters stay joined. */
 html[lang="ar"] body,
 html[lang="ar"] body * {
   font-family: var(--font-arabic) !important;

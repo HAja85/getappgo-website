@@ -10,7 +10,7 @@ export function CompanyStoryPage() {
   return (
     <>
       <Seo path="/company/story" title={page.seoTitle} description={page.seoDescription} />
-      <PageHero badge={page.hero.badge} badgeIcon="building" title={page.hero.title} accent={page.hero.accent} body={page.hero.body} compact center />
+      <PageHero badge={page.hero.badge} badgeIcon="building" title={page.hero.title} accent={page.hero.accent} body={page.hero.body} compact center sentence />
       <section className="bg-white py-20">
         <div className="cs-container max-w-3xl">
           <h2 className="font-heading text-3xl font-bold text-slate-900">{page.problemTitle}</h2>
@@ -24,7 +24,7 @@ export function CompanyStoryPage() {
       <section className="bg-slate-50 py-20">
         <div className="cs-container">
           <SectionTitle title={page.approachTitle} body={page.approachBody} />
-          <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {page.approach.map((item) => (
               <li key={item.title} className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
                 <h3 className="font-heading text-lg font-bold text-[#182793]">{item.title}</h3>

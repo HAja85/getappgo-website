@@ -5,8 +5,9 @@ export const portalEn = {
     seoDescription:
       "ZillionxAI AI Call Center answers inbound calls, runs outbound campaigns, books appointments, and hands over to your team with the full context.",
     hero: {
-      badge: "AI Call Center is live 24/7",
-      title: "Every call answered.",
+      badge: "",
+      title: "HiAlexi",
+      lines: ["AI Call Center is live 24/7", "Every call answered."],
       accent: "Every lead followed up.",
       body: "Alexi's AI Call Center picks up inbound calls, makes outbound ones, books appointments and updates your CRM. When a caller needs a person, it hands over with the full context.",
       primary: "Book a Demo",
@@ -223,9 +224,9 @@ export const portalEn = {
       "ZillionxAI combines SaaS, AI, automation, and implementation so businesses can turn technology into measurable outcomes.",
     hero: {
       badge: "Company Story",
-      title: "Technology into",
-      accent: "measurable outcomes",
-      body: "Businesses struggle to turn technology into measurable outcomes. ZillionxAI was built to close that gap.",
+      title: "Businesses struggle to turn technology into measurable outcomes.",
+      accent: "ZillionxAI was built to close that gap.",
+      body: "",
     },
     problemTitle: "Where transformation stalls",
     problem: [
@@ -238,8 +239,7 @@ export const portalEn = {
     approach: [
       { title: "SaaS", body: "Business platforms such as CRM, ERP, facility management, and custom applications, configured for the operation." },
       { title: "AI", body: "Applications that answer, qualify, and assist, with governance, audit trails, and a handoff to people." },
-      { title: "Automation", body: "Workflows that move work between systems with clear approvals, instead of another manual step." },
-      { title: "Implementation", body: "The work of putting that mix into daily use, from the first assessment through optimization." },
+      { title: "Automation and Integration", body: "Workflows that move work between systems with clear approvals, instead of another manual step." },
     ],
     journeyTitle: "From assessment through optimization",
     journeyBody: "Every engagement follows the same path, so the result stays visible from the first meeting to go-live and beyond.",
@@ -351,8 +351,9 @@ export const portalAr: typeof portalEn = {
     seoDescription:
       "مركز اتصال ZillionxAI بالذكاء الاصطناعي يرد على المكالمات الواردة، ويدير الحملات الصادرة، ويحجز المواعيد، ويحوّل المكالمة إلى فريقك مع السياق الكامل.",
     hero: {
-      badge: "مركز الاتصال بالذكاء الاصطناعي يعمل على مدار الساعة",
-      title: "كل مكالمة تُجاب.",
+      badge: "",
+      title: "HiAlexi",
+      lines: ["مركز الاتصال بالذكاء الاصطناعي يعمل على مدار الساعة", "كل مكالمة تُجاب."],
       accent: "وكل عميل محتمل يُتابع.",
       body: "يلتقط Alexi من ZillionxAI المكالمات الواردة، ويجري المكالمات الصادرة، ويحجز المواعيد، ويحدّث نظام علاقات العملاء. حين يحتاج المتصل إلى شخص، تُحوَّل المكالمة مع السياق الكامل.",
       primary: "احجز عرضًا توضيحيًا",
@@ -568,9 +569,9 @@ export const portalAr: typeof portalEn = {
     seoDescription: "تجمع ZillionxAI البرمجيات كخدمة والذكاء الاصطناعي والأتمتة والتنفيذ لتحويل التقنية إلى نتائج قابلة للقياس.",
     hero: {
       badge: "قصة الشركة",
-      title: "التقنية إلى",
-      accent: "نتائج قابلة للقياس",
-      body: "تواجه الشركات صعوبة في تحويل التقنية إلى نتائج قابلة للقياس. تأسست ZillionxAI لسد هذه الفجوة.",
+      title: "تواجه الشركات صعوبة في تحويل التقنية إلى نتائج قابلة للقياس.",
+      accent: "تأسست ZillionxAI لسد هذه الفجوة.",
+      body: "",
     },
     problemTitle: "أين يتعثر التحول",
     problem: [
@@ -583,8 +584,7 @@ export const portalAr: typeof portalEn = {
     approach: [
       { title: "SaaS", body: "منصات أعمال مثل CRM وERP وإدارة المرافق والتطبيقات المخصصة، مهيأة للتشغيل." },
       { title: "AI", body: "تطبيقات ترد وتؤهّل وتساعد، مع حوكمة وسجلات تدقيق وتسليم للناس." },
-      { title: "Automation", body: "مسارات تنقل العمل بين الأنظمة بموافقات واضحة، بدل خطوة يدوية أخرى." },
-      { title: "Implementation", body: "عمل إدخال هذا المزيج في الاستخدام اليومي، من التقييم الأول حتى التحسين." },
+      { title: "الأتمتة والتكامل", body: "مسارات تنقل العمل بين الأنظمة بموافقات واضحة، بدل خطوة يدوية أخرى." },
     ],
     journeyTitle: "من التقييم حتى التحسين",
     journeyBody: "كل مشاركة تتبع المسار نفسه، فتبقى النتيجة ظاهرة من الاجتماع الأول حتى الإطلاق وما بعده.",
