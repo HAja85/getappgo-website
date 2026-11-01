@@ -1,0 +1,4 @@
+# Library code is included by contact.php. Do not serve it over HTTP.
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>

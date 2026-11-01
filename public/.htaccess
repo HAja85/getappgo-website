@@ -1,0 +1,23 @@
+# Apache rules for the static Vite site on GoDaddy cPanel.
+# Existing files are served as themselves. Unknown routes fall back to
+# index.html. /api/contact.php must be executed by PHP and must not be
+# rewritten to the SPA shell.
+
+Options -Indexes
+RewriteEngine On
+RewriteBase /
+
+# Certificate challenges stay reachable. Other dotfiles do not.
+RewriteRule ^\.well-known/ - [END]
+RewriteRule (^|/)\. - [F,L]
+
+# Only the contact endpoint is public under /api. Library files are included
+# by PHP on disk; they are not meant to be downloaded.
+RewriteRule ^api/contact\.php$ - [END]
+RewriteRule ^api/ - [F,L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [END]
+
+RewriteRule ^ index.html [END]

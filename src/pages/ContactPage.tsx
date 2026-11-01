@@ -9,7 +9,7 @@ import { Icon } from "@/components/zillion/Icon";
 import { useCopy } from "@/i18n/LanguageProvider";
 import { demoRequestSchema } from "@/lib/content/schema";
 import { getAiAgents, getProducts, getSite } from "@/lib/content/repository";
-import { submitDemoRequest } from "@/lib/leads/submit";
+import { readHoneypot, submitDemoRequest } from "@/lib/leads/submit";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 const inputClass =
@@ -32,6 +32,7 @@ export function ContactPage() {
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [formStartedAt] = useState(() => Date.now());
 
   // Pre-rendered HTML has no query string, so apply ?product= after hydration.
   const productParam = params.get("product");
@@ -56,7 +57,7 @@ export function ContactPage() {
     setErrors({});
     setStatus("sending");
     try {
-      await submitDemoRequest(parsed.data);
+      await submitDemoRequest(parsed.data, { fax: readHoneypot(event.currentTarget), formStartedAt });
       setStatus("success");
     } catch {
       setStatus("error");
@@ -110,6 +111,10 @@ export function ContactPage() {
               </p>
             ) : (
               <form className="mt-8 grid gap-5 md:grid-cols-2" onSubmit={onSubmit} noValidate>
+                <div aria-hidden="true" className="sr-only">
+                  <label htmlFor="c-fax">Fax</label>
+                  <input id="c-fax" name="fax" type="text" tabIndex={-1} autoComplete="off" defaultValue="" />
+                </div>
                 <Field id="c-name" label={form.name} error={errors.name}>
                   <input id="c-name" className={inputClass} value={values.name} onChange={(e) => set("name")(e.target.value)} autoComplete="name" />
                 </Field>

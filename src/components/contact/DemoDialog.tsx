@@ -3,7 +3,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import * as Select from "@radix-ui/react-select";
 import { demoRequestSchema } from "@/lib/content/schema";
 import { getAiAgents, getProducts, getSite } from "@/lib/content/repository";
-import { submitDemoRequest } from "@/lib/leads/submit";
+import { readHoneypot, submitDemoRequest } from "@/lib/leads/submit";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import { Button } from "@/components/ui/Button";
 import { useDemo } from "./DemoProvider";
@@ -27,11 +27,13 @@ export function DemoDialog() {
   const [form, setForm] = useState(emptyForm);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [formStartedAt, setFormStartedAt] = useState(() => Date.now());
 
   useEffect(() => {
     if (!open) return;
     setStatus("idle");
     setErrors({});
+    setFormStartedAt(Date.now());
     setForm({
       ...emptyForm,
       productSlug: productSlug ?? "",
@@ -61,7 +63,7 @@ export function DemoDialog() {
 
     setStatus("submitting");
     try {
-      await submitDemoRequest(parsed.data);
+      await submitDemoRequest(parsed.data, { fax: readHoneypot(event.currentTarget), formStartedAt });
       setStatus("success");
     } catch {
       setStatus("error");
@@ -88,6 +90,10 @@ export function DemoDialog() {
             </div>
           ) : (
             <form className="mt-6 grid gap-4" onSubmit={onSubmit} noValidate>
+              <div aria-hidden="true" className="sr-only">
+                <label htmlFor="d-fax">Fax</label>
+                <input id="d-fax" name="fax" type="text" tabIndex={-1} autoComplete="off" defaultValue="" />
+              </div>
               <Field label="Name" error={errors.name}>
                 <input
                   value={form.name}

@@ -24,19 +24,44 @@ export function buildMailto(request: DemoRequest): string {
   return `mailto:${site.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
-export async function submitDemoRequest(request: DemoRequest): Promise<void> {
-  const endpoint = import.meta.env.VITE_LEADS_ENDPOINT;
-  if (endpoint) {
-    const response = await fetch(endpoint, {
+const CONTACT_ENDPOINT = "/api/contact.php";
+
+export function readHoneypot(form: HTMLFormElement): string {
+  const value = new FormData(form).get("fax");
+  return typeof value === "string" ? value : "";
+}
+
+export async function submitDemoRequest(
+  request: DemoRequest,
+  meta: { fax: string; formStartedAt: number },
+): Promise<void> {
+  let response: Response;
+  try {
+    response = await fetch(CONTACT_ENDPOINT, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(request),
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: request.name,
+        company: request.company,
+        email: request.email,
+        phone: request.phone,
+        productSlug: request.productSlug,
+        message: request.message,
+        intent: request.intent,
+        fax: meta.fax,
+        formStartedAt: meta.formStartedAt,
+      }),
     });
-    if (!response.ok) {
-      throw new Error("Unable to send your request right now.");
-    }
+  } catch {
+    window.location.href = buildMailto(request);
     return;
   }
 
-  window.location.href = buildMailto(request);
+  const payload = (await response.json().catch(() => null)) as { ok?: boolean } | null;
+  if (!response.ok || !payload || payload.ok !== true) {
+    throw new Error("Unable to send your request right now.");
+  }
 }
