@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { Icon } from "@/components/zillion/Icon";
 import { useCopy } from "@/i18n/LanguageProvider";
 
-const DOTS = ["#182793", "#7B3368", "#D97817"];
+const DOTS = ["#101B35", "#7C3AED", "#06B6D4"];
 
 export function HardwareSourcing() {
   const copy = useCopy();
@@ -17,7 +17,7 @@ export function HardwareSourcing() {
           <h2 className="heading2 relative font-black text-[#0F172A]">
             {hw.titleBefore}
             <span className="relative inline-block">
-              <span aria-hidden="true" className="absolute -top-3 left-0 text-base text-[#505FD0] sm:-top-4">✦</span>
+              <span aria-hidden="true" className="absolute -top-3 left-0 text-base text-[#2563EB] sm:-top-4">✦</span>
               <span className="text-gradient-4">{hw.titleAccent}</span>
             </span>
           </h2>
@@ -33,9 +33,9 @@ export function HardwareSourcing() {
             <li key={tile.label}>
               <Link
                 to={tile.href}
-                className="group focus-ring flex h-36 flex-col items-center justify-center gap-3 rounded-xl border border-gray-200 bg-white px-3 text-center transition-all hover:border-[#505FD0]/50 hover:shadow-md"
+                className="group focus-ring flex h-36 flex-col items-center justify-center gap-3 rounded-xl border border-gray-200 bg-white px-3 text-center transition-all hover:border-[#2563EB]/50 hover:shadow-md"
               >
-                <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#eef2ff] to-[#fdf2f8] text-[#182793] transition-transform group-hover:scale-110">
+                <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#EFF6FF] to-[#ECFEFF] text-[#101B35] transition-transform group-hover:scale-110">
                   <Icon name={tile.icon} size={30} strokeWidth={1.75} />
                 </span>
                 <span className="font-heading text-sm leading-tight font-bold text-slate-800">{tile.label}</span>

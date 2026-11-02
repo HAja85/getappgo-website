@@ -78,7 +78,7 @@ export function FloatingNav() {
 
   // Light (scrolled) state also applies while a menu panel is open over the hero.
   const light = scrolled;
-  const textColor = light ? "text-[#1F1F1F]" : "text-white";
+  const textColor = light ? "text-[#101B35]" : "text-white";
 
   return (
     <header className="pointer-events-none fixed inset-x-0 top-0 z-50 flex justify-center p-4">
@@ -155,7 +155,7 @@ export function FloatingNav() {
             </span>
             <button
               type="button"
-              className={cn("focus-ring rounded-full p-2 transition-colors xl:hidden", light ? "text-[#1F1F1F] hover:bg-black/5" : "text-white hover:bg-white/20")}
+              className={cn("focus-ring rounded-full p-2 transition-colors xl:hidden", light ? "text-[#101B35] hover:bg-black/5" : "text-white hover:bg-white/20")}
               aria-label={mobileOpen ? copy.nav.closeMenu : copy.nav.openMenu}
               aria-expanded={mobileOpen}
               aria-controls="mobile-menu"
@@ -191,7 +191,7 @@ export function FloatingNav() {
                       onClick={() => setLineId(entry.id)}
                       className={cn(
                         "focus-ring rounded-lg px-3 py-3 text-start font-heading text-xl font-bold transition-colors",
-                        entry.id === lineId ? "bg-gradient-1 text-white shadow-md" : "text-slate-900 hover:bg-white/70",
+                        entry.id === lineId ? "bg-gradient-1 text-white shadow-md" : "text-[#101B35] hover:bg-white/70",
                       )}
                     >
                       {entry.label}
@@ -215,7 +215,7 @@ export function FloatingNav() {
                     </li>
                   ))}
                 </ul>
-                <Link to={`/services/${line.slug}`} className="focus-ring mt-4 inline-flex items-center gap-1 rounded text-sm font-semibold text-[#182793]">
+                <Link to={`/services/${line.slug}`} className="focus-ring mt-4 inline-flex items-center gap-1 rounded text-sm font-semibold text-[#101B35]">
                   {copy.nav.viewLine}
                   <Icon name="chevronRight" size={14} className="rtl:-scale-x-100" />
                 </Link>
@@ -225,7 +225,7 @@ export function FloatingNav() {
                   <div
                     key={src}
                     className={cn(
-                      "overflow-hidden rounded-xl border border-white/20 bg-[#0f1235] shadow-sm",
+                      "overflow-hidden rounded-xl border border-white/20 bg-[#101B35] shadow-sm",
                       index === 0 && "col-span-2",
                     )}
                   >
@@ -250,14 +250,14 @@ export function FloatingNav() {
                   <li key={item.key} className="border-b border-slate-200/70">
                     <Link
                       to={item.href}
-                      className={cn("focus-ring block rounded py-2 font-medium", item.key === current ? "text-blue-600" : "text-slate-900")}
+                      className={cn("focus-ring block rounded py-2 font-medium", item.key === current ? "text-blue-600" : "text-[#101B35]")}
                     >
                       {item.label}
                     </Link>
                   </li>
                 ))}
             </ul>
-            <p className="mt-2 py-2 font-medium text-slate-900">{copy.nav.services}</p>
+            <p className="mt-2 py-2 font-medium text-[#101B35]">{copy.nav.services}</p>
             <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-2">
               {copy.lines.map((entry) => (
                 <button
@@ -274,7 +274,7 @@ export function FloatingNav() {
                 </button>
               ))}
             </div>
-            <p className="mt-3 font-heading font-bold text-slate-900">{line.label}</p>
+            <p className="mt-3 font-heading font-bold text-[#101B35]">{line.label}</p>
             <ul className="mt-1">
               {line.items.map((item, index) => (
                 <li key={item.href}>

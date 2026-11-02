@@ -64,7 +64,7 @@ function ProductHero({ product }: SectionProps) {
         </>
       }
       aside={
-        <div className="overflow-hidden rounded-3xl border-4 border-white/15 bg-[#0f1235] shadow-2xl">
+        <div className="overflow-hidden rounded-3xl border-4 border-white/15 bg-[#101B35] shadow-2xl">
           <img src={product.hero.visual} alt={product.hero.visualAlt} width={1280} height={720} className="h-auto w-full max-w-xl object-cover" />
         </div>
       }

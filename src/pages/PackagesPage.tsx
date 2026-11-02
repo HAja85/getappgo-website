@@ -36,20 +36,20 @@ export function PackagesPage() {
                 </div>
                 <div className="flex flex-1 flex-col p-6">
                   <p className="text-sm leading-6 text-slate-600">{item.body}</p>
-                  <p className="mt-6 text-[10px] font-bold tracking-[0.2em] text-[#182793] uppercase">{pk.deliverablesLabel}</p>
+                  <p className="mt-6 text-[10px] font-bold tracking-[0.2em] text-[#101B35] uppercase">{pk.deliverablesLabel}</p>
                   <ul className="mt-2 grid gap-1.5">
                     {item.deliverables.map((d) => (
-                      <li key={d} className="flex items-center gap-2 text-sm font-semibold text-slate-900">
+                      <li key={d} className="flex items-center gap-2 text-sm font-semibold text-[#101B35]">
                         <Icon name="checkCircle" size={16} className="shrink-0 text-green-600" />
                         {d}
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-6 text-[10px] font-bold tracking-[0.2em] text-[#182793] uppercase">{pk.exampleLabel}</p>
+                  <p className="mt-6 text-[10px] font-bold tracking-[0.2em] text-[#101B35] uppercase">{pk.exampleLabel}</p>
                   <ul className="mt-2 grid gap-1.5">
                     {item.examples.map((e) => (
                       <li key={e} className="flex items-center gap-2 text-sm text-slate-600">
-                        <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#505FD0]" />
+                        <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#2563EB]" />
                         {e}
                       </li>
                     ))}
@@ -70,14 +70,14 @@ export function PackagesPage() {
         </div>
       </section>
 
-      <section className="bg-[#020617] py-20 text-white">
+      <section className="bg-[#101B35] py-20 text-white">
         <div className="cs-container">
           <SectionTitle pill={company.modelPill} pillIcon="workflow" title={company.modelTitle} body={company.modelBody} dark />
           <ol className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {company.pillars.map((pillar, index) => (
               <li key={pillar.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
                 <div className="flex items-center justify-between">
-                  <IconTile icon={pillar.icon} className="from-[#505FD0] to-[#CA51AA]" />
+                  <IconTile icon={pillar.icon} className="from-[#2563EB] to-[#06B6D4]" />
                   <span className="text-3xl font-bold text-white/15">{String(index + 1).padStart(2, "0")}</span>
                 </div>
                 <h3 className="mt-5 font-heading text-lg font-bold">{pillar.title}</h3>

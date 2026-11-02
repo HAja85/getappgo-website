@@ -24,7 +24,7 @@ export function WhatWeDo() {
 
       <div className="cs-container relative py-12 sm:py-16 md:py-20 lg:py-24">
         <div className="mb-10 flex items-center gap-5 md:mb-14">
-          <p className="shrink-0 text-sm font-semibold tracking-[0.2em] text-[#07A1E9] uppercase">{copy.whatWeDo.eyebrow}</p>
+          <p className="shrink-0 text-sm font-semibold tracking-[0.2em] text-[#06B6D4] uppercase">{copy.whatWeDo.eyebrow}</p>
           <span aria-hidden="true" className="h-px flex-1 bg-slate-200" />
         </div>
 
@@ -41,11 +41,11 @@ export function WhatWeDo() {
                 index === 2 && "sm:rounded-es-xl lg:rounded-none",
               )}
             >
-              <span aria-hidden="true" className="absolute -top-px start-0 h-[3px] w-14 bg-gradient-to-r from-[#505FD0] to-[#8B5CF6]" />
+              <span aria-hidden="true" className="absolute -top-px start-0 h-[3px] w-14 bg-gradient-to-r from-[#2563EB] to-[#7C3AED]" />
               <span aria-hidden="true" className="block text-7xl leading-none font-bold text-gray-100 transition-colors duration-300 group-hover:text-violet-200 lg:text-8xl">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <h3 className="mt-8 font-display text-base font-bold tracking-[0.1em] text-[#1F1F1F] uppercase lg:mt-10">{card.title}</h3>
+              <h3 className="mt-8 font-display text-base font-bold tracking-[0.1em] text-[#101B35] uppercase lg:mt-10">{card.title}</h3>
               <p className="mt-4 text-sm leading-[22.75px] text-gray-500">{card.body}</p>
             </Link>
           ))}
@@ -63,7 +63,7 @@ export function WhatWeDo() {
                 <span className="bg-gradient-2 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg text-white">
                   <Icon name={item.icon} size={16} />
                 </span>
-                <span className="font-heading text-sm leading-tight font-bold text-[#182793]">{item.name}</span>
+                <span className="font-heading text-sm leading-tight font-bold text-[#101B35]">{item.name}</span>
               </li>
             ))}
           </ul>
@@ -78,7 +78,7 @@ export function WhatWeDo() {
               <span className="h-2 w-2 rounded-full bg-green-500" />
               {copy.trust.chip}
             </p>
-            <h3 className="mt-3 font-heading text-2xl font-bold text-slate-900 md:text-3xl">{copy.trust.title}</h3>
+            <h3 className="mt-3 font-heading text-2xl font-bold text-[#101B35] md:text-3xl">{copy.trust.title}</h3>
             <p className="mt-4 max-w-2xl text-base text-gray-600">{copy.trust.body}</p>
             <button
               type="button"

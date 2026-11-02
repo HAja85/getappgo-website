@@ -13,7 +13,7 @@ import { readHoneypot, submitDemoRequest } from "@/lib/leads/submit";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 
 const inputClass =
-  "h-11 w-full rounded-lg border border-slate-200 bg-slate-50 px-3 text-sm text-slate-800 outline-none transition focus:border-[#505FD0] focus:bg-white focus:ring-2 focus:ring-[#505FD0]/20";
+  "h-11 w-full rounded-lg border border-slate-200 bg-slate-50 px-3 text-sm text-slate-800 outline-none transition focus:border-[#2563EB] focus:bg-white focus:ring-2 focus:ring-[#2563EB]/20";
 
 export function ContactPage() {
   const copy = useCopy();
@@ -103,7 +103,7 @@ export function ContactPage() {
         <div className="cs-container grid gap-6 lg:grid-cols-[1.6fr_1fr]">
           <div className="rounded-2xl border border-slate-200 bg-white p-6 md:p-8">
             <Pill icon="send">{form.pill}</Pill>
-            <h2 className="mt-3 font-heading text-2xl font-bold text-slate-900 md:text-3xl">{form.title}</h2>
+            <h2 className="mt-3 font-heading text-2xl font-bold text-[#101B35] md:text-3xl">{form.title}</h2>
             <p className="mt-2 text-sm text-slate-500">{form.body}</p>
             {status === "success" ? (
               <p role="status" className="mt-8 rounded-xl bg-green-50 p-4 text-sm font-semibold text-green-700">
@@ -185,9 +185,9 @@ export function ContactPage() {
             )}
           </div>
 
-          <aside className="relative overflow-hidden rounded-2xl bg-[#3b1d5c] p-8 text-white">
+          <aside className="relative overflow-hidden rounded-2xl bg-[#101B35] p-8 text-white">
             <img src="/images/products/ai-call-center-platform.png" alt="" className="absolute inset-0 h-full w-full object-cover opacity-25" />
-            <div className="absolute inset-0 bg-gradient-to-b from-[#4b2a7a]/80 to-[#2b0f4a]/95" />
+            <div className="absolute inset-0 bg-gradient-to-b from-[#172554]/80 to-[#0B1224]/95" />
             <div className="relative">
               <Pill icon="sparkles" dark>
                 {copy.contact.side.label}
@@ -220,9 +220,9 @@ function ContactCard({ icon, title, body, value, href, external }: { icon: "phon
       >
         <span className="flex items-center gap-3">
           <IconTile icon={icon} className="h-9 w-9" />
-          <span className="text-xs font-bold tracking-wider text-[#182793] uppercase">{title}</span>
+          <span className="text-xs font-bold tracking-wider text-[#101B35] uppercase">{title}</span>
         </span>
-        <span dir="ltr" className="mt-4 text-lg font-semibold text-slate-900 rtl:text-end">{value}</span>
+        <span dir="ltr" className="mt-4 text-lg font-semibold text-[#101B35] rtl:text-end">{value}</span>
         <span className="mt-1 text-xs text-slate-500">{body}</span>
       </a>
     </li>

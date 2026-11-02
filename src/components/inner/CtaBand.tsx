@@ -26,7 +26,7 @@ export function CtaBand({ title, body, primary, secondary, productSlug }: CtaBan
           <button
             type="button"
             onClick={() => openDemo({ intent: "demo", productSlug })}
-            className="focus-ring inline-flex items-center gap-2 rounded-md bg-white px-5 py-2.5 text-sm font-semibold text-[#182793] shadow-md transition-transform hover:scale-105"
+            className="focus-ring inline-flex items-center gap-2 rounded-md bg-white px-5 py-2.5 text-sm font-semibold text-[#101B35] shadow-md transition-transform hover:scale-105"
           >
             {primary ?? copy.common.requestDemo}
             <Icon name="zap" size={14} />

@@ -67,7 +67,7 @@ export function HubIllustration() {
             );
           })}
         </svg>
-        <div className="absolute top-1/2 left-1/2 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-3xl bg-gradient-to-br from-[#8B5CF6] to-[#505FD0] text-white shadow-xl">
+        <div className="absolute top-1/2 left-1/2 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-3xl bg-gradient-to-br from-[#7C3AED] to-[#2563EB] text-white shadow-xl">
           <img src="/images/zillion/mark.svg" alt="" width={36} height={36} className="h-9 w-9 rounded-lg bg-white p-1" />
           <span className="mt-1 text-[11px] font-bold">{illus.hub}</span>
         </div>
@@ -97,7 +97,7 @@ export function FlowIllustration() {
     <div className="relative flex h-full w-full items-center justify-center bg-gradient-to-br from-[#eff6ff] via-[#f0f9ff] to-[#dbeafe] p-6">
       <div className="w-full max-w-[380px] rounded-3xl bg-white p-5 shadow-2xl">
         <div className="flex items-center justify-between">
-          <p className="font-heading text-base font-bold text-slate-900">{illus.flowTitle}</p>
+          <p className="font-heading text-base font-bold text-[#101B35]">{illus.flowTitle}</p>
           <span className="rounded-full bg-blue-50 px-2.5 py-1 text-[10px] font-bold text-blue-700">AUTO</span>
         </div>
         <ol className="mt-4 flex flex-col gap-3">
@@ -122,7 +122,7 @@ export function FlowIllustration() {
         <div className="mt-5 grid grid-cols-2 gap-3">
           {illus.flowStats.map((stat) => (
             <div key={stat.label} className="rounded-2xl bg-slate-50 p-3">
-              <p className="text-2xl font-bold text-[#182793]">{stat.value}</p>
+              <p className="text-2xl font-bold text-[#101B35]">{stat.value}</p>
               <p className="text-xs text-slate-500">{stat.label}</p>
             </div>
           ))}

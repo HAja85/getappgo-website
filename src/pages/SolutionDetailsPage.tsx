@@ -23,7 +23,7 @@ export function SolutionDetailsPage() {
           ))}
         </div>
         <p className="mt-8 text-sm">
-          <Link to="/solutions" className="font-semibold text-[#182793]">
+          <Link to="/solutions" className="font-semibold text-[#101B35]">
             All solutions
           </Link>
         </p>

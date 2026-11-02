@@ -26,7 +26,7 @@ export function SolutionsPage() {
                 </div>
               ) : null}
               <div className="p-6">
-                <h2 className="font-heading text-2xl font-bold text-slate-900">{solution.name}</h2>
+                <h2 className="font-heading text-2xl font-bold text-[#101B35]">{solution.name}</h2>
                 <p className="mt-3 text-sm leading-6 text-muted">{solution.tagline}</p>
               </div>
             </Link>

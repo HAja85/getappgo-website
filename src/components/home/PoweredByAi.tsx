@@ -8,7 +8,7 @@ import { cn } from "@/lib/cn";
 
 const ACCENTS = {
   green: { text: "text-[#22C55E]", dot: "bg-[#22C55E]", button: "bg-[#22C55E] text-black", bar: "bg-[#22C55E]" },
-  violet: { text: "text-[#8B5CF6]", dot: "bg-[#8B5CF6]", button: "bg-[#8B5CF6] text-white", bar: "bg-[#8B5CF6]" },
+  violet: { text: "text-[#7C3AED]", dot: "bg-[#7C3AED]", button: "bg-[#7C3AED] text-white", bar: "bg-[#7C3AED]" },
   blue: { text: "text-[#2563EB]", dot: "bg-[#2563EB]", button: "bg-[#2563EB] text-white", bar: "bg-[#2563EB]" },
 } as const;
 
@@ -108,9 +108,9 @@ export function PoweredByAi() {
         <svg aria-hidden="true" viewBox="0 0 340 14" className="mt-3 h-3.5 w-[220px] lg:w-[340px] rtl:-scale-x-100" fill="none">
           <defs>
             <linearGradient id="wavy" x1="0" x2="1">
-              <stop stopColor="#182793" />
-              <stop offset=".5" stopColor="#7B3368" />
-              <stop offset="1" stopColor="#D97817" />
+              <stop stopColor="#101B35" />
+              <stop offset=".5" stopColor="#7C3AED" />
+              <stop offset="1" stopColor="#06B6D4" />
             </linearGradient>
           </defs>
           <path d="M2 9c20-8 36-8 56 0s36 8 56 0 36-8 56 0 36 8 56 0 36-8 56 0 36 8 56 0" stroke="url(#wavy)" strokeWidth="2.5" strokeLinecap="round" />

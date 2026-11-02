@@ -22,15 +22,15 @@ export function AboutPage() {
             {about.stats.map((stat) => (
               <li key={stat.label} className="flex flex-col items-center rounded-2xl border border-slate-100 bg-white px-4 py-6 text-center shadow-lg">
                 <IconTile icon={stat.icon} />
-                <p dir="ltr" className="mt-3 text-3xl font-bold text-slate-900 md:text-4xl">{stat.value}</p>
+                <p dir="ltr" className="mt-3 text-3xl font-bold text-[#101B35] md:text-4xl">{stat.value}</p>
                 <p className="mt-1 text-xs text-slate-500">{stat.label}</p>
               </li>
             ))}
           </ul>
 
           <div className="mx-auto mt-20 max-w-4xl">
-            <h2 className="text-center font-heading text-3xl font-bold text-slate-900 md:text-4xl">{copy.company.overviewTitle}</h2>
-            <div className="mx-auto mt-3 h-[3px] w-16 rounded-full bg-gradient-to-r from-[#182793] to-[#D97817]" />
+            <h2 className="text-center font-heading text-3xl font-bold text-[#101B35] md:text-4xl">{copy.company.overviewTitle}</h2>
+            <div className="mx-auto mt-3 h-[3px] w-16 rounded-full bg-gradient-to-r from-[#101B35] to-[#06B6D4]" />
             <div className="mt-8 grid gap-4 text-sm leading-7 text-slate-600 md:text-base">
               {copy.company.overview.map((paragraph) => (
                 <p key={paragraph.slice(0, 24)}>{paragraph}</p>
@@ -50,7 +50,7 @@ export function AboutPage() {
                   <IconTile icon={pillar.icon} />
                   <span className="text-3xl font-bold text-gray-200">{String(index + 1).padStart(2, "0")}</span>
                 </div>
-                <h3 className="mt-5 font-heading text-lg font-bold text-slate-900">{pillar.title}</h3>
+                <h3 className="mt-5 font-heading text-lg font-bold text-[#101B35]">{pillar.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{pillar.body}</p>
               </li>
             ))}
@@ -60,7 +60,7 @@ export function AboutPage() {
               {copy.nav.packages}
               <Icon name="arrowRight" size={16} className="rtl:-scale-x-100" />
             </Link>
-            <Link to="/leadership" className="focus-ring rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 hover:border-[#505FD0] hover:text-[#182793]">
+            <Link to="/leadership" className="focus-ring rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-800 hover:border-[#2563EB] hover:text-[#101B35]">
               {copy.nav.leadership}
             </Link>
           </div>
@@ -74,7 +74,7 @@ export function AboutPage() {
             {about.values.map((value) => (
               <li key={value.title} className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
                 <IconTile icon={value.icon} />
-                <h3 className="mt-5 font-heading text-lg font-bold text-slate-900">{value.title}</h3>
+                <h3 className="mt-5 font-heading text-lg font-bold text-[#101B35]">{value.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{value.body}</p>
               </li>
             ))}
@@ -82,13 +82,13 @@ export function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[#020617] py-20 text-white">
+      <section className="bg-[#101B35] py-20 text-white">
         <div className="cs-container">
           <h2 className="text-center font-heading text-3xl font-bold md:text-4xl">{about.whyTitle}</h2>
           <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {about.why.map((item) => (
               <li key={item.title} className="rounded-2xl border border-white/10 bg-white/5 p-6">
-                <IconTile icon={item.icon} className="from-[#505FD0] to-[#CA51AA]" />
+                <IconTile icon={item.icon} className="from-[#2563EB] to-[#06B6D4]" />
                 <h3 className="mt-5 font-heading text-base font-bold">{item.title}</h3>
                 <p className="mt-2 text-sm text-white/70">{item.body}</p>
               </li>
@@ -107,7 +107,7 @@ export function AboutPage() {
             {about.process.map((step, index) => (
               <li key={step.title} className="relative rounded-2xl border border-slate-100 bg-white p-6 shadow-sm">
                 <span className="text-4xl font-bold text-gray-200">{String(index + 1).padStart(2, "0")}</span>
-                <h3 className="mt-3 font-heading text-lg font-bold text-slate-900">{step.title}</h3>
+                <h3 className="mt-3 font-heading text-lg font-bold text-[#101B35]">{step.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{step.body}</p>
               </li>
             ))}

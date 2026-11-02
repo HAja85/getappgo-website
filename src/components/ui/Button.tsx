@@ -21,7 +21,7 @@ export function Button({
         size === "md" ? "h-11 px-5 text-sm" : "h-9 px-4 text-sm",
         variant === "primary" && "btn-primary",
         variant === "secondary" &&
-          "border border-slate-300 bg-white text-slate-800 hover:border-[#505FD0] hover:text-[#182793]",
+          "border border-slate-300 bg-white text-slate-800 hover:border-[#2563EB] hover:text-[#101B35]",
         variant === "ghost" && "text-muted hover:text-mist",
         className,
       )}
