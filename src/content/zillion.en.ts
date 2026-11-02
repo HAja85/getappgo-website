@@ -496,7 +496,7 @@ const en = {
         body: "We assess your processes, systems and data to find where digital and AI will make the biggest difference, then turn the findings into a practical plan.",
         deliverables: ["Digital and AI Transformation Roadmap"],
         examples: ["Process and systems assessment", "Digital maturity scoring", "Prioritised opportunities and quick wins"],
-        accent: "from-[#182793] to-[#07A0E7]",
+        accent: "from-[#101B35] to-[#06B6D4]",
         icon: "eye",
       },
       {
@@ -507,7 +507,7 @@ const en = {
         body: "Bring AI into every customer conversation, connected to the systems your team already uses so every interaction is captured and actioned.",
         deliverables: ["End-to-End AI Call Center Integration"],
         examples: ["CRM integration", "WhatsApp integration", "Cloud email integration", "Basic analytics", "Workflow automation"],
-        accent: "from-[#505FD0] to-[#CA51AA]",
+        accent: "from-[#2563EB] to-[#06B6D4]",
         icon: "headset",
       },
       {
@@ -518,7 +518,7 @@ const en = {
         body: "An ongoing partnership that applies AI and automation across the business, from back-office documents to decision-making.",
         deliverables: ["Business automation programme"],
         examples: ["AI for document processing", "AI for reporting", "AI for employee productivity", "AI for business analytics"],
-        accent: "from-[#7B3368] to-[#D97817]",
+        accent: "from-[#7C3AED] to-[#06B6D4]",
         icon: "workflow",
       },
     ] as { id: string; number: string; title: string; subtitle: string; body: string; deliverables: string[]; examples: string[]; accent: string; icon: IconName }[],

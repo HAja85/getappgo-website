@@ -19,6 +19,7 @@ export function getPrerenderRoutes(): string[] {
     "/industries",
     ...getIndustries().map((industry) => `/industries/${industry.slug}`),
     "/about",
+    "/brand",
     "/contact",
     "/privacy",
   ];

@@ -47,7 +47,7 @@ export function LanguageSwitch({ light = false, block = false, className }: Lang
             className={cn(
               "focus-ring relative z-[1] font-bold transition-colors",
               block ? "flex-1 rounded-xl py-3 text-sm" : "rounded-full px-4 py-1.5 text-xs",
-              active ? "text-white" : light || block ? "text-[#1F1F1F]" : "text-white",
+              active ? "text-white" : light || block ? "text-[#101B35]" : "text-white",
             )}
           >
             {option.label}

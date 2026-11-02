@@ -25,7 +25,7 @@ export function PageHero({ badge, badgeIcon = "sparkles", title, accent, body, i
       )}
     >
       <img src={image} alt="" className="absolute inset-0 h-full w-full object-cover opacity-40" />
-      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-[#020B50]/95 via-[#0b1677]/80 to-[#2b0f4a]/60 rtl:bg-gradient-to-l" />
+      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-[#101B35]/95 via-[#172554]/80 to-[#0B1224]/60 rtl:bg-gradient-to-l" />
       <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:48px_48px]" />
       <div className={cn("cs-container relative grid items-center gap-10", aside ? "lg:grid-cols-[1.25fr_1fr]" : "")}>
         <div className={cn(center && "mx-auto max-w-4xl text-center")}>
@@ -55,7 +55,7 @@ export function HeroGlassCard({ label, title, body, checks, action }: { label?: 
   return (
     <div className="max-w-md rounded-2xl border border-white/10 bg-white/10 p-6 backdrop-blur-md">
       <div className="flex items-start gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-[#182793]">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white text-[#101B35]">
           <Icon name="checkCircle" size={20} />
         </span>
         <div>

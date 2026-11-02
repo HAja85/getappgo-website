@@ -5,7 +5,7 @@ import { CtaBand } from "@/components/inner/CtaBand";
 import { useCopy } from "@/i18n/LanguageProvider";
 import { cn } from "@/lib/cn";
 
-const PANEL = ["from-[#182793] to-[#7B3368]", "from-[#505FD0] to-[#CA51AA]", "from-[#7B3368] to-[#D97817]"];
+const PANEL = ["from-[#101B35] to-[#2563EB]", "from-[#2563EB] to-[#06B6D4]", "from-[#101B35] to-[#7C3AED]"];
 
 export function LeadershipPage() {
   const copy = useCopy();
@@ -38,9 +38,9 @@ export function LeadershipPage() {
                   )}
                 </div>
                 <div className="p-6 md:p-10">
-                  <p className="text-[10px] font-bold tracking-[0.2em] text-[#182793] uppercase">{person.role}</p>
-                  <h2 className="mt-1 font-heading text-3xl font-bold text-slate-900">{person.name}</h2>
-                  <blockquote className="mt-4 border-s-2 border-[#505FD0] ps-4 text-base text-slate-700 italic">“{person.quote}”</blockquote>
+                  <p className="text-[10px] font-bold tracking-[0.2em] text-[#101B35] uppercase">{person.role}</p>
+                  <h2 className="mt-1 font-heading text-3xl font-bold text-[#101B35]">{person.name}</h2>
+                  <blockquote className="mt-4 border-s-2 border-[#2563EB] ps-4 text-base text-slate-700 italic">“{person.quote}”</blockquote>
                   <div className="mt-6 grid gap-3 text-sm leading-7 text-slate-600 md:text-[15px]">
                     {person.story.map((line) => (
                       <p key={line.slice(0, 32)}>{line}</p>

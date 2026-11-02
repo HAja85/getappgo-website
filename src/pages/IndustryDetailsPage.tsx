@@ -23,7 +23,7 @@ export function IndustryDetailsPage() {
           ))}
         </div>
         <p className="mt-8 text-sm">
-          <Link to="/industries" className="font-semibold text-[#182793]">
+          <Link to="/industries" className="font-semibold text-[#101B35]">
             All industries
           </Link>
         </p>

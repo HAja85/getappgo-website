@@ -24,7 +24,7 @@ export function AppShell() {
     <>
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded-full focus:bg-[#182793] focus:px-4 focus:py-2 focus:text-white"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded-full focus:bg-[#101B35] focus:px-4 focus:py-2 focus:text-white"
       >
         {copy.nav.skip}
       </a>

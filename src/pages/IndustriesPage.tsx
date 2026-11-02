@@ -24,7 +24,7 @@ export function IndustriesPage() {
                 <img src={industry.heroVisual} alt="" width={800} height={450} className="h-full w-full object-cover" />
               </div>
               <div className="p-6">
-                <h2 className="font-heading text-xl font-bold text-slate-900">{industry.name}</h2>
+                <h2 className="font-heading text-xl font-bold text-[#101B35]">{industry.name}</h2>
                 <p className="mt-2 text-sm text-muted">{industry.tagline}</p>
               </div>
             </Link>

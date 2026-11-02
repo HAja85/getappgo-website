@@ -24,11 +24,11 @@ export function BrandLogo({ tone = "dark", size = "md", className, asLink = true
           className={cn(
             "font-heading font-bold tracking-tight",
             size === "lg" ? "text-[30px]" : "text-[22px] md:text-[24px]",
-            tone === "light" ? "text-white" : "text-[#182793]",
+            tone === "light" ? "text-white" : "text-[#101B35]",
           )}
         >
-          zillion<span className={tone === "light" ? "text-[#c9c2ff]" : "text-gradient-4"}>AI</span>
-          <span className={tone === "light" ? "text-white/70" : "text-[#D97817]"}>.</span>
+          zillion<span className={tone === "light" ? "text-[#67E8F9]" : "text-gradient-4"}>AI</span>
+          <span className={tone === "light" ? "text-white/70" : "text-[#2563EB]"}>.</span>
         </span>
         <span
           className={cn(
