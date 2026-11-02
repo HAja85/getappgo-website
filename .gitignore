@@ -22,3 +22,6 @@ Thumbs.db
 .env
 .env.*
 !.env.example
+
+# Contact form logs and rate-limit counters (written outside public_html on the server)
+.zillion-mail/

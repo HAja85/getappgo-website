@@ -1,0 +1,7 @@
+# Defense in depth if the site-root rewrite rules are edited later.
+# HTTP may call contact.php only. PHP include() of the library is unaffected.
+
+Options -Indexes
+RewriteEngine On
+RewriteRule ^contact\.php$ - [END]
+RewriteRule ^ - [F,L]

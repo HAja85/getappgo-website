@@ -1,0 +1,5 @@
+PHPMailer 6.12.0
+https://github.com/PHPMailer/PHPMailer
+License: GNU LGPL 2.1 (see LICENSE)
+Files: src/Exception.php, src/PHPMailer.php, src/SMTP.php
+Unmodified upstream sources. No Composer install is required.

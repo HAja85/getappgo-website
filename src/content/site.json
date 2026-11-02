@@ -72,7 +72,7 @@
     "expertSubtitle": "Share a little context and we'll connect you with a specialist — by email or WhatsApp.",
     "successTitle": "Request received",
     "successBody": "Thank you. A specialist will contact you shortly.",
-    "submitMode": "mailto"
+    "submitMode": "endpoint"
   },
   "about": {
     "headline": "Built for operators who need reliable software and intelligent platforms.",
